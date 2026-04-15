@@ -94,6 +94,7 @@
     "journeyEyebrow": "My journey",
     "hero": {
       "heading": "So in a nutshell, who is Frank Poboček?",
+      "tagline": "Developer. Builder. Founder.",
       "p1": "Full-stack web developer, AI integrator, smart-contract engineer, consultant, and founder — wearing multiple hats by design.",
       "p2": "Let me share my journey with you."
     },
@@ -125,12 +126,15 @@
     },
     "post": {
       "heading": "Post Academics",
-      "body": "Two days after graduating I started as a Backend Engineer in .NET at CRIF — building credit-register systems for international markets.",
+      "body": "Two days after graduating I joined CRIF as a Backend Engineer in .NET — building credit-register and data-pooling systems for international markets. Oracle databases, stored procedures, business processes, unit and integration tests.",
+      "body2": "After CRIF I moved into freelance — taking on full-stack projects for clients across Slovakia and beyond, building web apps, intranets, and e-commerce platforms under the Applance Solutions brand, later rebranded to pobocek.dev.",
       "more": "Read more"
     },
     "blockchain": {
       "heading": "Blockchain",
-      "body": "Smart contracts, Solidity, dApp integrations, Web3 audits. This chapter is still being written.",
+      "body": "I completed a Solidity bootcamp in early 2023 and went deep on smart contract development — writing, testing, and auditing contracts for EVM-compatible chains.",
+      "body2": "Since then I've integrated dApps into web frontends, worked with Web3.js and ethers.js, and consulted on token contract architecture.",
+      "body3": "Web3 is now a native part of the pobocek.dev offering alongside the full-stack web work.",
       "more": "Read more"
     },
     "today": {

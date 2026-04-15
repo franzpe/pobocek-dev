@@ -5,6 +5,7 @@
     "sk": "Môj vlastný SaaS. Eviro automaticky pýta zákazníkov o recenziu po každej návšteve, pripravuje AI odpovede vo vašom tóne a upozorní vás hneď, ako príde negatívna recenzia — aby ste stihli reagovať skôr, než uškodí. Postavené pre salóny, reštaurácie, zubárov a ďalšie lokálne podniky, ktoré stoja a padajú na svojom hodnotení."
   },
   "image": "/assets/images/projects/eviro-banner.svg",
+  "url": "https://eviro.io",
   "date": "2026-01",
   "featured": true,
   "order": 1,

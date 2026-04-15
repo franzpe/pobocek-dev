@@ -94,6 +94,7 @@
     "journeyEyebrow": "Moja cesta",
     "hero": {
       "heading": "Takže v skratke, kto je Frank Poboček?",
+      "tagline": "Developer. Tvorca. Zakladateľ.",
       "p1": "Full-stack web developer, AI integrátor, vývojár smart contractov, konzultant a zakladateľ — viac klobúkov, zámerne.",
       "p2": "Dovoľte mi podeliť sa o moju cestu."
     },
@@ -125,12 +126,15 @@
     },
     "post": {
       "heading": "Po škole",
-      "body": "Dva dni po štátniciach som nastúpil ako Backend Engineer v .NET v spoločnosti CRIF — staval som systémy úverových registrov pre medzinárodné trhy.",
+      "body": "Dva dni po štátniciach som nastúpil do CRIF ako Backend Engineer v .NET — budoval som systémy úverových registrov a data-poolingové riešenia pre medzinárodné trhy. Oracle databázy, stored procedures, business procesy, unit a integračné testy.",
+      "body2": "Po CRIF som prešiel na freelance — full-stack projekty pre klientov na Slovensku a v zahraničí, webové aplikácie, intranety a e-shopy pod značkou Applance Solutions, neskôr premenovanou na pobocek.dev.",
       "more": "Čítať viac"
     },
     "blockchain": {
       "heading": "Blockchain",
-      "body": "Smart contracty, Solidity, integrácie dApps, Web3 audity. Kapitola, ktorá sa stále píše.",
+      "body": "Začiatkom roka 2023 som absolvoval Solidity bootcamp a ponoril sa do vývoja smart contractov — písanie, testovanie a auditovanie contractov pre EVM-kompatibilné chainy.",
+      "body2": "Od vtedy integrujem dApps do webových frontendov, pracujem s Web3.js a ethers.js a konzultujem architektúru token contractov.",
+      "body3": "Web3 je dnes prirodzenou súčasťou ponuky pobocek.dev popri full-stack webovom vývoji.",
       "more": "Čítať viac"
     },
     "today": {

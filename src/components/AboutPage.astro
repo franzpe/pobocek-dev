@@ -11,12 +11,10 @@ const { lang } = Astro.props;
 const t = useT(lang);
 ---
 
-<!-- 1. Who am I — text-only -->
+<!-- 1. Hero headline -->
 <div class="bg-dark-violet">
-  <div class="py-10 md:py-24 px-5 md:px-16 container mx-auto text-violet sm:border-x border-violet">
-    <h1 class="text-4xl md:text-6xl leading-tight font-bold mb-5 md:mb-10 max-w-4xl">{t('about.hero.heading')}</h1>
-    <p class="text-xl md:text-2xl text-white mb-5 md:mb-6 max-w-3xl">{t('about.hero.p1')}</p>
-    <p class="text-xl md:text-2xl text-white max-w-3xl">{t('about.hero.p2')}</p>
+  <div class="py-16 md:py-32 px-5 md:px-16 container mx-auto sm:border-x border-violet">
+    <h1 class="text-6xl md:text-8xl lg:text-[10rem] font-bold text-violet leading-none">{t('about.hero.tagline')}</h1>
   </div>
 </div>
 
@@ -26,9 +24,9 @@ const t = useT(lang);
     <div class="w-full lg:w-1/2">
       <span class="inline-block text-xs font-bold uppercase tracking-widest text-lime mb-4">{t('about.today.subheading')}</span>
       <h2 class="text-4xl md:text-6xl font-bold pb-8 md:pb-12 text-violet">{t('about.today.heading')}</h2>
-      <p class="font-bold pb-6 text-white md:text-lg">{t('about.today.p1')}</p>
-      <p class="font-bold pb-6 text-white md:text-lg">{t('about.today.p2')}</p>
-      <p class="font-bold pb-8 text-white md:text-lg">{t('about.today.p3')}</p>
+      <p class="pb-6 text-white md:text-lg">{t('about.today.p1')}</p>
+      <p class="pb-6 text-white md:text-lg">{t('about.today.p2')}</p>
+      <p class="pb-8 text-white md:text-lg">{t('about.today.p3')}</p>
     </div>
     <div class="w-full lg:w-1/2 lg:pl-16 mt-8 lg:mt-0">
       <h3 class="text-xs font-bold uppercase tracking-widest text-violet mb-6">{t('about.today.stackHeading')}</h3>
@@ -41,7 +39,7 @@ const t = useT(lang);
 <div class="bg-lime">
   <div class="py-10 md:py-32 px-5 md:px-16 container mx-auto">
     <h2 class="text-4xl md:text-6xl font-bold pb-6 md:pb-8 text-dark-violet">{t('about.ai.heading')}</h2>
-    <p class="pb-10 md:pb-16 text-dark-violet md:text-xl max-w-3xl font-bold">{t('about.ai.intro')}</p>
+    <p class="pb-10 md:pb-16 text-dark-violet md:text-xl max-w-3xl">{t('about.ai.intro')}</p>
     <div class="grid md:grid-cols-2 gap-6 md:gap-10">
       <div class="bg-dark-violet rounded-xl p-8 md:p-10">
         <h3 class="text-xl md:text-2xl font-bold text-lime pb-4">{t('about.ai.b1Title')}</h3>
@@ -69,27 +67,27 @@ const t = useT(lang);
   </div>
 </div>
 
-<!-- 4. Journey eyebrow -->
-<div class="bg-dark-violet border-t border-violet">
-  <div class="px-5 md:px-16 container mx-auto sm:border-x border-violet pt-10 md:pt-20 pb-6 md:pb-4">
-    <span class="inline-block text-xs font-bold uppercase tracking-widest text-lime">{t('about.journeyEyebrow')}</span>
-  </div>
-</div>
-
 <!-- Young Lad -->
 <div class="bg-dark-violet">
-  <div class="flex flex-wrap items-center py-10 md:py-20 px-5 md:px-16 container mx-auto sm:border-x border-violet">
-    <div class="w-full lg:w-1/2">
-      <div class="flex items-center justify-end lg:justify-evenly">
-        <span class="text-5xl sm:text-8xl lg:text-[20rem] mr-5 lg:mr-0 lg:-mb-20 text-violet font-bold">[</span>
-        <span class="text-5xl sm:text-8xl lg:text-[20rem] -mt-6 lg:-mt-20 text-lime font-bold">]</span>
-      </div>
+  <div class="py-10 md:py-20 px-5 md:px-16 container mx-auto sm:border-x border-violet">
+    <!-- brackets row -->
+    <div class="flex items-end justify-between lg:hidden mb-8">
+      <span class="text-[10rem] text-violet font-bold leading-none">&#91;</span>
+      <span class="text-[10rem] text-lime font-bold leading-none">&#93;</span>
     </div>
-    <div class="w-full lg:w-1/2">
-      <h2 class="text-4xl font-bold pb-8 md:pb-16 text-violet">{t('about.young.heading')}</h2>
-      <p class="font-bold pb-6 text-white">{t('about.young.p1')}</p>
-      <p class="font-bold pb-6 text-white">{t('about.young.p2')}</p>
-      <p class="font-bold text-white">{t('about.young.p3')}</p>
+    <!-- desktop: side by side -->
+    <div class="flex flex-wrap items-center">
+      <div class="hidden lg:flex lg:w-1/2 items-center justify-evenly">
+        <span class="text-[20rem] lg:-mb-20 text-violet font-bold leading-none">[</span>
+        <span class="text-[20rem] lg:-mt-20 text-lime font-bold leading-none">]</span>
+      </div>
+      <div class="w-full lg:w-1/2">
+        <span class="inline-block text-xs font-bold uppercase tracking-widest text-lime mb-4">{t('about.journeyEyebrow')}</span>
+        <h2 class="text-4xl font-bold pb-8 md:pb-16 text-violet">{t('about.young.heading')}</h2>
+        <p class="pb-6 text-white">{t('about.young.p1')}</p>
+        <p class="pb-6 text-white">{t('about.young.p2')}</p>
+        <p class="text-white">{t('about.young.p3')}</p>
+      </div>
     </div>
   </div>
 </div>
@@ -99,10 +97,10 @@ const t = useT(lang);
   <div class="flex flex-wrap items-center py-10 md:py-32 px-5 md:px-16 container mx-auto">
     <div class="w-full lg:w-3/6 text-dark-violet">
       <h2 class="text-4xl font-bold pb-8 md:pb-16">{t('about.school.heading')}</h2>
-      <p class="font-bold pb-6">{t('about.school.p1')}</p>
-      <p class="font-bold pb-6 md:pb-16">{t('about.school.p2')}</p>
-      <p class="font-bold pb-6">{t('about.school.intro')}</p>
-      <ul class="list-disc ml-4 text-xl">
+      <p class="pb-6">{t('about.school.p1')}</p>
+      <p class="pb-6">{t('about.school.p2')}</p>
+      <p class="pb-6">{t('about.school.intro')}</p>
+      <ul class="list-disc ml-4">
         <li class="pb-3">{t('about.school.b1')}</li>
         <li>{t('about.school.b2')}</li>
       </ul>
@@ -129,8 +127,8 @@ const t = useT(lang);
     </div>
     <div class="w-full lg:w-3/6 mt-6 md:mt-10 lg:mt-0">
       <h2 class="text-4xl font-bold pb-8 md:pb-16 text-violet">{t('about.university.heading')}</h2>
-      <p class="font-bold pb-6 text-white">{t('about.university.p1')}</p>
-      <p class="font-bold pb-6 md:pb-16 text-white">{t('about.university.p2')}</p>
+      <p class="pb-6 text-white">{t('about.university.p1')}</p>
+      <p class="pb-6 text-white">{t('about.university.p2')}</p>
     </div>
   </div>
 </div>
@@ -140,7 +138,7 @@ const t = useT(lang);
   <div class="flex flex-wrap items-center py-10 md:py-28 px-5 md:px-16 container mx-auto">
     <div class="w-full lg:w-3/4 text-dark-violet">
       <h2 class="text-4xl font-bold pb-8 md:pb-16">{t('about.achievements.heading')}</h2>
-      <ul class="list-disc ml-4 font-bold">
+      <ul class="list-disc ml-4">
         <li class="pb-4">{t('about.achievements.b1')}</li>
         <li class="pb-4">{t('about.achievements.b2')}</li>
         <li class="pb-4">{t('about.achievements.b3')}</li>
@@ -155,13 +153,16 @@ const t = useT(lang);
   <div class="bg-dark-violet w-full lg:w-1/2">
     <div class="mx-auto lg:ml-auto lg:mr-0 max-w-screen-sm md:max-w-3xl lg:max-w-lg xl:max-w-screen-sm 2xl:max-w-screen-md ml-auto sm:border-x sm:border-violet lg:border-r-0 lg:border-l lg:border-l-violet py-10 md:py-32 px-5 md:pr-48 md:pl-16 text-white">
       <h2 class="text-4xl font-bold pb-8 md:pb-14">{t('about.post.heading')}</h2>
-      <p class="pb-6 md:text-xl">{t('about.post.body')}</p>
+      <p class="pb-6 md:text-lg">{t('about.post.body')}</p>
+      <p class="md:text-lg">{t('about.post.body2')}</p>
     </div>
   </div>
   <div class="bg-violet w-full lg:w-1/2">
     <div class="mx-auto lg:mr-auto lg:ml-0 h-full max-w-screen-sm md:max-w-3xl lg:max-w-lg xl:max-w-screen-sm 2xl:max-w-screen-md sm:border-x sm:border-dark-violet lg:border-l-0 lg:border-r lg:border-r-dark-violet py-10 md:py-32 px-5 md:pr-48 md:pl-16">
       <h2 class="text-4xl font-bold pb-8 md:pb-14 relative">{t('about.blockchain.heading')}</h2>
-      <p class="pb-6 md:text-xl relative">{t('about.blockchain.body')}</p>
+      <p class="pb-6 md:text-lg relative">{t('about.blockchain.body')}</p>
+      <p class="pb-6 md:text-lg relative">{t('about.blockchain.body2')}</p>
+      <p class="md:text-lg relative">{t('about.blockchain.body3')}</p>
     </div>
   </div>
 </div>
