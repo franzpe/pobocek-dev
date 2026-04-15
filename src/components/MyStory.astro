@@ -11,20 +11,20 @@ const t = useT(lang);
 const aboutHref = localizePath('/about', lang);
 ---
 
-<div class="bg-beige border-t border-dark-violet">
-  <div class="flex flex-wrap items-center py-10 md:py-32 px-5 md:px-16 container mx-auto sm:border-x border-dark-violet">
-    <div class="w-full lg:w-2/4 text-dark-violet">
+<div class="bg-dark-violet border-t border-violet">
+  <div class="flex flex-wrap items-center py-10 md:py-32 px-5 md:px-16 container mx-auto sm:border-x border-violet">
+    <div class="w-full lg:w-2/4 text-white">
       <h2 class="text-4xl md:text-7xl font-bold md:leading-[8rem] pb-8 md:pb-16">{t('myStory.heading')}</h2>
       <p class="font-bold pb-6">{t('myStory.p1')}</p>
       <p class="font-bold pb-16">{t('myStory.p2')}</p>
-      <a href={aboutHref} class="relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold text-white bg-dark-violet rounded-full group">
-        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-violet rounded-full group-hover:w-56 group-hover:h-56"></span>
+      <a href={aboutHref} class="relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold text-dark-violet bg-violet rounded-full group">
+        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-lime rounded-full group-hover:w-56 group-hover:h-56"></span>
         <span class="relative">{t('myStory.more')}</span>
       </a>
     </div>
     <div class="w-full hidden lg:block lg:w-3/6 lg:text-[18rem] lg:leading-[18rem]">
       <p class="text-violet font-bold lg:text-right">\\</p>
-      <p class="text-dark-violet font-bold tracking-widest">{'{{'}</p>
+      <p class="text-lime font-bold tracking-widest">{'{{'}</p>
     </div>
   </div>
 </div>
