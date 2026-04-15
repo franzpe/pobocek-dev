@@ -11,23 +11,74 @@ const { lang } = Astro.props;
 const t = useT(lang);
 ---
 
-<!-- Nutshell hero -->
+<!-- 1. Who am I — text-only -->
 <div class="bg-dark-violet">
-  <div class="flex flex-wrap items-center md:justify-between py-10 md:py-20 px-5 md:px-16 container mx-auto text-violet sm:border-x border-violet">
-    <div class="w-full lg:w-2/4 xl:w-2/5">
-      <h1 class="text-4xl md:text-5xl leading-[3rem] md:leading-[4rem] font-bold mb-5 md:mb-10">{t('about.hero.heading')}</h1>
-      <p class="text-2xl text-white mb-5 md:mb-10">{t('about.hero.p1')}</p>
-      <p class="text-2xl text-white mb-5">{t('about.hero.p2')}</p>
+  <div class="py-10 md:py-24 px-5 md:px-16 container mx-auto text-violet sm:border-x border-violet">
+    <h1 class="text-4xl md:text-6xl leading-tight font-bold mb-5 md:mb-10 max-w-4xl">{t('about.hero.heading')}</h1>
+    <p class="text-xl md:text-2xl text-white mb-5 md:mb-6 max-w-3xl">{t('about.hero.p1')}</p>
+    <p class="text-xl md:text-2xl text-white max-w-3xl">{t('about.hero.p2')}</p>
+  </div>
+</div>
+
+<!-- 2. Today -->
+<div class="bg-dark-violet border-t border-violet">
+  <div class="flex flex-wrap items-center py-10 md:py-32 px-5 md:px-16 container mx-auto sm:border-x border-violet">
+    <div class="w-full lg:w-1/2">
+      <span class="inline-block text-xs font-bold uppercase tracking-widest text-lime mb-4">{t('about.today.subheading')}</span>
+      <h2 class="text-4xl md:text-6xl font-bold pb-8 md:pb-12 text-violet">{t('about.today.heading')}</h2>
+      <p class="font-bold pb-6 text-white md:text-lg">{t('about.today.p1')}</p>
+      <p class="font-bold pb-6 text-white md:text-lg">{t('about.today.p2')}</p>
+      <p class="font-bold pb-8 text-white md:text-lg">{t('about.today.p3')}</p>
     </div>
-    <div class="mt-6 lg:mt-0 w-full lg:w-1/3 xl:w-3/6">
-      <img class="w-full" src="/assets/images/frantisekpobocek.jpg" alt={t('hero.photoAlt')} />
+    <div class="w-full lg:w-1/2 lg:pl-16 mt-8 lg:mt-0">
+      <h3 class="text-xs font-bold uppercase tracking-widest text-violet mb-6">{t('about.today.stackHeading')}</h3>
+      <p class="text-white font-bold text-lg md:text-xl leading-loose">{t('about.today.stackItems')}</p>
     </div>
   </div>
 </div>
 
+<!-- 3. AI -->
+<div class="bg-lime">
+  <div class="py-10 md:py-32 px-5 md:px-16 container mx-auto">
+    <h2 class="text-4xl md:text-6xl font-bold pb-6 md:pb-8 text-dark-violet">{t('about.ai.heading')}</h2>
+    <p class="pb-10 md:pb-16 text-dark-violet md:text-xl max-w-3xl font-bold">{t('about.ai.intro')}</p>
+    <div class="grid md:grid-cols-2 gap-6 md:gap-10">
+      <div class="bg-dark-violet rounded-xl p-8 md:p-10">
+        <h3 class="text-xl md:text-2xl font-bold text-lime pb-4">{t('about.ai.b1Title')}</h3>
+        <p class="text-white">{t('about.ai.b1Body')}</p>
+      </div>
+      <div class="bg-dark-violet rounded-xl p-8 md:p-10">
+        <h3 class="text-xl md:text-2xl font-bold text-lime pb-4">{t('about.ai.b2Title')}</h3>
+        <p class="text-white">{t('about.ai.b2Body')}</p>
+      </div>
+      <div class="bg-dark-violet rounded-xl p-8 md:p-10">
+        <h3 class="text-xl md:text-2xl font-bold text-lime pb-4">{t('about.ai.b3Title')}</h3>
+        <p class="text-white">{t('about.ai.b3Body')}</p>
+      </div>
+      <div class="bg-dark-violet rounded-xl p-8 md:p-10">
+        <h3 class="text-xl md:text-2xl font-bold text-lime pb-4">{t('about.ai.b4Title')}</h3>
+        <p class="text-white">{t('about.ai.b4Body')}</p>
+      </div>
+    </div>
+    <div class="mt-10 md:mt-16 text-center">
+      <a href="#contact" class="relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold text-lime bg-dark-violet rounded-full group">
+        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-violet rounded-full group-hover:w-56 group-hover:h-56"></span>
+        <span class="relative">{t('about.ai.cta')} →</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- 4. Journey eyebrow -->
+<div class="bg-dark-violet border-t border-violet">
+  <div class="px-5 md:px-16 container mx-auto sm:border-x border-violet pt-10 md:pt-20 pb-6 md:pb-4">
+    <span class="inline-block text-xs font-bold uppercase tracking-widest text-lime">{t('about.journeyEyebrow')}</span>
+  </div>
+</div>
+
 <!-- Young Lad -->
-<div class="bg-dark-violet border-violet border-t">
-  <div class="flex flex-wrap items-center py-10 md:py-28 px-5 md:px-16 container mx-auto sm:border-x border-violet">
+<div class="bg-dark-violet">
+  <div class="flex flex-wrap items-center py-10 md:py-20 px-5 md:px-16 container mx-auto sm:border-x border-violet">
     <div class="w-full lg:w-1/2">
       <div class="flex items-center justify-end lg:justify-evenly">
         <span class="text-5xl sm:text-8xl lg:text-[20rem] mr-5 lg:mr-0 lg:-mb-20 text-violet font-bold">[</span>
@@ -111,55 +162,6 @@ const t = useT(lang);
     <div class="mx-auto lg:mr-auto lg:ml-0 h-full max-w-screen-sm md:max-w-3xl lg:max-w-lg xl:max-w-screen-sm 2xl:max-w-screen-md sm:border-x sm:border-dark-violet lg:border-l-0 lg:border-r lg:border-r-dark-violet py-10 md:py-32 px-5 md:pr-48 md:pl-16">
       <h2 class="text-4xl font-bold pb-8 md:pb-14 relative">{t('about.blockchain.heading')}</h2>
       <p class="pb-6 md:text-xl relative">{t('about.blockchain.body')}</p>
-    </div>
-  </div>
-</div>
-
-<!-- Today -->
-<div class="bg-dark-violet border-t border-violet">
-  <div class="flex flex-wrap items-center py-10 md:py-32 px-5 md:px-16 container mx-auto sm:border-x border-violet">
-    <div class="w-full lg:w-1/2">
-      <span class="inline-block text-xs font-bold uppercase tracking-widest text-lime mb-4">{t('about.today.subheading')}</span>
-      <h2 class="text-4xl md:text-6xl font-bold pb-8 md:pb-12 text-violet">{t('about.today.heading')}</h2>
-      <p class="font-bold pb-6 text-white md:text-lg">{t('about.today.p1')}</p>
-      <p class="font-bold pb-6 text-white md:text-lg">{t('about.today.p2')}</p>
-      <p class="font-bold pb-8 text-white md:text-lg">{t('about.today.p3')}</p>
-    </div>
-    <div class="w-full lg:w-1/2 lg:pl-16 mt-8 lg:mt-0">
-      <h3 class="text-xs font-bold uppercase tracking-widest text-violet mb-6">{t('about.today.stackHeading')}</h3>
-      <p class="text-white font-bold text-lg md:text-xl leading-loose">{t('about.today.stackItems')}</p>
-    </div>
-  </div>
-</div>
-
-<!-- AI -->
-<div class="bg-lime">
-  <div class="py-10 md:py-32 px-5 md:px-16 container mx-auto">
-    <h2 class="text-4xl md:text-6xl font-bold pb-6 md:pb-8 text-dark-violet">{t('about.ai.heading')}</h2>
-    <p class="pb-10 md:pb-16 text-dark-violet md:text-xl max-w-3xl font-bold">{t('about.ai.intro')}</p>
-    <div class="grid md:grid-cols-2 gap-6 md:gap-10">
-      <div class="bg-dark-violet rounded-xl p-8 md:p-10">
-        <h3 class="text-xl md:text-2xl font-bold text-lime pb-4">{t('about.ai.b1Title')}</h3>
-        <p class="text-white">{t('about.ai.b1Body')}</p>
-      </div>
-      <div class="bg-dark-violet rounded-xl p-8 md:p-10">
-        <h3 class="text-xl md:text-2xl font-bold text-lime pb-4">{t('about.ai.b2Title')}</h3>
-        <p class="text-white">{t('about.ai.b2Body')}</p>
-      </div>
-      <div class="bg-dark-violet rounded-xl p-8 md:p-10">
-        <h3 class="text-xl md:text-2xl font-bold text-lime pb-4">{t('about.ai.b3Title')}</h3>
-        <p class="text-white">{t('about.ai.b3Body')}</p>
-      </div>
-      <div class="bg-dark-violet rounded-xl p-8 md:p-10">
-        <h3 class="text-xl md:text-2xl font-bold text-lime pb-4">{t('about.ai.b4Title')}</h3>
-        <p class="text-white">{t('about.ai.b4Body')}</p>
-      </div>
-    </div>
-    <div class="mt-10 md:mt-16 text-center">
-      <a href="#contact" class="relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold text-lime bg-dark-violet rounded-full group">
-        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-violet rounded-full group-hover:w-56 group-hover:h-56"></span>
-        <span class="relative">{t('about.ai.cta')} →</span>
-      </a>
     </div>
   </div>
 </div>
