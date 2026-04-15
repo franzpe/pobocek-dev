@@ -7,7 +7,6 @@
   "image": "/assets/images/projects/podrablom.jpg",
   "url": "https://podrablom.sk",
   "date": "2022-05",
-  "featured": true,
-  "order": 4,
+  "order": 7,
   "tech": ["WordPress", "Interactive SVG"]
 }

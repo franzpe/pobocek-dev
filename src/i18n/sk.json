@@ -85,6 +85,28 @@
       "heading": "Blockchain",
       "body": "Smart contracty, Solidity, integrácie dApps, Web3 audity. Kapitola, ktorá sa stále píše.",
       "more": "Čítať viac"
+    },
+    "today": {
+      "heading": "Dnes",
+      "subheading": "Nezávislé softvérové konzultácie",
+      "p1": "Dnes vediem pobocek.dev — pomáham firmám v rámci EÚ premeniť nápady na produkčné webové aplikácie a Web3 riešenia, od MVP až po plnohodnotné platformy.",
+      "p2": "Staviam webové aplikácie, intranety a e-shopy pre SME klientov po celom full-stacku — React, Node.js, .NET a Apollo GraphQL. Zároveň rozvíjam vlastný SaaS: Eviro — automatizuje zber recenzií, takže spokojní zákazníci sa menia na 5-hviezdičkové hodnotenia na autopilote.",
+      "p3": "Desať rokov produkčnej praxe naprieč fintechom, realitami a B2B znamená menej prekvapení, rýchlejšie dodanie a kód, ktorý dáva zmysel aj v treťom roku prevádzky.",
+      "stackHeading": "Stack, s ktorým pracujem každý deň",
+      "stackItems": "React · Next.js · Astro · Node.js · TypeScript · .NET · PostgreSQL · Apollo GraphQL · Tailwind · Solidity"
+    },
+    "ai": {
+      "heading": "AI tam, kde to má zmysel",
+      "intro": "Väčšina firiem nepotrebuje chatbota — potrebujú AI napojenú priamo do pracovného toku tak, aby každý týždeň ticho šetrila hodiny práce.",
+      "b1Title": "AI pre zákaznícku komunikáciu",
+      "b1Body": "Návrhy odpovedí, reakcie na recenzie, príjmové formuláre s pred-kvalifikáciou leadov — všetko naladené na váš tón.",
+      "b2Title": "RAG + interné znalosti",
+      "b2Body": "Vyhľadávajte vo vlastných dokumentoch, zmluvách a tiketoch prirodzeným jazykom. Odpovede s citáciami, nie halucinácie.",
+      "b3Title": "Agentické workflow",
+      "b3Body": "Automatizácia viacstupňových procesov — plánovanie, schvaľovanie, reporty — so záchytnými bodmi, keď si AI nie je istá.",
+      "b4Title": "Poradenstvo build-vs-buy",
+      "b4Body": "Poviem narovinu, kedy hotový nástroj prevalcuje vlastné riešenie, a kedy sa vlastný build naozaj vyplatí.",
+      "cta": "Máte nápad? Pošlite mi správu"
     }
   },
   "seo": {

@@ -16,11 +16,9 @@ const allProjects = await getCollection('projects');
 const featured = allProjects
   .filter((p) => p.data.featured)
   .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
-
-const highlightSlug = 'stavodoprava';
 ---
 
 <Hero lang={lang} />
-<ProjectsGrid lang={lang} projects={featured} highlightSlug={highlightSlug} />
+<ProjectsGrid lang={lang} projects={featured} defaultExpandedSlug="bestauction" />
 <MyStory lang={lang} />
 <Contact lang={lang} variant="light" />

@@ -8,6 +8,6 @@
   "url": "https://www.bestauction.com",
   "date": "2023-09",
   "featured": true,
-  "order": 1,
+  "order": 2,
   "tech": ["React", "TypeScript", "Node.js", "GraphQL"]
 }

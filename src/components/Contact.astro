@@ -5,9 +5,10 @@ import { useT } from '~/i18n/utils';
 interface Props {
   lang: Locale;
   variant?: 'light' | 'dark';
+  to?: string;
 }
 
-const { lang, variant = 'light' } = Astro.props;
+const { lang, variant = 'light', to = 'info@pobocek.dev' } = Astro.props;
 const t = useT(lang);
 
 const isDark = variant === 'dark';
@@ -15,13 +16,13 @@ const bg = isDark ? 'bg-dark-violet border-b border-beige' : 'bg-beige border-b 
 const border = isDark ? 'sm:border-x sm:border-beige' : 'sm:border-x border-dark-violet';
 const headingColor = isDark ? 'text-white' : 'text-dark-violet';
 const inputBorder = isDark ? 'border-beige' : 'border-dark-violet';
-const inputText = isDark ? 'text-white placeholder:text-white' : 'text-light-grey';
-const btnClass = isDark
-  ? 'text-dark-violet bg-violet'
-  : 'text-white bg-dark-violet';
+const inputText = isDark ? 'text-white placeholder:text-white' : 'text-dark-violet placeholder:text-light-grey';
+const btnClass = isDark ? 'text-dark-violet bg-violet' : 'text-white bg-dark-violet';
 const btnHover = isDark
   ? 'group-hover:w-56 group-hover:h-56 bg-lime'
   : 'group-hover:w-56 group-hover:h-56 bg-violet';
+
+const formId = `contact-form-${lang}-${variant}`;
 ---
 
 <div class={bg} id="contact">
@@ -38,19 +39,19 @@ const btnHover = isDark
       </div>
     </div>
     <div class={`w-full pb-6 md:pb-12 lg:pb-0 lg:border-l ${inputBorder} lg:w-3/5`}>
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form id={formId} data-contact-form data-mailto={to} novalidate>
         <div class="flex flex-wrap">
           <div class="w-full">
-            <input class={`block w-full bg-transparent border-b ${inputBorder} py-9 px-5 md:px-10 focus:outline-none ${inputText}`} id="grid-email" type="email" name="email" placeholder={t('contact.email')} required />
+            <input class={`block w-full bg-transparent border-b ${inputBorder} py-9 px-5 md:px-10 focus:outline-none ${inputText}`} name="email" type="email" placeholder={t('contact.email')} required />
           </div>
           <div class="w-full md:w-1/2">
-            <input class={`block w-full bg-transparent border-b md:border-r ${inputBorder} py-9 px-5 md:px-10 focus:outline-none ${inputText}`} id="grid-name" type="text" name="name" placeholder={t('contact.name')} required />
+            <input class={`block w-full bg-transparent border-b md:border-r ${inputBorder} py-9 px-5 md:px-10 focus:outline-none ${inputText}`} name="name" type="text" placeholder={t('contact.name')} required />
           </div>
           <div class="w-full md:w-1/2">
-            <input class={`block w-full bg-transparent border-b ${inputBorder} py-9 px-5 md:px-10 focus:outline-none ${inputText}`} id="grid-title" type="text" name="title" placeholder={t('contact.title')} />
+            <input class={`block w-full bg-transparent border-b ${inputBorder} py-9 px-5 md:px-10 focus:outline-none ${inputText}`} name="title" type="text" placeholder={t('contact.title')} />
           </div>
           <div class="w-full">
-            <textarea id="message" name="message" rows="9" class={`block w-full bg-transparent py-9 px-5 md:px-10 focus:outline-none ${inputText}`} placeholder={t('contact.message')} required></textarea>
+            <textarea name="message" rows="9" class={`block w-full bg-transparent py-9 px-5 md:px-10 focus:outline-none ${inputText}`} placeholder={t('contact.message')} required></textarea>
           </div>
           <div class="pl-6 md:pl-12 lg:pb-6">
             <button type="submit" class={`relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold rounded-full group ${btnClass}`}>
@@ -63,3 +64,34 @@ const btnHover = isDark
     </div>
   </div>
 </div>
+
+<script>
+  document.querySelectorAll<HTMLFormElement>('[data-contact-form]').forEach((form) => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const to = form.dataset.mailto || 'info@pobocek.dev';
+      const data = new FormData(form);
+      const email = String(data.get('email') || '').trim();
+      const name = String(data.get('name') || '').trim();
+      const title = String(data.get('title') || '').trim();
+      const message = String(data.get('message') || '').trim();
+
+      if (!email || !name || !message) {
+        form.reportValidity?.();
+        return;
+      }
+
+      const subject = title || `New enquiry from ${name}`;
+      const body = [
+        `From: ${name} <${email}>`,
+        '',
+        message,
+        '',
+        '— Sent via pobocek.dev',
+      ].join('\n');
+
+      const href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = href;
+    });
+  });
+</script>

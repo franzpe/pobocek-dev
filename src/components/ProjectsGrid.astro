@@ -7,15 +7,15 @@ import ProjectRow from './ProjectRow.astro';
 interface Props {
   lang: Locale;
   projects: CollectionEntry<'projects'>[];
-  highlightSlug?: string;
+  defaultExpandedSlug?: string;
 }
 
-const { lang, projects, highlightSlug } = Astro.props;
+const { lang, projects, defaultExpandedSlug } = Astro.props;
 const t = useT(lang);
 const workHref = localizePath('/work', lang);
 ---
 
-<div class="bg-dark-violet border-t border-violet">
+<div class="bg-dark-violet border-t border-violet" data-projects-grid>
   {projects.map((p) => (
     <ProjectRow
       lang={lang}
@@ -23,8 +23,9 @@ const workHref = localizePath('/work', lang);
       year={p.data.date.slice(0, 4)}
       description={p.data.description[lang]}
       image={p.data.image}
+      logo={p.data.logo}
       slug={p.id}
-      highlight={p.id === highlightSlug}
+      defaultExpanded={p.id === defaultExpandedSlug}
     />
   ))}
 </div>
@@ -40,3 +41,48 @@ const workHref = localizePath('/work', lang);
     </div>
   </div>
 </div>
+
+<script>
+  const grid = document.querySelector('[data-projects-grid]');
+  if (grid) {
+    grid.querySelectorAll<HTMLButtonElement>('[data-project-toggle]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const row = btn.closest('[data-project-row]');
+        if (!row) return;
+        const header = row.querySelector<HTMLElement>('[data-project-header]');
+        const body = row.querySelector<HTMLElement>('[data-project-body]');
+        const title = row.querySelector<HTMLElement>('[data-project-title]');
+        const year = row.querySelector<HTMLElement>('[data-project-year]');
+        const arrow = row.querySelector<HTMLElement>('[data-project-arrow]');
+        if (!header || !body) return;
+
+        const expanded = header.getAttribute('data-expanded') === 'true';
+        const next = !expanded;
+        header.setAttribute('data-expanded', String(next));
+        btn.setAttribute('aria-expanded', String(next));
+
+        if (next) {
+          header.classList.remove('bg-dark-violet');
+          header.classList.add('bg-lime');
+          title?.classList.remove('text-white');
+          title?.classList.add('text-dark-violet');
+          year?.classList.remove('text-white');
+          year?.classList.add('text-dark-violet');
+          body.classList.remove('max-h-0');
+          body.classList.add('max-h-[2000px]');
+          arrow?.classList.add('rotate-90');
+        } else {
+          header.classList.add('bg-dark-violet');
+          header.classList.remove('bg-lime');
+          title?.classList.add('text-white');
+          title?.classList.remove('text-dark-violet');
+          year?.classList.add('text-white');
+          year?.classList.remove('text-dark-violet');
+          body.classList.add('max-h-0');
+          body.classList.remove('max-h-[2000px]');
+          arrow?.classList.remove('rotate-90');
+        }
+      });
+    });
+  }
+</script>

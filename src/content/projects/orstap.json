@@ -7,6 +7,7 @@
   "image": "/assets/images/projects/orstap.jpg",
   "url": "https://orstap.sk",
   "date": "2022-03",
-  "order": 11,
+  "featured": true,
+  "order": 4,
   "tech": ["WordPress"]
 }

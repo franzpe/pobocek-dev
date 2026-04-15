@@ -7,7 +7,6 @@
   "image": "/assets/images/projects/stavodoprava.png",
   "url": "https://www.stavodoprava-group.sk",
   "date": "2019-11",
-  "featured": true,
-  "order": 2,
+  "order": 6,
   "tech": ["React", "Next.js", "Instagram API"]
 }

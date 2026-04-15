@@ -4,9 +4,10 @@
     "en": "My own SaaS — Eviro automates review collection for local businesses, turning happy customers into 5-star ratings on autopilot. Built with a modern full-stack (React, Node.js, GraphQL) and integrated with Google Business and other review platforms.",
     "sk": "Môj vlastný SaaS — Eviro automatizuje zber recenzií pre lokálne podniky a mení spokojných zákazníkov na 5-hviezdičkové hodnotenia na autopilote. Postavené na modernom full-stacku (React, Node.js, GraphQL) s integráciou na Google Business a ďalšie platformy."
   },
-  "image": "/assets/images/frantisekpobocek.jpg",
+  "image": "/assets/images/projects/eviro.png",
+  "logo": "/assets/images/projects/eviro.svg",
   "date": "2025-01",
-  "featured": false,
-  "order": 5,
+  "featured": true,
+  "order": 1,
   "tech": ["React", "Node.js", "GraphQL", "Stripe"]
 }

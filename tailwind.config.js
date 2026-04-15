@@ -1,6 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,json}'],
+  safelist: [
+    'translate-y-2',
+    '-translate-y-2',
+    'rotate-45',
+    '-rotate-45',
+    'opacity-0',
+    'max-h-0',
+    'max-h-[2000px]',
+  ],
   theme: {
     extend: {
       colors: {

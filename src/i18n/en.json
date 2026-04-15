@@ -85,6 +85,28 @@
       "heading": "Blockchain",
       "body": "Smart contracts, Solidity, dApp integrations, Web3 audits. This chapter is still being written.",
       "more": "Read more"
+    },
+    "today": {
+      "heading": "Today",
+      "subheading": "Independent software consultancy",
+      "p1": "Today I run pobocek.dev — helping businesses across the EU turn ideas into production-ready web apps and Web3 solutions, from MVPs to full-scale platforms.",
+      "p2": "I build custom web applications, intranets, and e-commerce platforms for SME clients across the full stack — React, Node.js, .NET, and Apollo GraphQL. I also ship my own SaaS: Eviro — automating review collection so happy customers become 5-star ratings on autopilot.",
+      "p3": "A decade of production experience across fintech, real estate, and B2B means fewer surprises, faster delivery, and code that still makes sense in year three.",
+      "stackHeading": "Stack I ship with daily",
+      "stackItems": "React · Next.js · Astro · Node.js · TypeScript · .NET · PostgreSQL · Apollo GraphQL · Tailwind · Solidity"
+    },
+    "ai": {
+      "heading": "AI where it moves the needle",
+      "intro": "Most businesses don't need a chatbot — they need AI wired into the workflow where it quietly saves hours every week.",
+      "b1Title": "AI-assisted customer comms",
+      "b1Body": "Reply drafts, review responses, intake forms that pre-qualify leads — all tuned to your tone of voice.",
+      "b2Title": "RAG + internal knowledge",
+      "b2Body": "Search your own docs, contracts, and tickets with natural-language queries. Cited answers, not hallucinations.",
+      "b3Title": "Agent workflows",
+      "b3Body": "Automate the multi-step stuff — scheduling, approvals, report generation — with graceful fallbacks when the AI is unsure.",
+      "b4Title": "Build-or-buy guidance",
+      "b4Body": "I'll tell you straight when an off-the-shelf tool beats a custom build, and where building pays back.",
+      "cta": "Got an idea? Let's talk"
     }
   },
   "seo": {
