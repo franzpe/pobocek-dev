@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 100">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;display=swap');
+    </style>
+  </defs>
+  <rect width="310" height="100" fill="#0d0a1e"/>
+  <text x="0" y="80" font-family="'Space Grotesk', sans-serif" font-size="100" font-weight="700" letter-spacing="-4" fill="#ffffff">eviro<tspan fill="#a78bfa">.</tspan></text>
+</svg>

@@ -91,7 +91,7 @@ const formId = `contact-form-${lang}-${variant}`;
       ].join('\n');
 
       const href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = href;
+      window.open(href, '_blank', 'noopener');
     });
   });
 </script>

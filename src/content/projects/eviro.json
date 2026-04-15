@@ -1,8 +1,8 @@
 {
-  "title": { "en": "Eviro", "sk": "Eviro" },
+  "title": { "en": "Eviro — Reviews on autopilot", "sk": "Eviro — recenzie na autopilote" },
   "description": {
-    "en": "My own SaaS — Eviro automates review collection for local businesses, turning happy customers into 5-star ratings on autopilot. Built with a modern full-stack (React, Node.js, GraphQL) and integrated with Google Business and other review platforms.",
-    "sk": "Môj vlastný SaaS — Eviro automatizuje zber recenzií pre lokálne podniky a mení spokojných zákazníkov na 5-hviezdičkové hodnotenia na autopilote. Postavené na modernom full-stacku (React, Node.js, GraphQL) s integráciou na Google Business a ďalšie platformy."
+    "en": "My own SaaS. Eviro automatically asks your customers for a review after every visit, drafts AI replies in your tone of voice, and pings you the moment a negative review lands — so you can fix it before it hurts. Built for salons, restaurants, dentists and other local businesses that live and die by their star rating.",
+    "sk": "Môj vlastný SaaS. Eviro automaticky pýta zákazníkov o recenziu po každej návšteve, pripravuje AI odpovede vo vašom tóne a upozorní vás hneď, ako príde negatívna recenzia — aby ste stihli reagovať skôr, než uškodí. Postavené pre salóny, reštaurácie, zubárov a ďalšie lokálne podniky, ktoré stoja a padajú na svojom hodnotení."
   },
   "image": "/assets/images/projects/eviro.png",
   "logo": "/assets/images/projects/eviro.svg",

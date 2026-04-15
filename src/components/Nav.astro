@@ -13,6 +13,7 @@ const { lang, path, variant = 'dark' } = Astro.props;
 const t = useT(lang);
 
 const isDark = variant === 'dark';
+const topBarBg = isDark ? 'bg-dark-violet border-b border-violet/40' : 'bg-beige border-b border-dark-violet/40';
 const navBg = isDark ? 'bg-dark-violet sm:border-b border-violet' : 'bg-beige sm:border-b border-dark-violet';
 const borderColor = isDark ? 'border-violet' : 'border-dark-violet';
 const textColor = isDark ? 'text-white' : 'text-dark-violet';
@@ -30,6 +31,12 @@ const work = localizePath('/work', lang);
 const about = localizePath('/about', lang);
 const contactAnchor = `${home}#contact`;
 ---
+
+<div class={`hidden md:block ${topBarBg}`}>
+  <div class={`container mx-auto flex justify-end items-center sm:border-x ${borderColor} py-2 px-5 md:px-16`}>
+    <LanguageSwitcher lang={lang} path={path} variant={isDark ? 'light' : 'dark'} />
+  </div>
+</div>
 
 <nav class={navBg} id="site-nav">
   <div class={`container mx-auto flex items-center justify-between sm:border-x ${borderColor} py-6 md:py-7 px-5 md:px-16`}>
@@ -60,9 +67,8 @@ const contactAnchor = `${home}#contact`;
       <li class="px-3"><a class="px-6 py-6 hover:text-violet" href={contactAnchor}>{t('nav.getInTouch')}</a></li>
       <li class="px-3"><a class="px-6 py-6 hover:text-violet" href={work}>{t('nav.work')}</a></li>
       <li class="px-3"><a class="px-6 py-6 hover:text-violet" href={about}>{t('nav.about')}</a></li>
-      <li class="px-3"><LanguageSwitcher lang={lang} path={path} variant={isDark ? 'light' : 'dark'} /></li>
       <li>
-        <ul class="flex gap-3 items-center">
+        <ul class="flex gap-3 items-center ml-3">
           <li><a href="https://linkedin.com/in/frantisek-pobocek-06819913b" target="_blank" rel="noopener" aria-label="LinkedIn"><img class={socialHover} src={`/assets/images/linkedin${iconSuffix}.svg`} alt="" width="24" height="24" /></a></li>
           <li><a href="https://github.com/franzpe" target="_blank" rel="noopener" aria-label="GitHub"><img class={socialHover} src={`/assets/images/github-sign${iconSuffix}.svg`} alt="" width="24" height="24" /></a></li>
         </ul>
