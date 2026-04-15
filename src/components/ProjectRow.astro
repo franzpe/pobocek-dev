@@ -57,11 +57,11 @@ const bodyId = `project-body-${slug}`;
     class={`overflow-hidden transition-all duration-300 ease-out ${defaultExpanded ? 'max-h-[2000px]' : 'max-h-0'}`}
   >
     <div class="container mx-auto bg-lime sm:border-x border-violet flex flex-wrap">
-      <div class="w-full md:w-2/6 border-t border-dark-violet ml-4 md:ml-16">
+      <div class="w-full md:w-2/5 border-t border-dark-violet ml-4 md:ml-16 flex items-center">
         {logo ? (
-          <img class="py-6 md:py-14 max-h-48 object-contain" src={logo} alt={title} />
+          <img class="py-6 md:py-12 w-full max-w-xs md:max-w-sm max-h-72 md:max-h-[22rem] object-contain" src={logo} alt={title} />
         ) : image ? (
-          <img class="py-6 md:py-14 max-h-48 w-auto object-contain" src={image} alt={title} />
+          <img class="py-6 md:py-12 w-full max-w-xs md:max-w-sm max-h-72 md:max-h-[22rem] object-contain" src={image} alt={title} />
         ) : null}
       </div>
       <div class="flex-1 md:border-t border-dark-violet py-6 md:py-14 px-5 md:px-20">
