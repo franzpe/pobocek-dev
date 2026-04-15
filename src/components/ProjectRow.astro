@@ -21,9 +21,9 @@ const rowId = `project-row-${slug}`;
 const bodyId = `project-body-${slug}`;
 ---
 
-<div class="border-b border-violet" data-project-row id={rowId}>
+<div class="border-b border-violet bg-dark-violet" data-project-row id={rowId}>
   <div
-    class={`flex flex-wrap container mx-auto sm:border-x border-violet transition-colors ${defaultExpanded ? 'bg-lime' : 'bg-dark-violet'}`}
+    class={`container mx-auto flex flex-wrap sm:border-x border-violet transition-colors ${defaultExpanded ? 'bg-lime' : 'bg-dark-violet'}`}
     data-project-header
     data-expanded={defaultExpanded ? 'true' : 'false'}
   >
@@ -54,9 +54,9 @@ const bodyId = `project-body-${slug}`;
   <div
     id={bodyId}
     data-project-body
-    class={`bg-lime overflow-hidden transition-all duration-300 ease-out ${defaultExpanded ? 'max-h-[2000px]' : 'max-h-0'}`}
+    class={`overflow-hidden transition-all duration-300 ease-out ${defaultExpanded ? 'max-h-[2000px]' : 'max-h-0'}`}
   >
-    <div class="flex flex-wrap container mx-auto sm:border-x border-violet">
+    <div class="container mx-auto bg-lime sm:border-x border-violet flex flex-wrap">
       <div class="w-full md:w-2/6 border-t border-dark-violet ml-4 md:ml-16">
         {logo ? (
           <img class="py-6 md:py-14 max-h-48 object-contain" src={logo} alt={title} />

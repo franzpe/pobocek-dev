@@ -3,6 +3,7 @@ import '~/styles/global.css';
 import SEO from '~/components/SEO.astro';
 import Nav from '~/components/Nav.astro';
 import Footer from '~/components/Footer.astro';
+import Analytics from '~/components/Analytics.astro';
 import type { Locale } from '~/i18n/utils';
 
 interface Props {
@@ -26,6 +27,7 @@ const { title, description, lang, path, navVariant = 'dark', ogImage } = Astro.p
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <SEO title={title} description={description} lang={lang} path={path} ogImage={ogImage} />
+    <Analytics />
   </head>
   <body>
     <Nav lang={lang} path={path} variant={navVariant} />
