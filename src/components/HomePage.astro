@@ -21,8 +21,9 @@ const featured = allProjects
 ---
 
 <Hero lang={lang} />
+<ProjectsGrid lang={lang} projects={featured} defaultExpandedSlug="eviro" />
 
-<!-- Highlights hook between the hero and the projects grid -->
+<!-- Highlights hook between the projects grid and My Story -->
 <div class="bg-dark-violet border-t border-violet">
   <div class="py-10 md:py-24 px-5 md:px-16 container mx-auto sm:border-x border-violet">
     <span class="inline-block text-xs font-bold uppercase tracking-widest text-lime mb-4">{t('about.highlights.eyebrow')}</span>
@@ -65,6 +66,5 @@ const featured = allProjects
   </div>
 </div>
 
-<ProjectsGrid lang={lang} projects={featured} defaultExpandedSlug="eviro" />
 <MyStory lang={lang} />
 <Contact lang={lang} variant="light" />
