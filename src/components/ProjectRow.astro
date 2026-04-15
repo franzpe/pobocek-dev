@@ -54,25 +54,30 @@ const bodyId = `project-body-${slug}`;
   <div
     id={bodyId}
     data-project-body
-    class={`overflow-hidden transition-all duration-300 ease-out ${defaultExpanded ? 'max-h-[2000px]' : 'max-h-0'}`}
+    class={`grid transition-[grid-template-rows] duration-300 ease-out ${defaultExpanded ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}
   >
-    <div class="container mx-auto bg-lime sm:border-x border-violet flex flex-wrap">
-      <div class="w-full md:w-2/5 border-t border-dark-violet ml-4 md:ml-16 flex items-center">
-        {logo ? (
-          <img class="py-6 md:py-12 w-full max-w-xs md:max-w-sm max-h-72 md:max-h-[22rem] object-contain" src={logo} alt={title} />
-        ) : image ? (
-          <img class="py-6 md:py-12 w-full max-w-xs md:max-w-sm max-h-72 md:max-h-[22rem] object-contain" src={image} alt={title} />
-        ) : null}
-      </div>
-      <div class="flex-1 md:border-t border-dark-violet py-6 md:py-14 px-5 md:px-20">
-        {description && <p class="font-bold text-dark-violet">{description}</p>}
-        <a
-          href={detailHref}
-          class="mt-7 relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold text-white bg-dark-violet rounded-full group"
-        >
-          <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-violet rounded-full group-hover:w-56 group-hover:h-56"></span>
-          <span class="relative">{t('card.readMore')}</span>
-        </a>
+    <div class="overflow-hidden">
+      <div class="container mx-auto bg-lime sm:border-x border-violet">
+        <div class="w-full border-t border-dark-violet"></div>
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-2/5 flex items-center">
+            {logo ? (
+              <img class="py-6 md:py-12 ml-4 md:ml-16 w-full max-w-xs md:max-w-sm max-h-72 md:max-h-[22rem] object-contain" src={logo} alt={title} />
+            ) : image ? (
+              <img class="py-6 md:py-12 ml-4 md:ml-16 w-full max-w-xs md:max-w-sm max-h-72 md:max-h-[22rem] object-contain" src={image} alt={title} />
+            ) : null}
+          </div>
+          <div class="flex-1 py-6 md:py-14 px-5 md:px-20">
+            {description && <p class="font-bold text-dark-violet">{description}</p>}
+            <a
+              href={detailHref}
+              class="mt-7 relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold text-white bg-dark-violet rounded-full group"
+            >
+              <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-violet rounded-full group-hover:w-56 group-hover:h-56"></span>
+              <span class="relative">{t('card.readMore')}</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -7,7 +7,7 @@
   "image": "/assets/images/projects/p38.jpg",
   "url": "https://p38.sk",
   "date": "2023-04",
-  "featured": true,
+  "featured": false,
   "order": 5,
   "tech": ["WordPress", "Custom theme"]
 }

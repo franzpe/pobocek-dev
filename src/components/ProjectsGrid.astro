@@ -68,8 +68,8 @@ const workHref = localizePath('/work', lang);
           title?.classList.add('text-dark-violet');
           year?.classList.remove('text-white');
           year?.classList.add('text-dark-violet');
-          body.classList.remove('max-h-0');
-          body.classList.add('max-h-[2000px]');
+          body.classList.remove('grid-rows-[0fr]');
+          body.classList.add('grid-rows-[1fr]');
           arrow?.classList.add('rotate-90');
         } else {
           header.classList.add('bg-dark-violet');
@@ -78,8 +78,8 @@ const workHref = localizePath('/work', lang);
           title?.classList.remove('text-dark-violet');
           year?.classList.add('text-white');
           year?.classList.remove('text-dark-violet');
-          body.classList.add('max-h-0');
-          body.classList.remove('max-h-[2000px]');
+          body.classList.add('grid-rows-[0fr]');
+          body.classList.remove('grid-rows-[1fr]');
           arrow?.classList.remove('rotate-90');
         }
       });

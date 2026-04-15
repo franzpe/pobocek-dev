@@ -8,6 +8,6 @@
   "url": "https://www.norderp.com",
   "date": "2021-06",
   "featured": true,
-  "order": 3,
+  "order": 4,
   "tech": ["React", "TypeScript", ".NET"]
 }
