@@ -24,7 +24,7 @@ const projects = allProjects.sort((a, b) => (a.data.order ?? 99) - (b.data.order
 
 <div class="bg-beige">
   <div class="py-10 md:py-28 px-5 md:px-16 container mx-auto sm:border-x border-dark-violet">
-    <div class="flex flex-wrap gap-6 justify-between py-10 md:py-20">
+    <div class="flex flex-wrap gap-6 justify-between pb-10 md:pb-20">
       {projects.map((p) => {
         const href = localizePath(`/work/${p.id}`, lang);
         return (

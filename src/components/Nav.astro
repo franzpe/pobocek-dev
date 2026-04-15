@@ -13,8 +13,12 @@ const { lang, path, variant = 'dark' } = Astro.props;
 const t = useT(lang);
 
 const isDark = variant === 'dark';
-const topBarBg = isDark ? 'bg-dark-violet border-b border-violet/40' : 'bg-beige border-b border-dark-violet/40';
-const navBg = isDark ? 'bg-dark-violet sm:border-b border-violet' : 'bg-beige sm:border-b border-dark-violet';
+const topBarBg = isDark
+  ? 'bg-dark-violet border-b border-violet/40'
+  : 'bg-beige border-b border-dark-violet/40';
+const navBg = isDark
+  ? 'bg-dark-violet sm:border-b border-violet'
+  : 'bg-beige sm:border-b border-dark-violet';
 const borderColor = isDark ? 'border-violet' : 'border-dark-violet';
 const textColor = isDark ? 'text-white' : 'text-dark-violet';
 const socialHover = isDark
@@ -33,18 +37,22 @@ const contactAnchor = `${home}#contact`;
 ---
 
 <div class={`hidden md:block ${topBarBg}`}>
-  <div class={`container mx-auto flex justify-end items-center sm:border-x ${borderColor} py-2 px-5 md:px-16`}>
+  <div
+    class={`container mx-auto flex justify-end items-center sm:border-x ${borderColor} py-2 px-5 md:px-16`}
+  >
     <LanguageSwitcher lang={lang} path={path} variant={isDark ? 'light' : 'dark'} />
   </div>
 </div>
 
 <nav class={navBg} id="site-nav">
-  <div class={`container mx-auto flex items-center justify-between sm:border-x ${borderColor} py-1 md:py-2 px-5 md:px-16`}>
+  <div
+    class={`container mx-auto flex items-center justify-between sm:border-x ${borderColor} py-1 md:py-2 pl-0 pr-5 md:pr-16 md:pl-5`}
+  >
     <a href={home} aria-label="pobocek.dev home" class="shrink-0">
       <img
         src={logoSrc}
         alt={t('nav.logoAlt')}
-        class="h-[90px] md:h-[132px] w-auto"
+        class="h-[90px] w-auto md:h-[132px]"
         width="258"
         height="126"
       />
@@ -53,7 +61,7 @@ const contactAnchor = `${home}#contact`;
     <button
       type="button"
       id="mobile-menu-toggle"
-      class="md:hidden flex flex-col gap-1.5 p-2 focus:outline-none"
+      class="flex flex-col gap-1.5 p-2 focus:outline-none md:hidden"
       aria-label="Toggle menu"
       aria-expanded="false"
       aria-controls="mobile-menu"
@@ -64,13 +72,39 @@ const contactAnchor = `${home}#contact`;
     </button>
 
     <ul class={`hidden md:flex flex-wrap items-center font-bold z-10 ${textColor}`}>
-      <li class="px-3"><a class="px-6 py-6 hover:text-violet" href={contactAnchor}>{t('nav.getInTouch')}</a></li>
+      <li class="px-3">
+        <a class="px-6 py-6 hover:text-violet" href={contactAnchor}>{t('nav.getInTouch')}</a>
+      </li>
       <li class="px-3"><a class="px-6 py-6 hover:text-violet" href={work}>{t('nav.work')}</a></li>
       <li class="px-3"><a class="px-6 py-6 hover:text-violet" href={about}>{t('nav.about')}</a></li>
       <li>
-        <ul class="flex gap-3 items-center ml-3">
-          <li><a href="https://linkedin.com/in/frantisek-pobocek-06819913b" target="_blank" rel="noopener" aria-label="LinkedIn"><img class={socialHover} src={`/assets/images/linkedin${iconSuffix}.svg`} alt="" width="24" height="24" /></a></li>
-          <li><a href="https://github.com/franzpe" target="_blank" rel="noopener" aria-label="GitHub"><img class={socialHover} src={`/assets/images/github-sign${iconSuffix}.svg`} alt="" width="24" height="24" /></a></li>
+        <ul class="ml-3 flex items-center gap-3">
+          <li>
+            <a
+              href="https://linkedin.com/in/frantisek-pobocek-06819913b"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              ><img
+                class={socialHover}
+                src={`/assets/images/linkedin${iconSuffix}.svg`}
+                alt=""
+                width="24"
+                height="24"
+              /></a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/franzpe" target="_blank" rel="noopener" aria-label="GitHub"
+              ><img
+                class={socialHover}
+                src={`/assets/images/github-sign${iconSuffix}.svg`}
+                alt=""
+                width="24"
+                height="24"
+              /></a
+            >
+          </li>
         </ul>
       </li>
     </ul>
@@ -78,14 +112,52 @@ const contactAnchor = `${home}#contact`;
 
   <div id="mobile-menu" class={`hidden md:hidden ${mobileMenuBg} border-t ${borderColor}`}>
     <ul class={`flex flex-col font-bold text-lg ${textColor}`}>
-      <li><a class={`block px-8 py-5 hover:text-violet border-b ${borderColor}`} href={contactAnchor}>{t('nav.getInTouch')}</a></li>
-      <li><a class={`block px-8 py-5 hover:text-violet border-b ${borderColor}`} href={work}>{t('nav.work')}</a></li>
-      <li><a class={`block px-8 py-5 hover:text-violet border-b ${borderColor}`} href={about}>{t('nav.about')}</a></li>
-      <li class={`px-8 py-5 border-b ${borderColor}`}><LanguageSwitcher lang={lang} path={path} variant={isDark ? 'light' : 'dark'} /></li>
+      <li>
+        <a class={`block px-8 py-5 hover:text-violet border-b ${borderColor}`} href={contactAnchor}
+          >{t('nav.getInTouch')}</a
+        >
+      </li>
+      <li>
+        <a class={`block px-8 py-5 hover:text-violet border-b ${borderColor}`} href={work}
+          >{t('nav.work')}</a
+        >
+      </li>
+      <li>
+        <a class={`block px-8 py-5 hover:text-violet border-b ${borderColor}`} href={about}
+          >{t('nav.about')}</a
+        >
+      </li>
+      <li class={`px-8 py-5 border-b ${borderColor}`}>
+        <LanguageSwitcher lang={lang} path={path} variant={isDark ? 'light' : 'dark'} />
+      </li>
       <li class="px-8 py-5">
-        <ul class="flex gap-5 items-center">
-          <li><a href="https://linkedin.com/in/frantisek-pobocek-06819913b" target="_blank" rel="noopener" aria-label="LinkedIn"><img class={socialHover} src={`/assets/images/linkedin${iconSuffix}.svg`} alt="" width="28" height="28" /></a></li>
-          <li><a href="https://github.com/franzpe" target="_blank" rel="noopener" aria-label="GitHub"><img class={socialHover} src={`/assets/images/github-sign${iconSuffix}.svg`} alt="" width="28" height="28" /></a></li>
+        <ul class="flex items-center gap-5">
+          <li>
+            <a
+              href="https://linkedin.com/in/frantisek-pobocek-06819913b"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              ><img
+                class={socialHover}
+                src={`/assets/images/linkedin${iconSuffix}.svg`}
+                alt=""
+                width="28"
+                height="28"
+              /></a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/franzpe" target="_blank" rel="noopener" aria-label="GitHub"
+              ><img
+                class={socialHover}
+                src={`/assets/images/github-sign${iconSuffix}.svg`}
+                alt=""
+                width="28"
+                height="28"
+              /></a
+            >
+          </li>
         </ul>
       </li>
     </ul>
