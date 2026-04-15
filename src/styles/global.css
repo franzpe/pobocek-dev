@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Area';
+  font-weight: normal;
+  font-display: swap;
+  src: url('/assets/fonts/area-normal-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Area';
+  font-weight: bold;
+  font-display: swap;
+  src: url('/assets/fonts/area-normal-bold.otf') format('opentype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: 'Area', system-ui, sans-serif;
+}

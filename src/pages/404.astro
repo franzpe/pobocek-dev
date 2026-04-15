@@ -1,0 +1,20 @@
+---
+import Base from '~/layouts/Base.astro';
+import { getLocaleFromUrl, useT, localizePath } from '~/i18n/utils';
+
+const lang = getLocaleFromUrl(Astro.url);
+const t = useT(lang);
+const home = localizePath('/', lang);
+---
+
+<Base title="404 · pobocek.dev" description="Page not found" lang={lang} path="/404">
+  <div class="bg-dark-violet text-violet">
+    <div class="container mx-auto sm:border-x border-violet py-32 md:py-52 px-5 md:px-16 text-center">
+      <h1 class="text-7xl md:text-9xl font-bold">404</h1>
+      <p class="text-xl md:text-2xl mt-8 text-white">{lang === 'sk' ? 'Stránka nenájdená' : 'Page not found'}</p>
+      <a href={home} class="mt-12 inline-flex items-center justify-center px-12 py-4 font-bold text-dark-violet bg-violet rounded-full">
+        {lang === 'sk' ? 'Späť na úvod' : 'Back to home'}
+      </a>
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,13 @@
+---
+import Base from '~/layouts/Base.astro';
+import HomePage from '~/components/HomePage.astro';
+import { useT } from '~/i18n/utils';
+
+const lang = 'sk';
+const t = useT(lang);
+const path = '/sk';
+---
+
+<Base title={t('seo.home.title')} description={t('seo.home.description')} lang={lang} path={path}>
+  <HomePage lang={lang} />
+</Base>

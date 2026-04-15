@@ -1,0 +1,65 @@
+---
+import type { Locale } from '~/i18n/utils';
+import { useT } from '~/i18n/utils';
+
+interface Props {
+  lang: Locale;
+  variant?: 'light' | 'dark';
+}
+
+const { lang, variant = 'light' } = Astro.props;
+const t = useT(lang);
+
+const isDark = variant === 'dark';
+const bg = isDark ? 'bg-dark-violet border-b border-beige' : 'bg-beige border-b border-dark-violet';
+const border = isDark ? 'sm:border-x sm:border-beige' : 'sm:border-x border-dark-violet';
+const headingColor = isDark ? 'text-white' : 'text-dark-violet';
+const inputBorder = isDark ? 'border-beige' : 'border-dark-violet';
+const inputText = isDark ? 'text-white placeholder:text-white' : 'text-light-grey';
+const btnClass = isDark
+  ? 'text-dark-violet bg-violet'
+  : 'text-white bg-dark-violet';
+const btnHover = isDark
+  ? 'group-hover:w-56 group-hover:h-56 bg-lime'
+  : 'group-hover:w-56 group-hover:h-56 bg-violet';
+---
+
+<div class={bg} id="contact">
+  <div class={`flex flex-wrap container mx-auto ${border}`}>
+    <div class="w-full lg:w-2/5 px-5 md:px-16 py-6 md:py-12">
+      <div class="flex justify-between text-violet text-4xl md:text-9xl">
+        <span>]</span><span>]</span><span>]</span><span>]</span><span>]</span>
+      </div>
+      <h2 class={`text-4xl lg:text-5xl xl:text-7xl font-bold xl:leading-[6rem] py-6 md:py-12 tracking-wide ${headingColor}`}>
+        {t('contact.heading')}
+      </h2>
+      <div class="flex justify-between text-violet text-4xl md:text-9xl">
+        <span>[</span><span>[</span><span>[</span><span>[</span><span>[</span>
+      </div>
+    </div>
+    <div class={`w-full pb-6 md:pb-12 lg:pb-0 lg:border-l ${inputBorder} lg:w-3/5`}>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="flex flex-wrap">
+          <div class="w-full">
+            <input class={`block w-full bg-transparent border-b ${inputBorder} py-9 px-5 md:px-10 focus:outline-none ${inputText}`} id="grid-email" type="email" name="email" placeholder={t('contact.email')} required />
+          </div>
+          <div class="w-full md:w-1/2">
+            <input class={`block w-full bg-transparent border-b md:border-r ${inputBorder} py-9 px-5 md:px-10 focus:outline-none ${inputText}`} id="grid-name" type="text" name="name" placeholder={t('contact.name')} required />
+          </div>
+          <div class="w-full md:w-1/2">
+            <input class={`block w-full bg-transparent border-b ${inputBorder} py-9 px-5 md:px-10 focus:outline-none ${inputText}`} id="grid-title" type="text" name="title" placeholder={t('contact.title')} />
+          </div>
+          <div class="w-full">
+            <textarea id="message" name="message" rows="9" class={`block w-full bg-transparent py-9 px-5 md:px-10 focus:outline-none ${inputText}`} placeholder={t('contact.message')} required></textarea>
+          </div>
+          <div class="pl-6 md:pl-12 lg:pb-6">
+            <button type="submit" class={`relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold rounded-full group ${btnClass}`}>
+              <span class={`absolute w-0 h-0 transition-all duration-500 ease-out rounded-full ${btnHover}`}></span>
+              <span class="relative">{t('contact.send')}</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

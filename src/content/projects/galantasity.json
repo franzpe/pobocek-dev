@@ -1,0 +1,12 @@
+{
+  "title": { "en": "Galantasity", "sk": "Galantasity" },
+  "description": {
+    "en": "Lifestyle and info portal focused on regional content for the Galanta community and surrounding villages. Curates local news, events, and features updated regularly.",
+    "sk": "Podieľali sme sa na tvorbe lifestylovo-informačného webu zameraného na regionálny obsah pre občanov mesta Galanta a všetkých okolitých obcí. Web obsahuje mnoho zaujímavostí a pravidelne informuje o novom dianí v meste."
+  },
+  "image": "/assets/images/projects/galantasity.jpg",
+  "url": "https://www.galantasity.sk",
+  "date": "2022-01",
+  "order": 13,
+  "tech": ["WordPress"]
+}

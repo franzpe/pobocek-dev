@@ -1,0 +1,57 @@
+---
+import type { Locale } from '~/i18n/utils';
+import { useT, localizePath } from '~/i18n/utils';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
+interface Props {
+  lang: Locale;
+  path: string;
+  variant?: 'dark' | 'light';
+}
+
+const { lang, path, variant = 'dark' } = Astro.props;
+const t = useT(lang);
+
+const isDark = variant === 'dark';
+const navBg = isDark ? 'bg-dark-violet sm:border-b border-violet' : 'bg-beige sm:border-b border-dark-violet';
+const borderColor = isDark ? 'border-violet' : 'border-dark-violet';
+const textColor = isDark ? 'text-white' : 'text-dark-violet';
+const socialIconOpacity = isDark ? '' : 'opacity-30 hover:opacity-100';
+
+const logoSrc = isDark ? '/assets/images/logo-white.svg' : '/assets/images/logo-black.svg';
+const iconSuffix = isDark ? '' : '-dv';
+
+const home = localizePath('/', lang);
+const work = localizePath('/work', lang);
+const about = localizePath('/about', lang);
+const contactAnchor = `${home}#contact`;
+---
+
+<nav class={navBg}>
+  <div class={`container mx-auto flex flex-wrap justify-between items-center sm:border-x ${borderColor} py-6 md:py-7 px-8 md:px-16`}>
+    <div>
+      <a href={home} aria-label="pobocek.dev home">
+        <img
+          src={logoSrc}
+          alt={t('nav.logoAlt')}
+          class="h-[70px] md:h-[105px] w-auto"
+          width="215"
+          height="105"
+        />
+      </a>
+    </div>
+    <ul class={`flex flex-wrap items-center font-bold z-10 ${textColor}`}>
+      <li class="px-3"><a class="px-6 py-6 hover:text-violet" href={contactAnchor}>{t('nav.getInTouch')}</a></li>
+      <li class="px-3"><a class="px-6 py-6 hover:text-violet" href={work}>{t('nav.work')}</a></li>
+      <li class="px-3"><a class="px-6 py-6 hover:text-violet" href={about}>{t('nav.about')}</a></li>
+      <li class="px-3"><LanguageSwitcher lang={lang} path={path} variant={isDark ? 'light' : 'dark'} /></li>
+      <li>
+        <ul class="flex">
+          <li class="pr-3"><a href="https://linkedin.com/in/frantisek-pobocek-06819913b" target="_blank" rel="noopener"><img class={`w-full ${socialIconOpacity}`} src={`/assets/images/linkedin${iconSuffix}.svg`} alt="LinkedIn" /></a></li>
+          <li class="pr-3"><a href="https://github.com/franzpe" target="_blank" rel="noopener"><img class={`w-full ${socialIconOpacity}`} src={`/assets/images/github-sign${iconSuffix}.svg`} alt="GitHub" /></a></li>
+          <li><a href="https://t.me/Franzpeee" target="_blank" rel="noopener"><img class={`w-full ${socialIconOpacity}`} src={`/assets/images/telegram${iconSuffix}.svg`} alt="Telegram" /></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

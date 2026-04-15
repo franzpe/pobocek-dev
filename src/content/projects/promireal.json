@@ -1,0 +1,12 @@
+{
+  "title": { "en": "Promireal", "sk": "Promireal" },
+  "description": {
+    "en": "Presentation website for the premium real-estate firm Promireal — showcasing modern developer projects and a full service package from advisory through financing.",
+    "sk": "Pre lukratívnu spoločnosť Promireal sme vytvorili prezentačnú webovú stránku s cieľom informovať klientov a verejnosť o predaji moderných developerských projektov. V ponuke služieb je komplexný balíček od poradenstva až po financovanie."
+  },
+  "image": "/assets/images/projects/promireal.jpg",
+  "url": "https://promireal.sk",
+  "date": "2022-04",
+  "order": 14,
+  "tech": ["WordPress"]
+}

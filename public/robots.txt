@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pobocek.dev/sitemap-index.xml

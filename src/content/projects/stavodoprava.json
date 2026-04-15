@@ -1,0 +1,13 @@
+{
+  "title": { "en": "Stavodoprava Group", "sk": "Stavodoprava Group" },
+  "description": {
+    "en": "Built a clean, performance-first representative website for STAVODOPRAVA s.r.o. Current projects are pulled automatically from Instagram — publish a post, it shows on the site. Scores 100 on Lighthouse for performance and quality.",
+    "sk": "Pre spoločnosť STAVODOPRAVA s.r.o. sme vytvorili jednoduchý a prehľadný reprezentačný web, ktorý zobrazuje aktuálne projekty prostredníctvom Instagramu — stačí pridať post na Instagram a automaticky sa zobrazí na stránke (dáta čerpané priamo z Instagramu). V teste Lighthouse web dosahuje 100% hodnoty."
+  },
+  "image": "/assets/images/projects/stavodoprava.png",
+  "url": "https://www.stavodoprava-group.sk",
+  "date": "2019-11",
+  "featured": true,
+  "order": 2,
+  "tech": ["React", "Next.js", "Instagram API"]
+}

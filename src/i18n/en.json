@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "getInTouch": "Get in Touch",
+    "work": "Work",
+    "about": "About me",
+    "logoAlt": "pobocek.dev logo"
+  },
+  "hero": {
+    "greeting": "Hi, I'm František Poboček",
+    "tagline": "Full-stack web developer, AI integrator, and smart-contract engineer",
+    "photoAlt": "František Poboček",
+    "bulletsAlt": "decorative bullets"
+  },
+  "projectsHome": {
+    "seeAll": "See all"
+  },
+  "card": {
+    "readMore": "Read more",
+    "readAll": "Read all"
+  },
+  "myStory": {
+    "heading": "My Story",
+    "p1": "I've been around computers since I was a kid — first playing games, then repairing them, then building on them. Over the last decade I've turned that into a career spanning full-stack web apps, AI integrations, and Web3.",
+    "p2": "Today I help SMEs across the EU turn ideas into production-ready web apps — smarter products with AI where it matters, robust infrastructure, and clean UX. React, Node.js, .NET, GraphQL, smart contracts, dApps.",
+    "more": "More about me"
+  },
+  "contact": {
+    "heading": "Let's work together!",
+    "email": "Your e-mail",
+    "name": "Name",
+    "title": "Title",
+    "message": "Description",
+    "send": "Send"
+  },
+  "footer": {
+    "privacy": "Privacy & Policy",
+    "copyright": "pobocek.dev"
+  },
+  "work": {
+    "pageTitle": "Selected Work",
+    "heading": "My Work",
+    "intro": "A selection of projects I've delivered — from web apps and e-commerce to enterprise intranet tools and Web3 dApps.",
+    "visitSite": "Visit site",
+    "backToWork": "Back to work"
+  },
+  "about": {
+    "pageTitle": "About",
+    "hero": {
+      "heading": "So in a nutshell, who is Frank Poboček?",
+      "p1": "Full-stack web developer, AI integrator, smart-contract engineer, consultant, and founder — wearing multiple hats by design.",
+      "p2": "Let me share my journey with you."
+    },
+    "young": {
+      "heading": "Young Lad",
+      "p1": "Since I was a kid, I've always been around computers — playing games, repairing them, or occasionally smashing them when the opponent team killed me in Counter-Strike.",
+      "p2": "One memory sums up my childhood. I had a PC on the kitchen table (we were redecorating), plugged in and running CS 1.6, while my dad assembled an IKEA wardrobe and my phone rang.",
+      "p3": "The lads invited me out to play football. I politely declined. Seconds later I threw a grenade in-game, my speakers bellowed \"FIRE IN THE HOLE\", and I hung up as fast as I could. I tried football, cycling, gym, airsoft — but the PC stayed #1."
+    },
+    "school": {
+      "heading": "Secondary school",
+      "p1": "I studied at the Secondary School of Electrical Engineering, K. Adlera, in Bratislava-Dubravka. That's where my programming journey started, while I competed in regional CS 1.6 tournaments.",
+      "p2": "I picked Computer Systems. The theoretical foundations (algebra, algorithms, C++, building things) combined with hands-on work became a great head-start for my career.",
+      "intro": "Some of what I accomplished there:",
+      "b1": "Cisco CCNA Fundamentals certification (networking).",
+      "b2": "Final exam: recorded Cinema 4D tutorials and built a PHP site to host them."
+    },
+    "university": {
+      "heading": "University",
+      "p1": "I chose the Faculty of Economic Informatics at the University of Economics in Bratislava. Statistics, maths, and coding in one degree — a dream scenario.",
+      "p2": "In C programming classes I was ahead of my peers thanks to my secondary school. Professor Ľubomír Turňa, RNDr., CSc. noticed and invited me to co-author a paper at the International Scientific Conference for eLearning. The nerves before the conference were real — but we made it."
+    },
+    "achievements": {
+      "heading": "Achievements & Work",
+      "b1": "Co-author and presenter of a publication at the International Scientific Conference for eLearning — numerical verification of model results accounting for gradation, feedback, repetition, and forgetting. Built the .NET data-model analysis app (2015).",
+      "b2": "Master's thesis: Application of fuzzy logic in financial decision-making. Built a credit fuzzy application in C# / .NET WPF (2017).",
+      "b3": "Bachelor's thesis: Amortization schedule calculator in C# / .NET WPF, comparing debt repayment types (2015).",
+      "b4": "Internships at two local studios building .NET WPF apps with Microsoft SQL."
+    },
+    "post": {
+      "heading": "Post Academics",
+      "body": "Two days after graduating I started as a Backend Engineer in .NET at CRIF — building credit-register systems for international markets.",
+      "more": "Read more"
+    },
+    "blockchain": {
+      "heading": "Blockchain",
+      "body": "Smart contracts, Solidity, dApp integrations, Web3 audits. This chapter is still being written.",
+      "more": "Read more"
+    }
+  },
+  "seo": {
+    "defaultDescription": "Smarter web apps, AI integration, and Web3 — built by Frank Poboček across React, Node.js, .NET, GraphQL, and smart contracts.",
+    "home": {
+      "title": "pobocek.dev — Smarter web apps, AI & Web3",
+      "description": "Full-stack web development, AI integration, and smart-contract engineering for SMEs across the EU."
+    },
+    "work": {
+      "title": "Work · pobocek.dev",
+      "description": "Selected projects: web apps, e-commerce, intranet tools, and Web3 dApps delivered by Frank Poboček."
+    },
+    "about": {
+      "title": "About · pobocek.dev",
+      "description": "My journey from kitchen-table Counter-Strike to building production web apps and smart contracts for clients across the EU."
+    }
+  }
+}

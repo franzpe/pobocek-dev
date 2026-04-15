@@ -1,0 +1,12 @@
+{
+  "title": { "en": "Credit Register (CRIF Tunisia)", "sk": "Úverový register (CRIF Tunisko)" },
+  "description": {
+    "en": "Backend development for Tunisia's credit register in .NET — adding new features, modelling business processes and services, testing, and reshaping the database model. Included writing stored procedures in the Oracle database.",
+    "sk": "Vývoj backendu úverového registra pre krajinu Tunisko v .NET technológiách. Práca spočívala v pridávaní nových funkcionalít, tvorbe business procesov, služieb, testovaní a pretváraní databázového modelu, ako aj v tvorbe uložených procedúr v Oracle databáze."
+  },
+  "image": "/assets/images/projects/cbs.png",
+  "url": "https://www.crif.com",
+  "date": "2017-09",
+  "order": 21,
+  "tech": [".NET", "C#", "Oracle"]
+}

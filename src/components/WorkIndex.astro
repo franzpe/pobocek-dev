@@ -1,0 +1,48 @@
+---
+import type { Locale } from '~/i18n/utils';
+import { getCollection } from 'astro:content';
+import { useT, localizePath } from '~/i18n/utils';
+import Contact from './Contact.astro';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const t = useT(lang);
+
+const allProjects = await getCollection('projects');
+const projects = allProjects.sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+---
+
+<div class="bg-beige border-b border-dark-violet">
+  <div class="py-10 md:py-20 px-5 md:px-16 container mx-auto text-dark-violet sm:border-x border-dark-violet">
+    <h1 class="text-6xl md:text-5xl font-bold">{t('work.heading')}</h1>
+    <p class="mt-6 md:text-xl max-w-3xl">{t('work.intro')}</p>
+  </div>
+</div>
+
+<div class="bg-beige">
+  <div class="py-10 md:py-28 px-5 md:px-16 container mx-auto sm:border-x border-dark-violet">
+    <div class="flex flex-wrap gap-6 justify-between py-10 md:py-20">
+      {projects.map((p) => {
+        const href = localizePath(`/work/${p.id}`, lang);
+        return (
+          <a href={href} class="flex flex-col w-full md:w-[48%] lg:w-[31%] mb-6 bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <img class="w-full h-48 object-cover" src={p.data.image} alt={p.data.title[lang]} />
+            <div class="py-8 px-5 flex flex-col flex-1">
+              <h3 class="font-bold pb-4 text-2xl text-dark-violet">{p.data.title[lang]}</h3>
+              <p class="pb-8 text-dark-violet line-clamp-3">{p.data.description[lang]}</p>
+              <div class="flex flex-1 flex-wrap w-full items-end justify-between">
+                <span class="inline-block rounded-full border border-dark-violet font-bold text-dark-violet px-5 py-3">{t('card.readAll')}</span>
+                <p class="text-medium-grey text-sm">{p.data.date.replace('-', '/')}</p>
+              </div>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</div>
+
+<Contact lang={lang} variant="dark" />

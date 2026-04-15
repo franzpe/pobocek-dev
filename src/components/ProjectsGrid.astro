@@ -1,0 +1,42 @@
+---
+import type { Locale } from '~/i18n/utils';
+import type { CollectionEntry } from 'astro:content';
+import { useT, localizePath } from '~/i18n/utils';
+import ProjectRow from './ProjectRow.astro';
+
+interface Props {
+  lang: Locale;
+  projects: CollectionEntry<'projects'>[];
+  highlightSlug?: string;
+}
+
+const { lang, projects, highlightSlug } = Astro.props;
+const t = useT(lang);
+const workHref = localizePath('/work', lang);
+---
+
+<div class="bg-dark-violet border-t border-violet">
+  {projects.map((p) => (
+    <ProjectRow
+      lang={lang}
+      title={p.data.title[lang]}
+      year={p.data.date.slice(0, 4)}
+      description={p.data.description[lang]}
+      image={p.data.image}
+      slug={p.id}
+      highlight={p.id === highlightSlug}
+    />
+  ))}
+</div>
+
+<div class="border-b border-violet bg-dark-violet">
+  <div class="container mx-auto sm:border-x border-violet">
+    <div class="py-4 md:py-12 px-5 md:px-16 ml-0 md:ml-4">
+      <a href={workHref} class="relative inline-flex items-center justify-center px-12 py-4 overflow-hidden border-lime border font-bold text-lime bg-dark-violet rounded-full group hover:text-dark-violet">
+        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-lime rounded-full group-hover:w-56 group-hover:h-56"></span>
+        <span class="relative">{t('projectsHome.seeAll')}</span>
+      </a>
+      <span class="text-l sm:text-4xl lg:text-6xl text-lime pt-3.5 sm:pt-0 md:tracking-[.3rem] lg:tracking-[.6rem] xl:tracking-[1.3rem] 2xl:tracking-[1.8rem] float-right">////////////////////////</span>
+    </div>
+  </div>
+</div>

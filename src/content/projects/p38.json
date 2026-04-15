@@ -1,0 +1,13 @@
+{
+  "title": { "en": "P38 — Trnava pub", "sk": "P38 — pub v Trnave" },
+  "description": {
+    "en": "Delivered the web implementation for P38, a new pub in Trnava. Built a presentation site to a design supplied by Vizion agency.",
+    "sk": "Podieľali sme sa na realizácii webového riešenia pre nový pub v Trnave s názvom P38. Naša práca spočívala vo vytvorení prezentačného webu podľa dodaného dizajnu od agentúry Vizion."
+  },
+  "image": "/assets/images/projects/p38.jpg",
+  "url": "https://p38.sk",
+  "date": "2023-04",
+  "featured": true,
+  "order": 3,
+  "tech": ["WordPress", "Custom theme"]
+}

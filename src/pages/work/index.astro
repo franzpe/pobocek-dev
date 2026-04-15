@@ -1,0 +1,13 @@
+---
+import Base from '~/layouts/Base.astro';
+import WorkIndex from '~/components/WorkIndex.astro';
+import { useT } from '~/i18n/utils';
+
+const lang = 'en';
+const t = useT(lang);
+const path = '/work';
+---
+
+<Base title={t('seo.work.title')} description={t('seo.work.description')} lang={lang} path={path} navVariant="light">
+  <WorkIndex lang={lang} />
+</Base>

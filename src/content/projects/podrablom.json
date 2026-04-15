@@ -1,0 +1,13 @@
+{
+  "title": { "en": "Dvorníky pod Ráblom", "sk": "Dvorníky pod Ráblom" },
+  "description": {
+    "en": "Presentation site for the IBV Dvorníky pod Ráblom real-estate development — focused on informing buyers about apartment and house availability, with an interactive floor-plan explorer so each property's details are one click away.",
+    "sk": "Pre projekt IBV Dvorníky pod Ráblom sme vytvorili prezentačnú webovú stránku, ktorá sa zameriava predovšetkým na informovanie užívateľov o dostupnosti bytov a domov. Vytvorili sme aj interaktívnu časť pôdorysov, vďaka čomu dokáže zákazník jednoducho zistiť informácie o konkrétnej nehnuteľnosti."
+  },
+  "image": "/assets/images/projects/podrablom.jpg",
+  "url": "https://podrablom.sk",
+  "date": "2022-05",
+  "featured": true,
+  "order": 4,
+  "tech": ["WordPress", "Interactive SVG"]
+}

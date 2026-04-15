@@ -1,0 +1,23 @@
+---
+import type { Locale } from '~/i18n/utils';
+import { alternatePath } from '~/i18n/utils';
+
+interface Props {
+  lang: Locale;
+  path: string;
+  variant?: 'light' | 'dark';
+}
+
+const { lang, path, variant = 'light' } = Astro.props;
+const altPath = alternatePath(path, lang);
+const altLabel = lang === 'en' ? 'SK' : 'EN';
+const currentLabel = lang === 'en' ? 'EN' : 'SK';
+
+const base = variant === 'light' ? 'text-white hover:text-violet' : 'text-dark-violet hover:text-violet';
+---
+
+<div class={`flex items-center gap-2 text-sm font-bold ${base}`}>
+  <span class="opacity-60">{currentLabel}</span>
+  <span class="opacity-40">/</span>
+  <a href={altPath} class="underline underline-offset-4 hover:no-underline">{altLabel}</a>
+</div>

@@ -1,0 +1,13 @@
+{
+  "title": { "en": "Best Auction", "sk": "Best Auction" },
+  "description": {
+    "en": "Contributed to the frontend of Best Auction, a sophisticated electronic procurement platform giving buyers flexibility to source goods and services at the best price, while suppliers can submit competitive bids transparently.",
+    "sk": "Podieľali sme sa na tvorbe vizuálnej časti (frontend) webovej aplikácie Best Auction, ktorá používateľom ponúka sofistikovaný nástroj na obstaranie tovaru alebo služieb rýchlejšie a transparentnejšie. Pre obstarávateľa je to flexibilná možnosť získať požadované veci prostredníctvom najvýhodnejšej ponuky, účastníkovi (dodávateľovi) umožňuje predložiť konkurenčné ponuky."
+  },
+  "image": "/assets/images/projects/bestauction.png",
+  "url": "https://www.bestauction.com",
+  "date": "2023-09",
+  "featured": true,
+  "order": 1,
+  "tech": ["React", "TypeScript", "Node.js", "GraphQL"]
+}

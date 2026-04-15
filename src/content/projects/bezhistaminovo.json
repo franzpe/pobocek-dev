@@ -1,0 +1,11 @@
+{
+  "title": { "en": "Bezhistaminovo", "sk": "Bezhistaminovo" },
+  "description": {
+    "en": "Website helping people with histamine intolerance. Users sign in and get a per-recipe compatibility score via a custom algorithm that estimates tolerance. They can also rate dishes and get food recommendations in one place.",
+    "sk": "Stránka sa zameriava na pomoc ľuďom s histamínovou intoleranciou. Ide o webstránku s prihlasovaním užívateľov a individuálnym algoritmom, ktorý vypočíta percentuálnu vhodnosť a znášanlivosť daného receptu pre konkrétneho užívateľa. Ďalej je možnosť hodnotiť jedlá a recepty a získať tak potrebné informácie a odporúčania o vhodnosti potravín na jednom mieste."
+  },
+  "image": "/assets/images/projects/bezhistaminovo.png",
+  "date": "2021-08",
+  "order": 19,
+  "tech": ["React", "Node.js", "Custom algorithm"]
+}

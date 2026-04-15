@@ -1,0 +1,12 @@
+{
+  "title": { "en": "Róbert Šipka", "sk": "Róbert Šipka" },
+  "description": {
+    "en": "Single-page website with a construction-work portfolio for the construction and trading company Róbert Šipka.",
+    "sk": "Pre stavebno-obchodnú spoločnosť Róbert Šipka sme vytvorili jednostránkový web spolu s portfóliom stavebných prác."
+  },
+  "image": "/assets/images/projects/sipkarobert.jpg",
+  "url": "https://www.sipkarobert.sk",
+  "date": "2022-01",
+  "order": 12,
+  "tech": ["HTML", "CSS", "JavaScript"]
+}

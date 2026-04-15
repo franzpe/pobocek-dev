@@ -1,0 +1,11 @@
+{
+  "title": { "en": "Investment Questionnaire", "sk": "Investičný dotazník" },
+  "description": {
+    "en": "Progressive Web App that builds a client investment profile from experience and knowledge, then evaluates whether the target market is a positive or negative match. First load enables full offline use — one codebase instead of two native apps.",
+    "sk": "Vytvorili sme investičný dotazník, ktorého úlohou je vytvorenie profilu klienta podľa jeho skúseností a znalostí a následne vyhodnotiť, či je pre daný cieľový trh pozitívny alebo negatívny. Jedná sa o progresívnu webovú aplikáciu, čo znamená, že po prvom načítaní sa dá v 100 % funkčnosti používať offline, teda bez internetu kdekoľvek. Vďaka tomu šetríme náklady na nepotrebný vývoj dvoch aplikácií."
+  },
+  "image": "/assets/images/projects/questionnaire.png",
+  "date": "2021-07",
+  "order": 18,
+  "tech": ["React", "PWA", "Service Worker"]
+}

@@ -1,0 +1,26 @@
+---
+import type { Locale } from '~/i18n/utils';
+import { getCollection } from 'astro:content';
+import Hero from './Hero.astro';
+import ProjectsGrid from './ProjectsGrid.astro';
+import MyStory from './MyStory.astro';
+import Contact from './Contact.astro';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+
+const allProjects = await getCollection('projects');
+const featured = allProjects
+  .filter((p) => p.data.featured)
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+
+const highlightSlug = 'stavodoprava';
+---
+
+<Hero lang={lang} />
+<ProjectsGrid lang={lang} projects={featured} highlightSlug={highlightSlug} />
+<MyStory lang={lang} />
+<Contact lang={lang} variant="light" />

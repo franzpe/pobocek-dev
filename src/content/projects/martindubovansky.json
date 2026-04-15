@@ -1,0 +1,12 @@
+{
+  "title": { "en": "Martin Dubovanský", "sk": "Martin Dubovanský" },
+  "description": {
+    "en": "Clean presentation site with a blog for financial advisor Martin Dubovanský, covering news from the world of finance and financial literacy. Runs on WordPress for easy content editing.",
+    "sk": "Pre finančného poradcu Martina Dubovanského sme vytvorili prehľadnú prezentačnú webstránku spolu s blogom, ktorý sa zaoberá novinkami zo sveta financií a finančnej gramotnosti. Stránka beží na redakčnom systéme WordPress, ktorý je jednoduchý na používanie."
+  },
+  "image": "/assets/images/projects/martindubovansky.jpg",
+  "url": "https://www.martindubovansky.sk",
+  "date": "2021-09",
+  "order": 15,
+  "tech": ["WordPress"]
+}

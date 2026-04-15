@@ -1,0 +1,12 @@
+{
+  "title": { "en": "Don't Eat Your Boogers", "sk": "Don't Eat Your Boogers" },
+  "description": {
+    "en": "Fun mobile game for kids built for Los Porkos s.r.o., released on iOS and Android tablets and phones.",
+    "sk": "Zábavná hra pre deti vytvorená pre spoločnosť Los Porkos s.r.o., na mobilné alebo tabletové platformy iOS a Android."
+  },
+  "image": "/assets/images/projects/boogers.png",
+  "url": "https://boogers.losporkos.com",
+  "date": "2021-08",
+  "order": 20,
+  "tech": ["React Native", "iOS", "Android"]
+}

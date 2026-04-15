@@ -1,0 +1,12 @@
+{
+  "title": { "en": "Expert Group", "sk": "Expert Group" },
+  "description": {
+    "en": "Complete site redesign for Expert Group — Slovakia's largest expert-appraisal organization. Clients include state bodies, bailiff offices, insurance companies, leasing firms, and law offices.",
+    "sk": "Pre najväčšiu znaleckú organizáciu na Slovensku – Expert Group – sme realizovali kompletný redizajn stránky. Medzi stálych klientov patria štátne orgány, exekútorské úrady, znalecké ústavy a organizácie, poisťovne, leasingové spoločnosti, právnické kancelárie a iné organizácie."
+  },
+  "image": "/assets/images/projects/expertgroup.jpg",
+  "url": "http://www.expertgroup.sk",
+  "date": "2022-03",
+  "order": 10,
+  "tech": ["WordPress"]
+}

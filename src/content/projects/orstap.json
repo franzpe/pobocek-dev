@@ -1,0 +1,12 @@
+{
+  "title": { "en": "Orstap Nitra", "sk": "Orstap Nitra" },
+  "description": {
+    "en": "Website for Orstap covering two sister companies under one roof — supply and installation of ceramic, gres and stone tiles, plus the retail arm selling tiles, sanitary ware and construction chemicals. References include Eurovea, Amazon, Sky Park, Avion and more.",
+    "sk": "Pre spoločnosť Orstap sme vytvorili webovú stránku s úvodnou časťou a dvoma samostatnými sekciami — ide o dve spoločnosti pod jednou strechou. ORSTAP Nitra sa zameriava na dodávku a montáž keramických, gresových a kamenných obkladov a dlažieb; Ing. Róbert Chlebo – ORSTAP sa venuje predaju obkladov, dlažieb, sanity a stavebnej chémie. Medzi realizácie patria Eurovea, Amazon, Living Park, Eperia, X-BIONIC Sphere, Sky Park, Avion a mnoho ďalších."
+  },
+  "image": "/assets/images/projects/orstap.jpg",
+  "url": "https://orstap.sk",
+  "date": "2022-03",
+  "order": 11,
+  "tech": ["WordPress"]
+}

@@ -1,0 +1,32 @@
+---
+import type { Locale } from '~/i18n/utils';
+import { useT } from '~/i18n/utils';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const t = useT(lang);
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-beige">
+  <div class="flex flex-wrap justify-between md:justify-around container mx-auto sm:border-x border-dark-violet py-6 md:py-14 px-5 md:px-0">
+    <div>
+      <a class="text-xs font-bold text-dark-violet underline hover:text-violet" href="https://pobocek.dev/privacy">
+        {t('footer.privacy')}
+      </a>
+    </div>
+    <div>
+      <ul class="flex">
+        <li class="pr-3"><a href="https://linkedin.com/in/frantisek-pobocek-06819913b" target="_blank" rel="noopener"><img class="w-full relative z-0 hover:opacity-30" src="/assets/images/linkedin-dv.svg" alt="LinkedIn" /></a></li>
+        <li class="pr-3"><a href="https://github.com/franzpe" target="_blank" rel="noopener"><img class="w-full relative z-0 hover:opacity-30" src="/assets/images/github-sign-dv.svg" alt="GitHub" /></a></li>
+        <li><a href="https://t.me/Franzpeee" target="_blank" rel="noopener"><img class="w-full relative z-0 hover:opacity-30" src="/assets/images/telegram-dv.svg" alt="Telegram" /></a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-xs text-dark-violet font-bold">{year}. {t('footer.copyright')}</p>
+    </div>
+  </div>
+</footer>

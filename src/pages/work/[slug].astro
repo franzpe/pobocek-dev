@@ -1,0 +1,26 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import WorkDetail from '~/components/WorkDetail.astro';
+import { useT } from '~/i18n/utils';
+
+export const getStaticPaths = (async () => {
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({
+    params: { slug: project.id },
+    props: { project },
+  }));
+}) satisfies GetStaticPaths;
+
+const { project } = Astro.props;
+const lang = 'en';
+const t = useT(lang);
+const path = `/work/${project.id}`;
+const title = `${project.data.title[lang]} · pobocek.dev`;
+const description = project.data.description[lang];
+---
+
+<Base title={title} description={description} lang={lang} path={path} navVariant="light" ogImage={project.data.image}>
+  <WorkDetail lang={lang} project={project} />
+</Base>

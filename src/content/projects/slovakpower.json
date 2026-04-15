@@ -1,0 +1,12 @@
+{
+  "title": { "en": "Slovak Power", "sk": "Slovak Power" },
+  "description": {
+    "en": "E-shop for Slovak Power built around a simple idea — deliver fitness supplements to customers in a clean, quality, and eco-minded way. Pick your fitness goal, see matching products that help toward a healthier lifestyle.",
+    "sk": "Pre Slovak Power sme vytvorili e-shop, ktorého hlavnou myšlienkou bolo predstaviť a priniesť zákazníkom produkt jednoducho, kvalitne a ekologicky. Na stránke si jednoducho zvolíte svoj fitness cieľ a nakupujete produkty, ktoré vám pomôžu k zdravšiemu životnému štýlu."
+  },
+  "image": "/assets/images/projects/slovakpower.jpg",
+  "url": "https://www.slovakpower.sk",
+  "date": "2021-09",
+  "order": 16,
+  "tech": ["PrestaShop", "E-commerce"]
+}

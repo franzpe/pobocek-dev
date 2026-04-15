@@ -1,0 +1,12 @@
+{
+  "title": { "en": "Approval App (NordERP)", "sk": "Schvaľovacia aplikácia (NordERP)" },
+  "description": {
+    "en": "Intranet web app for NordERP that handles document approval workflows, pulling data from an extensive ERP system. Users search items, approve or reject them, and add purchase requests or incoming invoices — all in one place.",
+    "sk": "Pre spoločnosť NordERP sme vytvorili webovú aplikáciu, ktorá funguje v rámci intranetovej siete. Slúži na schvaľovanie rôznych typov dokumentov a dáta čerpá z rozsiahleho ERP systému. V aplikácii je možné vyhľadávať položky, schvaľovať/zamietať aj pridávať nákupné požiadavky alebo došlé faktúry — všetko prehľadne na jednom mieste."
+  },
+  "image": "/assets/images/projects/approval-app.png",
+  "url": "https://www.norderp.com",
+  "date": "2021-06",
+  "order": 17,
+  "tech": ["React", "TypeScript", ".NET"]
+}

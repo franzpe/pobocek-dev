@@ -1,0 +1,51 @@
+---
+import type { Locale } from '~/i18n/utils';
+import type { CollectionEntry } from 'astro:content';
+import { useT, localizePath } from '~/i18n/utils';
+import Contact from './Contact.astro';
+
+interface Props {
+  lang: Locale;
+  project: CollectionEntry<'projects'>;
+}
+
+const { lang, project } = Astro.props;
+const t = useT(lang);
+const workHref = localizePath('/work', lang);
+---
+
+<article class="bg-beige border-b border-dark-violet">
+  <div class="py-10 md:py-20 px-5 md:px-16 container mx-auto text-dark-violet sm:border-x border-dark-violet">
+    <a href={workHref} class="inline-block mb-8 text-dark-violet font-bold hover:text-violet">← {t('work.backToWork')}</a>
+    <h1 class="text-4xl md:text-6xl font-bold">{project.data.title[lang]}</h1>
+    <p class="mt-4 text-medium-grey text-lg">{project.data.date.replace('-', '/')}</p>
+    {project.data.tech && (
+      <ul class="mt-4 flex flex-wrap gap-2">
+        {project.data.tech.map((t) => (
+          <li class="text-xs font-bold bg-white text-dark-violet px-3 py-1 rounded-full">{t}</li>
+        ))}
+      </ul>
+    )}
+  </div>
+</article>
+
+<div class="bg-beige">
+  <div class="py-10 md:py-20 px-5 md:px-16 container mx-auto sm:border-x border-dark-violet">
+    <div class="flex flex-col lg:flex-row gap-10">
+      <div class="w-full lg:w-1/2">
+        <img src={project.data.image} alt={project.data.title[lang]} class="w-full rounded-xl shadow" />
+      </div>
+      <div class="w-full lg:w-1/2 text-dark-violet">
+        <p class="text-lg md:text-xl leading-relaxed">{project.data.description[lang]}</p>
+        {project.data.url && (
+          <a href={project.data.url} target="_blank" rel="noopener noreferrer" class="mt-8 relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold text-white bg-dark-violet rounded-full group">
+            <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-violet rounded-full group-hover:w-56 group-hover:h-56"></span>
+            <span class="relative">{t('work.visitSite')} →</span>
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+</div>
+
+<Contact lang={lang} variant="dark" />

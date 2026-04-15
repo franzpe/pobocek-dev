@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "getInTouch": "Kontakt",
+    "work": "Práce",
+    "about": "O mne",
+    "logoAlt": "pobocek.dev logo"
+  },
+  "hero": {
+    "greeting": "Ahoj, som František Poboček",
+    "tagline": "Full-stack web developer, AI integrátor a vývojár smart contractov",
+    "photoAlt": "František Poboček",
+    "bulletsAlt": "dekoratívne guličky"
+  },
+  "projectsHome": {
+    "seeAll": "Zobraziť všetky"
+  },
+  "card": {
+    "readMore": "Viac",
+    "readAll": "Čítať viac"
+  },
+  "myStory": {
+    "heading": "Môj príbeh",
+    "p1": "Pri počítačoch som odmalička — najprv hry, potom opravy, dnes vývoj. Posledných desať rokov z toho robím kariéru — full-stack web, AI integrácie a Web3.",
+    "p2": "Dnes pomáham firmám v rámci EU premeniť nápady na produkčné webové aplikácie — smart produkty s AI, robustnou infraštruktúrou a prehľadným UX. React, Node.js, .NET, GraphQL, smart contracty, dApps.",
+    "more": "Viac o mne"
+  },
+  "contact": {
+    "heading": "Poďme spolupracovať!",
+    "email": "Váš e-mail",
+    "name": "Meno",
+    "title": "Predmet",
+    "message": "Správa",
+    "send": "Odoslať"
+  },
+  "footer": {
+    "privacy": "Ochrana osobných údajov",
+    "copyright": "pobocek.dev"
+  },
+  "work": {
+    "pageTitle": "Vybrané práce",
+    "heading": "Moje práce",
+    "intro": "Výber projektov, ktoré som dodal — od webových aplikácií a e-shopov cez intranetové nástroje po Web3 dApps.",
+    "visitSite": "Navštíviť web",
+    "backToWork": "Späť na práce"
+  },
+  "about": {
+    "pageTitle": "O mne",
+    "hero": {
+      "heading": "Takže v skratke, kto je Frank Poboček?",
+      "p1": "Full-stack web developer, AI integrátor, vývojár smart contractov, konzultant a zakladateľ — viac klobúkov, zámerne.",
+      "p2": "Dovoľte mi podeliť sa o moju cestu."
+    },
+    "young": {
+      "heading": "Detstvo",
+      "p1": "Pri počítačoch som odmalička — hral som hry, opravoval ich alebo ich občas búchal, keď ma v Counter-Strike zabil súper.",
+      "p2": "Jedna spomienka vystihuje celé detstvo. Mal som PC na kuchynskom stole (rekonštruovali sme), všetko zapojené, bežalo CS 1.6, otec skladal skriňu z IKEA a mne zazvonil telefón.",
+      "p3": "Kamoši ma volali na futbal. Zdvorilo som odmietol. O sekundu neskôr som v hre hodil granát, reproduktory zahlásili \"FIRE IN THE HOLE\" a ja som zahanbene zložil. Skúšal som futbal, cyklistiku, posilku, airsoft — ale PC zostal #1."
+    },
+    "school": {
+      "heading": "Stredná škola",
+      "p1": "Chodil som na Strednú priemyselnú školu elektrotechnickú K. Adlera v Bratislave-Dúbravke. Tam sa začala moja programátorská cesta — popri tom som sa zúčastňoval lokálnych (SK, CZ, HU) CS 1.6 turnajov.",
+      "p2": "Vybral som si počítačové systémy. Teoretický základ (algebra, algoritmy, C++, hardware) v kombinácii s praxou mi dal skvelý štart do kariéry.",
+      "intro": "Čo sa mi počas školy podarilo:",
+      "b1": "Certifikácia Cisco CCNA Fundamentals (sieťovanie).",
+      "b2": "Záverečná práca: nahral som tutoriály pre Cinema 4D a vytvoril pre ne PHP stránku."
+    },
+    "university": {
+      "heading": "Vysoká škola",
+      "p1": "Vybral som si Fakultu hospodárskej informatiky na Ekonomickej univerzite v Bratislave. Štatistika, matematika a programovanie v jednom — ideálna kombinácia.",
+      "p2": "Na hodinách C-čka som bol výrazne napred vďaka strednej škole. Profesor Ľubomír Turňa, RNDr., CSc. si to všimol a pozval ma ako spoluautora publikácie na Medzinárodnú vedeckú konferenciu eLearningu. Stres pred prezentáciou bol reálny, ale zvládli sme to."
+    },
+    "achievements": {
+      "heading": "Úspechy a práca",
+      "b1": "Spoluautor a prezentátor publikácie na Medzinárodnej vedeckej konferencii eLearningu — numerická verifikácia modelov s ohľadom na gradáciu, spätnú väzbu, opakovanie a zabúdanie v procese učenia. Vytvoril som .NET aplikáciu pre analýzu dátového modelu (2015).",
+      "b2": "Diplomová práca: Aplikácia fuzzy logiky v rozhodovaní na finančných trhoch. Vybudoval som fuzzy úverovú aplikáciu v C# / .NET WPF (2017).",
+      "b3": "Bakalárska práca: Kalkulačka splátkového kalendára v C# / .NET WPF, porovnanie typov splácania dlhu (2015).",
+      "b4": "Stáže v dvoch lokálnych štúdiách, kde som vyvíjal .NET WPF aplikácie nad Microsoft SQL."
+    },
+    "post": {
+      "heading": "Po škole",
+      "body": "Dva dni po štátniciach som nastúpil ako Backend Engineer v .NET v spoločnosti CRIF — staval som systémy úverových registrov pre medzinárodné trhy.",
+      "more": "Čítať viac"
+    },
+    "blockchain": {
+      "heading": "Blockchain",
+      "body": "Smart contracty, Solidity, integrácie dApps, Web3 audity. Kapitola, ktorá sa stále píše.",
+      "more": "Čítať viac"
+    }
+  },
+  "seo": {
+    "defaultDescription": "Smart webové aplikácie, AI integrácie a Web3 — tvorí František Poboček v React, Node.js, .NET, GraphQL a smart contractoch.",
+    "home": {
+      "title": "pobocek.dev — Smart webové aplikácie, AI a Web3",
+      "description": "Full-stack vývoj, AI integrácie a smart contracty pre firmy v rámci EÚ."
+    },
+    "work": {
+      "title": "Práce · pobocek.dev",
+      "description": "Vybrané projekty: webové aplikácie, e-shopy, intranetové nástroje a Web3 dApps od Františka Poboček."
+    },
+    "about": {
+      "title": "O mne · pobocek.dev",
+      "description": "Moja cesta od Counter-Strike na kuchynskom stole k produkčným webovým aplikáciám a smart contractom pre klientov po celej EÚ."
+    }
+  }
+}
