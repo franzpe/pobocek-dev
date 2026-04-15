@@ -1,6 +1,6 @@
 ---
 import type { Locale } from '~/i18n/utils';
-import { useT, localizePath } from '~/i18n/utils';
+import { useT } from '~/i18n/utils';
 import Contact from './Contact.astro';
 
 interface Props {
@@ -9,60 +9,113 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = useT(lang);
-const workHref = localizePath('/work', lang);
 ---
 
-<!-- 1. Highlights — the hook -->
+<!-- Nutshell hero -->
 <div class="bg-dark-violet">
-  <div class="py-10 md:py-24 px-5 md:px-16 container mx-auto sm:border-x border-violet">
-    <span class="inline-block text-xs font-bold uppercase tracking-widest text-lime mb-4">{t('about.highlights.eyebrow')}</span>
-    <h1 class="text-4xl md:text-6xl font-bold text-violet max-w-4xl leading-tight">{t('about.highlights.heading')}</h1>
-    <p class="mt-6 md:mt-8 text-white md:text-xl font-bold max-w-3xl">{t('about.highlights.intro')}</p>
-
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-10 md:mt-16">
-      <div>
-        <p class="text-4xl md:text-6xl font-bold text-lime">{t('about.highlights.stat1Value')}</p>
-        <p class="mt-2 text-xs md:text-sm font-bold text-white uppercase tracking-wider">{t('about.highlights.stat1Label')}</p>
-      </div>
-      <div>
-        <p class="text-4xl md:text-6xl font-bold text-lime">{t('about.highlights.stat2Value')}</p>
-        <p class="mt-2 text-xs md:text-sm font-bold text-white uppercase tracking-wider">{t('about.highlights.stat2Label')}</p>
-      </div>
-      <div>
-        <p class="text-4xl md:text-6xl font-bold text-lime">{t('about.highlights.stat3Value')}</p>
-        <p class="mt-2 text-xs md:text-sm font-bold text-white uppercase tracking-wider">{t('about.highlights.stat3Label')}</p>
-      </div>
-      <div>
-        <p class="text-4xl md:text-6xl font-bold text-lime">{t('about.highlights.stat4Value')}</p>
-        <p class="mt-2 text-xs md:text-sm font-bold text-white uppercase tracking-wider">{t('about.highlights.stat4Label')}</p>
-      </div>
+  <div class="flex flex-wrap items-center md:justify-between py-10 md:py-20 px-5 md:px-16 container mx-auto text-violet sm:border-x border-violet">
+    <div class="w-full lg:w-2/4 xl:w-2/5">
+      <h1 class="text-4xl md:text-5xl leading-[3rem] md:leading-[4rem] font-bold mb-5 md:mb-10">{t('about.hero.heading')}</h1>
+      <p class="text-2xl text-white mb-5 md:mb-10">{t('about.hero.p1')}</p>
+      <p class="text-2xl text-white mb-5">{t('about.hero.p2')}</p>
     </div>
-
-    <div class="grid md:grid-cols-3 gap-6 md:gap-8 mt-12 md:mt-20">
-      <div class="border border-violet rounded-xl p-6 md:p-8">
-        <h3 class="text-xl md:text-2xl font-bold text-violet mb-3">{t('about.highlights.pick1Title')}</h3>
-        <p class="text-white text-sm md:text-base">{t('about.highlights.pick1Body')}</p>
-      </div>
-      <div class="border border-violet rounded-xl p-6 md:p-8">
-        <h3 class="text-xl md:text-2xl font-bold text-violet mb-3">{t('about.highlights.pick2Title')}</h3>
-        <p class="text-white text-sm md:text-base">{t('about.highlights.pick2Body')}</p>
-      </div>
-      <div class="border border-violet rounded-xl p-6 md:p-8">
-        <h3 class="text-xl md:text-2xl font-bold text-violet mb-3">{t('about.highlights.pick3Title')}</h3>
-        <p class="text-white text-sm md:text-base">{t('about.highlights.pick3Body')}</p>
-      </div>
-    </div>
-
-    <div class="mt-10 md:mt-16">
-      <a href={workHref} class="relative inline-flex items-center justify-center px-12 py-4 overflow-hidden border-lime border font-bold text-lime bg-dark-violet rounded-full group hover:text-dark-violet">
-        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-lime rounded-full group-hover:w-56 group-hover:h-56"></span>
-        <span class="relative">{t('about.highlights.cta')} →</span>
-      </a>
+    <div class="mt-6 lg:mt-0 w-full lg:w-1/3 xl:w-3/6">
+      <img class="w-full" src="/assets/images/frantisekpobocek.jpg" alt={t('hero.photoAlt')} />
     </div>
   </div>
 </div>
 
-<!-- 2. Today -->
+<!-- Young Lad -->
+<div class="bg-dark-violet border-violet border-t">
+  <div class="flex flex-wrap items-center py-10 md:py-28 px-5 md:px-16 container mx-auto sm:border-x border-violet">
+    <div class="w-full lg:w-1/2">
+      <div class="flex items-center justify-end lg:justify-evenly">
+        <span class="text-5xl sm:text-8xl lg:text-[20rem] mr-5 lg:mr-0 lg:-mb-20 text-violet font-bold">[</span>
+        <span class="text-5xl sm:text-8xl lg:text-[20rem] -mt-6 lg:-mt-20 text-lime font-bold">]</span>
+      </div>
+    </div>
+    <div class="w-full lg:w-1/2">
+      <h2 class="text-4xl font-bold pb-8 md:pb-16 text-violet">{t('about.young.heading')}</h2>
+      <p class="font-bold pb-6 text-white">{t('about.young.p1')}</p>
+      <p class="font-bold pb-6 text-white">{t('about.young.p2')}</p>
+      <p class="font-bold text-white">{t('about.young.p3')}</p>
+    </div>
+  </div>
+</div>
+
+<!-- Secondary school -->
+<div class="bg-violet">
+  <div class="flex flex-wrap items-center py-10 md:py-32 px-5 md:px-16 container mx-auto">
+    <div class="w-full lg:w-3/6 text-dark-violet">
+      <h2 class="text-4xl font-bold pb-8 md:pb-16">{t('about.school.heading')}</h2>
+      <p class="font-bold pb-6">{t('about.school.p1')}</p>
+      <p class="font-bold pb-6 md:pb-16">{t('about.school.p2')}</p>
+      <p class="font-bold pb-6">{t('about.school.intro')}</p>
+      <ul class="list-disc ml-4 text-xl">
+        <li class="pb-3">{t('about.school.b1')}</li>
+        <li>{t('about.school.b2')}</li>
+      </ul>
+    </div>
+    <div class="w-full lg:w-2/4 mt-6 lg:mt-0">
+      <div class="flex md:justify-end relative">
+        <span class="absolute left-[50%] -translate-x-[50%] -bottom-12 lg:-bottom-36 text-8xl lg:text-[16rem] text-dark-violet font-bold">&lt;</span>
+        <img class="w-full lg:w-5/6" src="/assets/images/secondary-school.png" alt={t('about.school.heading')} />
+        <span class="absolute right-0 -top-14 lg:-top-48 text-8xl lg:text-[20rem] text-lime font-bold">&lt;</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- University -->
+<div class="bg-dark-violet">
+  <div class="flex flex-wrap items-center py-10 md:py-32 px-5 md:px-16 container mx-auto sm:border-x border-violet">
+    <div class="w-full lg:w-2/4 mt-6">
+      <div class="flex relative">
+        <span class="absolute left-4 lg:-left-10 -top-7 lg:top-0 text-8xl lg:text-[16rem] text-violet font-bold">{'}'}</span>
+        <img class="w-full lg:w-5/6" src="/assets/images/university.png" alt={t('about.university.heading')} />
+        <span class="absolute right-10 lg:right-40 -bottom-4 lg:-bottom-12 text-8xl lg:text-[16rem] text-lime font-bold">{'{'}</span>
+      </div>
+    </div>
+    <div class="w-full lg:w-3/6 mt-6 md:mt-10 lg:mt-0">
+      <h2 class="text-4xl font-bold pb-8 md:pb-16 text-violet">{t('about.university.heading')}</h2>
+      <p class="font-bold pb-6 text-white">{t('about.university.p1')}</p>
+      <p class="font-bold pb-6 md:pb-16 text-white">{t('about.university.p2')}</p>
+    </div>
+  </div>
+</div>
+
+<!-- Achievements -->
+<div class="bg-lime">
+  <div class="flex flex-wrap items-center py-10 md:py-28 px-5 md:px-16 container mx-auto">
+    <div class="w-full lg:w-3/4 text-dark-violet">
+      <h2 class="text-4xl font-bold pb-8 md:pb-16">{t('about.achievements.heading')}</h2>
+      <ul class="list-disc ml-4 font-bold">
+        <li class="pb-4">{t('about.achievements.b1')}</li>
+        <li class="pb-4">{t('about.achievements.b2')}</li>
+        <li class="pb-4">{t('about.achievements.b3')}</li>
+        <li>{t('about.achievements.b4')}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Post Academics + Blockchain -->
+<div class="flex flex-wrap">
+  <div class="bg-dark-violet w-full lg:w-1/2">
+    <div class="mx-auto lg:ml-auto lg:mr-0 max-w-screen-sm md:max-w-3xl lg:max-w-lg xl:max-w-screen-sm 2xl:max-w-screen-md ml-auto sm:border-x sm:border-violet lg:border-r-0 lg:border-l lg:border-l-violet py-10 md:py-32 px-5 md:pr-48 md:pl-16 text-white">
+      <h2 class="text-4xl font-bold pb-8 md:pb-14">{t('about.post.heading')}</h2>
+      <p class="pb-6 md:text-xl">{t('about.post.body')}</p>
+    </div>
+  </div>
+  <div class="bg-violet w-full lg:w-1/2">
+    <div class="mx-auto lg:mr-auto lg:ml-0 h-full max-w-screen-sm md:max-w-3xl lg:max-w-lg xl:max-w-screen-sm 2xl:max-w-screen-md sm:border-x sm:border-dark-violet lg:border-l-0 lg:border-r lg:border-r-dark-violet py-10 md:py-32 px-5 md:pr-48 md:pl-16">
+      <h2 class="text-4xl font-bold pb-8 md:pb-14 relative">{t('about.blockchain.heading')}</h2>
+      <p class="pb-6 md:text-xl relative">{t('about.blockchain.body')}</p>
+    </div>
+  </div>
+</div>
+
+<!-- Today -->
 <div class="bg-dark-violet border-t border-violet">
   <div class="flex flex-wrap items-center py-10 md:py-32 px-5 md:px-16 container mx-auto sm:border-x border-violet">
     <div class="w-full lg:w-1/2">
@@ -79,7 +132,7 @@ const workHref = localizePath('/work', lang);
   </div>
 </div>
 
-<!-- 3. AI -->
+<!-- AI -->
 <div class="bg-lime">
   <div class="py-10 md:py-32 px-5 md:px-16 container mx-auto">
     <h2 class="text-4xl md:text-6xl font-bold pb-6 md:pb-8 text-dark-violet">{t('about.ai.heading')}</h2>
@@ -107,111 +160,6 @@ const workHref = localizePath('/work', lang);
         <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-violet rounded-full group-hover:w-56 group-hover:h-56"></span>
         <span class="relative">{t('about.ai.cta')} →</span>
       </a>
-    </div>
-  </div>
-</div>
-
-<!-- 4. My Journey: hero + young + school + university + achievements + post/blockchain -->
-<div class="bg-dark-violet border-t border-violet">
-  <div class="px-5 md:px-16 container mx-auto sm:border-x border-violet pt-10 md:pt-20 pb-6 md:pb-10">
-    <span class="inline-block text-xs font-bold uppercase tracking-widest text-lime">{t('about.journeyEyebrow')}</span>
-  </div>
-</div>
-
-<div class="bg-dark-violet">
-  <div class="flex flex-wrap items-center md:justify-between py-10 md:py-20 px-5 md:px-16 container mx-auto text-violet sm:border-x border-violet">
-    <div class="w-full lg:w-2/4 xl:w-2/5">
-      <h2 class="text-4xl md:text-5xl leading-[3rem] md:leading-[4rem] font-bold mb-5 md:mb-10">{t('about.hero.heading')}</h2>
-      <p class="text-2xl text-white mb-5 md:mb-10">{t('about.hero.p1')}</p>
-      <p class="text-2xl text-white mb-5">{t('about.hero.p2')}</p>
-    </div>
-    <div class="mt-6 lg:mt-0 w-full lg:w-1/3 xl:w-3/6">
-      <img class="w-full" src="/assets/images/frantisekpobocek.jpg" alt={t('hero.photoAlt')} />
-    </div>
-  </div>
-</div>
-
-<div class="bg-dark-violet border-violet border-t">
-  <div class="flex flex-wrap items-center py-10 md:py-28 px-5 md:px-16 container mx-auto sm:border-x border-violet">
-    <div class="w-full lg:w-1/2">
-      <div class="flex items-center justify-end lg:justify-evenly">
-        <span class="text-5xl sm:text-8xl lg:text-[20rem] mr-5 lg:mr-0 lg:-mb-20 text-violet font-bold">[</span>
-        <span class="text-5xl sm:text-8xl lg:text-[20rem] -mt-6 lg:-mt-20 text-lime font-bold">]</span>
-      </div>
-    </div>
-    <div class="w-full lg:w-1/2">
-      <h2 class="text-4xl font-bold pb-8 md:pb-16 text-violet">{t('about.young.heading')}</h2>
-      <p class="font-bold pb-6 text-white">{t('about.young.p1')}</p>
-      <p class="font-bold pb-6 text-white">{t('about.young.p2')}</p>
-      <p class="font-bold text-white">{t('about.young.p3')}</p>
-    </div>
-  </div>
-</div>
-
-<div class="bg-violet">
-  <div class="flex flex-wrap items-center py-10 md:py-32 px-5 md:px-16 container mx-auto">
-    <div class="w-full lg:w-3/6 text-dark-violet">
-      <h2 class="text-4xl font-bold pb-8 md:pb-16">{t('about.school.heading')}</h2>
-      <p class="font-bold pb-6">{t('about.school.p1')}</p>
-      <p class="font-bold pb-6 md:pb-16">{t('about.school.p2')}</p>
-      <p class="font-bold pb-6">{t('about.school.intro')}</p>
-      <ul class="list-disc ml-4 text-xl">
-        <li class="pb-3">{t('about.school.b1')}</li>
-        <li>{t('about.school.b2')}</li>
-      </ul>
-    </div>
-    <div class="w-full lg:w-2/4 mt-6 lg:mt-0">
-      <div class="flex md:justify-end relative">
-        <span class="absolute left-[50%] -translate-x-[50%] -bottom-12 lg:-bottom-36 text-8xl lg:text-[16rem] text-dark-violet font-bold">&lt;</span>
-        <img class="w-full lg:w-5/6" src="/assets/images/secondary-school.png" alt={t('about.school.heading')} />
-        <span class="absolute right-0 -top-14 lg:-top-48 text-8xl lg:text-[20rem] text-lime font-bold">&lt;</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-dark-violet">
-  <div class="flex flex-wrap items-center py-10 md:py-32 px-5 md:px-16 container mx-auto sm:border-x border-violet">
-    <div class="w-full lg:w-2/4 mt-6">
-      <div class="flex relative">
-        <span class="absolute left-4 lg:-left-10 -top-7 lg:top-0 text-8xl lg:text-[16rem] text-violet font-bold">{'}'}</span>
-        <img class="w-full lg:w-5/6" src="/assets/images/university.png" alt={t('about.university.heading')} />
-        <span class="absolute right-10 lg:right-40 -bottom-4 lg:-bottom-12 text-8xl lg:text-[16rem] text-lime font-bold">{'{'}</span>
-      </div>
-    </div>
-    <div class="w-full lg:w-3/6 mt-6 md:mt-10 lg:mt-0">
-      <h2 class="text-4xl font-bold pb-8 md:pb-16 text-violet">{t('about.university.heading')}</h2>
-      <p class="font-bold pb-6 text-white">{t('about.university.p1')}</p>
-      <p class="font-bold pb-6 md:pb-16 text-white">{t('about.university.p2')}</p>
-    </div>
-  </div>
-</div>
-
-<div class="bg-lime">
-  <div class="flex flex-wrap items-center py-10 md:py-28 px-5 md:px-16 container mx-auto">
-    <div class="w-full lg:w-3/4 text-dark-violet">
-      <h2 class="text-4xl font-bold pb-8 md:pb-16">{t('about.achievements.heading')}</h2>
-      <ul class="list-disc ml-4 font-bold">
-        <li class="pb-4">{t('about.achievements.b1')}</li>
-        <li class="pb-4">{t('about.achievements.b2')}</li>
-        <li class="pb-4">{t('about.achievements.b3')}</li>
-        <li>{t('about.achievements.b4')}</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="flex flex-wrap">
-  <div class="bg-dark-violet w-full lg:w-1/2">
-    <div class="mx-auto lg:ml-auto lg:mr-0 max-w-screen-sm md:max-w-3xl lg:max-w-lg xl:max-w-screen-sm 2xl:max-w-screen-md ml-auto sm:border-x sm:border-violet lg:border-r-0 lg:border-l lg:border-l-violet py-10 md:py-32 px-5 md:pr-48 md:pl-16 text-white">
-      <h2 class="text-4xl font-bold pb-8 md:pb-14">{t('about.post.heading')}</h2>
-      <p class="pb-6 md:text-xl">{t('about.post.body')}</p>
-    </div>
-  </div>
-  <div class="bg-violet w-full lg:w-1/2">
-    <div class="mx-auto lg:mr-auto lg:ml-0 h-full max-w-screen-sm md:max-w-3xl lg:max-w-lg xl:max-w-screen-sm 2xl:max-w-screen-md sm:border-x sm:border-dark-violet lg:border-l-0 lg:border-r lg:border-r-dark-violet py-10 md:py-32 px-5 md:pr-48 md:pl-16">
-      <h2 class="text-4xl font-bold pb-8 md:pb-14 relative">{t('about.blockchain.heading')}</h2>
-      <p class="pb-6 md:text-xl relative">{t('about.blockchain.body')}</p>
     </div>
   </div>
 </div>
