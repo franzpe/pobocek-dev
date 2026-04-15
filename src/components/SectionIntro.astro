@@ -1,0 +1,27 @@
+---
+interface Props {
+  heading: string;
+  intro?: string;
+  variant?: 'light' | 'dark';
+  tag?: 'h1' | 'h2';
+}
+
+const { heading, intro, variant = 'light', tag = 'h1' } = Astro.props;
+
+const isDark = variant === 'dark';
+const bg = isDark ? 'bg-dark-violet border-b border-violet' : 'bg-beige border-b border-dark-violet';
+const border = isDark ? 'sm:border-x border-violet' : 'sm:border-x border-dark-violet';
+const headingColor = isDark ? 'text-violet' : 'text-dark-violet';
+const textColor = isDark ? 'text-white' : 'text-dark-violet';
+---
+
+<div class={bg}>
+  <div class={`py-10 md:py-20 px-5 md:px-16 container mx-auto ${border}`}>
+    {tag === 'h1' ? (
+      <h1 class={`text-4xl md:text-6xl font-bold ${headingColor}`}>{heading}</h1>
+    ) : (
+      <h2 class={`text-4xl md:text-6xl font-bold ${headingColor}`}>{heading}</h2>
+    )}
+    {intro && <p class={`mt-6 md:text-xl max-w-3xl ${textColor}`}>{intro}</p>}
+  </div>
+</div>

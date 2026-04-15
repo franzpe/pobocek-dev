@@ -1,7 +1,9 @@
 ---
 import type { Locale } from '~/i18n/utils';
 import { getCollection } from 'astro:content';
+import { useT } from '~/i18n/utils';
 import Hero from './Hero.astro';
+import SectionIntro from './SectionIntro.astro';
 import ProjectsGrid from './ProjectsGrid.astro';
 import MyStory from './MyStory.astro';
 import Contact from './Contact.astro';
@@ -11,6 +13,7 @@ interface Props {
 }
 
 const { lang } = Astro.props;
+const t = useT(lang);
 
 const allProjects = await getCollection('projects');
 const featured = allProjects
@@ -19,6 +22,7 @@ const featured = allProjects
 ---
 
 <Hero lang={lang} />
+<SectionIntro heading={t('projectsHome.heading')} intro={t('projectsHome.intro')} variant="dark" tag="h2" />
 <ProjectsGrid lang={lang} projects={featured} defaultExpandedSlug="eviro" />
 <MyStory lang={lang} />
 <Contact lang={lang} variant="light" />

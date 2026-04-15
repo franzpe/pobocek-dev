@@ -12,6 +12,8 @@
     "bulletsAlt": "decorative bullets"
   },
   "projectsHome": {
+    "heading": "Selected work",
+    "intro": "A handful of projects I'm especially proud of — from a SaaS I run to enterprise intranet tools and e-commerce. Click a row to open the details.",
     "seeAll": "See all"
   },
   "card": {
@@ -69,25 +71,9 @@
   },
   "about": {
     "pageTitle": "About",
-    "highlights": {
-      "eyebrow": "A decade of shipping",
-      "heading": "Real products. Real businesses. Real outcomes.",
-      "intro": "18+ web apps, e-shops, intranets and one SaaS of my own — delivered across fintech, real estate, B2B and local services. Built to ship, not to demo.",
-      "stat1Value": "10+",
-      "stat1Label": "years of production code",
-      "stat2Value": "18+",
-      "stat2Label": "projects shipped",
-      "stat3Value": "100",
-      "stat3Label": "Lighthouse score on Stavodoprava",
-      "stat4Value": "EU",
-      "stat4Label": "clients across the continent",
-      "pick1Title": "Best Auction",
-      "pick1Body": "Frontend for a sophisticated electronic procurement platform — sealed bids, real-time updates, multi-role workflows.",
-      "pick2Title": "Eviro",
-      "pick2Body": "My own SaaS. Reviews on autopilot, AI reply drafts, instant alerts on negative feedback — for local businesses that live by their star rating.",
-      "pick3Title": "NordERP Approval",
-      "pick3Body": "Intranet web app on top of a rich ERP — invoice and purchase-request approvals, role-aware workflows, audit trail.",
-      "cta": "See all work"
+    "intro": {
+      "heading": "Who am I",
+      "body": "Independent software consultant based in Slovakia. A decade of shipping production web apps, AI integrations, and one SaaS of my own — for businesses across the EU."
     },
     "journeyEyebrow": "My journey",
     "hero": {
