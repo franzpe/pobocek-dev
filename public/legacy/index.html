@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title></title>
@@ -13,12 +13,11 @@
         src: url('assets/fonts/area-normal-regular.otf');
       }
       @font-face {
-          font-family: 'Area';
-          font-weight: bold;
-          src: url('assets/fonts/area-normal-bold.otf');
+        font-family: 'Area';
+        font-weight: bold;
+        src: url('assets/fonts/area-normal-bold.otf');
       }
     </style>
-    
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,11 +28,11 @@
         theme: {
           extend: {
             colors: {
-              'white': '#ffffff;',
-              'violet': '#C4B7F1;',
+              white: '#ffffff;',
+              violet: '#C4B7F1;',
               'dark-violet': '#1A1A33',
-              'lime': ' #D3FFB5',
-              'beige': '#FFFDE9',
+              lime: ' #D3FFB5',
+              beige: '#FFFDE9',
               'light-grey': 'rgba(26, 26, 51, 0.30)',
               'medium-grey': 'rgba(26, 26, 51, 0.50)',
             },
@@ -50,90 +49,175 @@
   </head>
 
   <body>
-    <nav class="bg-dark-violet sm:border-b border-violet">
-      <div class="container mx-auto flex flex-wrap justify-between items-center sm:border-x border-violet py-6 md:py-7 px-8 md:px-16">
+    <nav class="border-violet bg-dark-violet sm:border-b">
+      <div
+        class="container mx-auto flex flex-wrap items-center justify-between border-violet px-8 py-6 sm:border-x md:px-16 md:py-7"
+      >
         <div>
-            <a href="index.html"><img src="assets/images/logo-white.svg" alt="Logo Poboček"></a>
+          <a href="index.html"><img src="assets/images/logo-white.svg" alt="Logo Poboček" /></a>
         </div>
-        <ul class="flex flex-wrap items-center text-white font-bold z-10">
-            <li class="px-3"><a class="px-6 py-6 hover:text-violet" href="#contact">Get in Touch</a></li>
-            <li class="px-3"><a class="px-6 py-6 hover:text-violet" href="references.html">Work</a></li>
-            <li class="px-3"><a class="px-6 py-6 hover:text-violet" href="about-me.html">About me</a></li>
-            <li class="px-3"><a class="px-6 py-6 hover:text-violet" href="blog.html">Blog</a></li>
-            <li>
-              <ul class="flex">
-                <li class="pr-3"><a href="https://linkedin.com/in/frantisek-pobocek-06819913b" target="_blank"><img class="w-full" src="assets/images/linkedin.svg" alt="LinkedIn"></a></li>
-                <li class="pr-3"><a href="https://github.com/franzpe" target="_blank"><img class="w-full" src="assets/images/github-sign.svg" alt="Github"></a></li>
-                <li><a href="https://t.me/Franzpeee" target="_blank"><img class="w-full" src="assets/images/telegram.svg" alt="Telegram"></a></li>
-              </ul>
+        <ul class="z-10 flex flex-wrap items-center font-bold text-white">
+          <li class="px-3">
+            <a class="px-6 py-6 hover:text-violet" href="#contact">Get in Touch</a>
+          </li>
+          <li class="px-3">
+            <a class="px-6 py-6 hover:text-violet" href="references.html">Work</a>
+          </li>
+          <li class="px-3">
+            <a class="px-6 py-6 hover:text-violet" href="about-me.html">About me</a>
+          </li>
+          <li class="px-3"><a class="px-6 py-6 hover:text-violet" href="blog.html">Blog</a></li>
+          <li>
+            <ul class="flex">
+              <li class="pr-3">
+                <a href="https://linkedin.com/in/frantisek-pobocek-06819913b" target="_blank"
+                  ><img class="w-full" src="assets/images/linkedin.svg" alt="LinkedIn"
+                /></a>
+              </li>
+              <li class="pr-3">
+                <a href="https://github.com/franzpe" target="_blank"
+                  ><img class="w-full" src="assets/images/github-sign.svg" alt="Github"
+                /></a>
+              </li>
+              <li>
+                <a href="https://t.me/Franzpeee" target="_blank"
+                  ><img class="w-full" src="assets/images/telegram.svg" alt="Telegram"
+                /></a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
     </nav>
 
     <div class="bg-dark-violet">
-        <div class="flex flex-wrap items-center py-10 md:py-40 px-5 md:px-16 container mx-auto text-violet sm:border-x border-violet">
-          <div class="w-full lg:w-2/3 xl:w-1/2">
-            <h1 class="text-4xl md:text-8xl font-bold md:leading-[8rem]">Hi, I’m František Poboček</h1>
-            <h2 class="text-2xl pt-6 md:leading-[3rem] md:w-96">full stack web developer, and&nbspsmart contract developer</h2>
-          </div>
-          <div class="mt-6 lg:mt-0 w-full lg:w-1/3 xl:w-1/2 relative">
-            <img class="w-full absolute bottom-0 z-10" src="assets/images/bullets.svg" alt="guličky">
-            <img class="w-full relative z-0" src="assets/images/frantisekpobocek.jpg" alt="František Poboček">
-          </div>
+      <div
+        class="container mx-auto flex flex-wrap items-center border-violet px-5 py-10 text-violet sm:border-x md:px-16 md:py-40"
+      >
+        <div class="w-full lg:w-2/3 xl:w-1/2">
+          <h1 class="text-4xl font-bold md:text-8xl md:leading-[8rem]">
+            Hi, I’m František Poboček
+          </h1>
+          <h2 class="pt-6 text-2xl md:w-96 md:leading-[3rem]">
+            full stack web developer, and&nbspsmart contract developer
+          </h2>
         </div>
+        <div class="relative mt-6 w-full lg:mt-0 lg:w-1/3 xl:w-1/2">
+          <img
+            class="absolute bottom-0 z-10 w-full"
+            src="assets/images/bullets.svg"
+            alt="guličky"
+          />
+          <img
+            class="relative z-0 w-full"
+            src="assets/images/frantisekpobocek.jpg"
+            alt="František Poboček"
+          />
+        </div>
+      </div>
     </div>
 
-    <div class="bg-dark-violet border-t border-violet">
+    <div class="border-t border-violet bg-dark-violet">
       <div class="border-b border-violet">
-        <div class="flex flex-wrap container mx-auto sm:border-x border-violet">
+        <div class="container mx-auto flex flex-wrap border-violet sm:border-x">
           <div class="w-2/4 md:w-2/3">
-            <p class="text-s md:text-xl font-bold text-white py-4 lg:py-12 px-5 lg:px-16 ml-0 lg:ml-4">BestAuction</p>
+            <p
+              class="text-s ml-0 px-5 py-4 font-bold text-white md:text-xl lg:ml-4 lg:px-16 lg:py-12"
+            >
+              BestAuction
+            </p>
           </div>
-          <div class="w-1/4 md:w-1/6 border-violet border-x">
-            <p class="text-s md:text-xl font-bold text-white text-center py-4 lg:py-12 px-2 lg:px-16">2023</p>
+          <div class="w-1/4 border-x border-violet md:w-1/6">
+            <p
+              class="text-s px-2 py-4 text-center font-bold text-white md:text-xl lg:px-16 lg:py-12"
+            >
+              2023
+            </p>
           </div>
-          <div class="w-1/4 md:w-1/6 cursor-pointer">
-            <img class="text-center py-4 lg:py-12 mx-auto " src="assets/images/arrow-right.svg" alt="šípka">
+          <div class="w-1/4 cursor-pointer md:w-1/6">
+            <img
+              class="mx-auto py-4 text-center lg:py-12"
+              src="assets/images/arrow-right.svg"
+              alt="šípka"
+            />
           </div>
         </div>
       </div>
 
       <div class="border-b border-violet">
-        <div class="flex flex-wrap container mx-auto sm:border-x border-violet">
+        <div class="container mx-auto flex flex-wrap border-violet sm:border-x">
           <div class="w-2/4 md:w-2/3">
-            <p class="text-s md:text-xl font-bold text-white py-4 lg:py-12 px-5 lg:px-16 ml-0 lg:ml-4">BestAuction</p>
+            <p
+              class="text-s ml-0 px-5 py-4 font-bold text-white md:text-xl lg:ml-4 lg:px-16 lg:py-12"
+            >
+              BestAuction
+            </p>
           </div>
-          <div class="w-1/4 md:w-1/6 border-violet border-x">
-            <p class="text-s md:text-xl font-bold text-white text-center py-4 lg:py-12 px-5 lg:px-16">2023</p>
+          <div class="w-1/4 border-x border-violet md:w-1/6">
+            <p
+              class="text-s px-5 py-4 text-center font-bold text-white md:text-xl lg:px-16 lg:py-12"
+            >
+              2023
+            </p>
           </div>
-          <div class="w-1/4 md:w-1/6 cursor-pointer">
-            <img class="text-center py-4 lg:py-12 mx-auto " src="assets/images/arrow-right.svg" alt="šípka">
+          <div class="w-1/4 cursor-pointer md:w-1/6">
+            <img
+              class="mx-auto py-4 text-center lg:py-12"
+              src="assets/images/arrow-right.svg"
+              alt="šípka"
+            />
           </div>
         </div>
       </div>
 
       <div class="border-b border-violet">
-        <div class="bg-lime flex flex-wrap container mx-auto sm:border-x border-violet">
+        <div class="container mx-auto flex flex-wrap border-violet bg-lime sm:border-x">
           <div class="w-2/4 md:w-2/3">
-            <p class="text-s md:text-xl font-bold text-dark-violet py-4 lg:py-12 px-5 lg:px-16 ml-0 lg:ml-4">Stavodoprava</p>
+            <p
+              class="text-s ml-0 px-5 py-4 font-bold text-dark-violet md:text-xl lg:ml-4 lg:px-16 lg:py-12"
+            >
+              Stavodoprava
+            </p>
           </div>
-          <div class="w-1/4 md:w-1/6 border-violet border-x">
-            <p class="text-s md:text-xl font-bold text-dark-violet text-center py-4 lg:py-12 px-5 lg:px-16">2019</p>
+          <div class="w-1/4 border-x border-violet md:w-1/6">
+            <p
+              class="text-s px-5 py-4 text-center font-bold text-dark-violet md:text-xl lg:px-16 lg:py-12"
+            >
+              2019
+            </p>
           </div>
-          <div class="w-1/4 md:w-1/6 cursor-pointer">
-            <img class="text-center py-4 lg:py-12 mx-auto" src="assets/images/arrow-bottom.svg" alt="šípka">
+          <div class="w-1/4 cursor-pointer md:w-1/6">
+            <img
+              class="mx-auto py-4 text-center lg:py-12"
+              src="assets/images/arrow-bottom.svg"
+              alt="šípka"
+            />
           </div>
         </div>
 
-        <div class="bg-lime flex flex-wrap container mx-auto ">
-          <div class="w-full md:w-2/6 border-t border-dark-violet ml-4 md:ml-16">
-            <img class="py-6 md:py-14" src="assets/images/stavodoprava-logo.png" alt="stavodopravalogo">
+        <div class="container mx-auto flex flex-wrap bg-lime">
+          <div class="ml-4 w-full border-t border-dark-violet md:ml-16 md:w-2/6">
+            <img
+              class="py-6 md:py-14"
+              src="assets/images/stavodoprava-logo.png"
+              alt="stavodopravalogo"
+            />
           </div>
-          <div class="flex-1 md:border-t border-dark-violet py-6 md:py-14 px-5 md:px-20">
-            <p class="font-bold">For the STAVODOPRAVA company, was created a simple and clear representative website that displays current projects via Instagram. Just add a post to Instagram, which will automatically appear on the page (data taken directly from Instagram). In addition, in the Lighthouse test, which aims to determine the performance and quality of the website, the website achieves a 100% value.</p>
-            <a href="#" class="mt-7 relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold text-white bg-dark-violet rounded-full group">
-              <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-violet rounded-full group-hover:w-56 group-hover:h-56"></span>
+          <div class="flex-1 border-dark-violet px-5 py-6 md:border-t md:px-20 md:py-14">
+            <p class="font-bold">
+              For the STAVODOPRAVA company, was created a simple and clear representative website
+              that displays current projects via Instagram. Just add a post to Instagram, which will
+              automatically appear on the page (data taken directly from Instagram). In addition, in
+              the Lighthouse test, which aims to determine the performance and quality of the
+              website, the website achieves a 100% value.
+            </p>
+            <a
+              href="#"
+              class="group relative mt-7 inline-flex items-center justify-center overflow-hidden rounded-full bg-dark-violet px-12 py-4 font-bold text-white"
+            >
+              <span
+                class="absolute h-0 w-0 rounded-full bg-violet transition-all duration-500 ease-out group-hover:h-56 group-hover:w-56"
+              ></span>
               <span class="relative">Read More</span>
             </a>
           </div>
@@ -141,156 +225,284 @@
       </div>
 
       <div class="border-b border-violet">
-        <div class="flex flex-wrap container mx-auto sm:border-x border-violet">
+        <div class="container mx-auto flex flex-wrap border-violet sm:border-x">
           <div class="w-2/4 md:w-2/3">
-            <p class="text-s md:text-xl font-bold text-white py-4 lg:py-12 px-5 lg:px-16 ml-0 lg:ml-4">BestAuction</p>
+            <p
+              class="text-s ml-0 px-5 py-4 font-bold text-white md:text-xl lg:ml-4 lg:px-16 lg:py-12"
+            >
+              BestAuction
+            </p>
           </div>
-          <div class="w-1/4 md:w-1/6 border-violet border-x">
-            <p class="text-s md:text-xl font-bold text-white text-center py-4 lg:py-12 px-5 lg:px-16">2023</p>
+          <div class="w-1/4 border-x border-violet md:w-1/6">
+            <p
+              class="text-s px-5 py-4 text-center font-bold text-white md:text-xl lg:px-16 lg:py-12"
+            >
+              2023
+            </p>
           </div>
-          <div class="w-1/4 md:w-1/6 cursor-pointer">
-            <img class="text-center py-4 lg:py-12 mx-auto " src="assets/images/arrow-right.svg" alt="šípka">
+          <div class="w-1/4 cursor-pointer md:w-1/6">
+            <img
+              class="mx-auto py-4 text-center lg:py-12"
+              src="assets/images/arrow-right.svg"
+              alt="šípka"
+            />
           </div>
         </div>
       </div>
     </div>
 
     <div class="border-b border-violet bg-dark-violet">
-      <div class="container mx-auto sm:border-x border-violet">
-        <div class="py-4 md:py-12 px-5 md:px-16 ml-0 md:ml-4">
-            <a href="references.html" class="relative inline-flex items-center justify-center px-12 py-4 overflow-hidden border-lime border font-bold text-lime bg-dark-violet rounded-full group hover:text-dark-violet">
-              <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-lime rounded-full group-hover:w-56 group-hover:h-56"></span>
-              <span class="relative">See all</span>
-            </a>   
-            <span class="text-l sm:text-4xl lg:text-6xl text-lime pt-3.5 sm:pt-0 md:tracking-[.3rem] lg:tracking-[.6rem] xl:tracking-[1.3rem] 2xl:tracking-[1.8rem] float-right">////////////////////////</span>    
-          </div> 
+      <div class="container mx-auto border-violet sm:border-x">
+        <div class="ml-0 px-5 py-4 md:ml-4 md:px-16 md:py-12">
+          <a
+            href="references.html"
+            class="group relative inline-flex items-center justify-center overflow-hidden rounded-full border border-lime bg-dark-violet px-12 py-4 font-bold text-lime hover:text-dark-violet"
+          >
+            <span
+              class="absolute h-0 w-0 rounded-full bg-lime transition-all duration-500 ease-out group-hover:h-56 group-hover:w-56"
+            ></span>
+            <span class="relative">See all</span>
+          </a>
+          <span
+            class="text-l float-right pt-3.5 text-lime sm:pt-0 sm:text-4xl md:tracking-[.3rem] lg:text-6xl lg:tracking-[.6rem] xl:tracking-[1.3rem] 2xl:tracking-[1.8rem]"
+            >////////////////////////</span
+          >
         </div>
+      </div>
     </div>
 
     <div class="bg-dark-violet">
-      <div class="flex flex-wrap items-center py-10 md:py-32 px-5 md:px-16 container mx-auto sm:border-x border-violet">
-        <div class="w-full lg:w-2/4 text-white">
-          <h2 class="text-4xl md:text-7xl font-bold md:leading-[8rem] pb-8 md:pb-16">My Story</h2>
-          <p class="font-bold pb-6">Since I was a kid, I've always been around computers either playing video games, repairing them or most frequently smashing them 😱, when opponent team would kill me in counter-strike.</p>
-          <p class="font-bold pb-16">This one particular memory could sum up my childhood. I recall, I had a PC on kitchen table, yeah you heard right desktop pc right there (we we're redecorating), all plugged in, up and running, playing counter-strike 1.6 while my dad was assembling IKEA wardrobe and my phone just rang.r</p>
-          <a href="about-me.html" class="relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold text-dark-violet bg-violet rounded-full group">
-            <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-lime rounded-full group-hover:w-56 group-hover:h-56"></span>
+      <div
+        class="container mx-auto flex flex-wrap items-center border-violet px-5 py-10 sm:border-x md:px-16 md:py-32"
+      >
+        <div class="w-full text-white lg:w-2/4">
+          <h2 class="pb-8 text-4xl font-bold md:pb-16 md:text-7xl md:leading-[8rem]">My Story</h2>
+          <p class="pb-6 font-bold">
+            Since I was a kid, I've always been around computers either playing video games,
+            repairing them or most frequently smashing them 😱, when opponent team would kill me in
+            counter-strike.
+          </p>
+          <p class="pb-16 font-bold">
+            This one particular memory could sum up my childhood. I recall, I had a PC on kitchen
+            table, yeah you heard right desktop pc right there (we we're redecorating), all plugged
+            in, up and running, playing counter-strike 1.6 while my dad was assembling IKEA wardrobe
+            and my phone just rang.r
+          </p>
+          <a
+            href="about-me.html"
+            class="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-violet px-12 py-4 font-bold text-dark-violet"
+          >
+            <span
+              class="absolute h-0 w-0 rounded-full bg-lime transition-all duration-500 ease-out group-hover:h-56 group-hover:w-56"
+            ></span>
             <span class="relative">More about me</span>
-          </a>        
+          </a>
         </div>
-        <div class="w-full hidden lg:block lg:w-3/6 lg:text-[18rem] lg:leading-[18rem] ">
-          <p class="text-violet font-bold lg:text-right">\\</p>
-          <p class="text-lime font-bold tracking-widest">{{</p>
+        <div class="hidden w-full lg:block lg:w-3/6 lg:text-[18rem] lg:leading-[18rem]">
+          <p class="font-bold text-violet lg:text-right">\\</p>
+          <p class="font-bold tracking-widest text-lime">{{</p>
         </div>
       </div>
-  </div>
+    </div>
 
-  <div class="bg-violet">
-    <div class="container mx-auto py-10 md:py-32 px-5 md:px-16">
-      <h2 class="text-4xl md:text-7xl font-bold text-dark-violet">Blog</h2>
-      <div class="flex flex-wrap pt-10 md:pt-20">
-        <div class="w-full lg:w-1/3 text-dark-violet">
-          <div class="flex flex-col h-full">
-            <img class="w-full rounded-t-xl h-48 object-cover" src="assets/images/frantisekpobocek.jpg" alt="František Poboček">
-            <div class="bg-beige py-8 px-5 rounded-b-xl flex flex-col flex-1">
-              <h3 class="font-bold pb-6 text-3xl">Headline</h3>
-              <p class="pb-16">This one particular memory could sum up my childhood. I recall, I had a PC on kitchen table, yeah you heard right desktop pc right there.</p>
-              <div class="flex flex-1 flex-wrap w-full items-end justify-between">
-                <a href="#" class="inline-block rounded-full border border-dark-violet font-bold text-dark-violet px-5 py-3 ease-out duration-200 hover:bg-violet hover:border-violet">Read all</a>
-                <p>3/2023</p>
-              </div>
-          </div>
-        </div>
-        </div>
-        <div class="w-full lg:w-2/3 pt-6 lg:pt-0 lg:pl-10">
-          <div class="flex flex-row flex-wrap lg:h-80">
-            <img class="rounded-t-xl lg:rounded-r-none lg:rounded-s-xl w-full lg:w-1/2 object-cover h-48 lg:h-80" src="assets/images/frantisekpobocek.jpg" alt="František Poboček">
-            <div class="bg-beige py-8 px-5  w-full lg:w-1/2 rounded-b-xl lg:rounded-b-none lg:rounded-e-xl">
-              <h3 class="font-bold pb-6 text-lg">Headline</h3>
-              <p class="pb-8">This one particular memory could sum up my childhood. I recall, I had a PC on kitchen table, yeah you heard right desktop.</p>
-              <div class="flex flex-wrap items-center justify-between">
-                <a href="#" class="inline-block rounded-full border border-dark-violet font-bold text-dark-violet px-5 py-3 ease-out duration-200 hover:bg-violet hover:border-violet">Read all</a>
-                <p>3/2023</p>
+    <div class="bg-violet">
+      <div class="container mx-auto px-5 py-10 md:px-16 md:py-32">
+        <h2 class="text-4xl font-bold text-dark-violet md:text-7xl">Blog</h2>
+        <div class="flex flex-wrap pt-10 md:pt-20">
+          <div class="w-full text-dark-violet lg:w-1/3">
+            <div class="flex h-full flex-col">
+              <img
+                class="h-48 w-full rounded-t-xl object-cover"
+                src="assets/images/frantisekpobocek.jpg"
+                alt="František Poboček"
+              />
+              <div class="flex flex-1 flex-col rounded-b-xl bg-beige px-5 py-8">
+                <h3 class="pb-6 text-3xl font-bold">Headline</h3>
+                <p class="pb-16">
+                  This one particular memory could sum up my childhood. I recall, I had a PC on
+                  kitchen table, yeah you heard right desktop pc right there.
+                </p>
+                <div class="flex w-full flex-1 flex-wrap items-end justify-between">
+                  <a
+                    href="#"
+                    class="inline-block rounded-full border border-dark-violet px-5 py-3 font-bold text-dark-violet duration-200 ease-out hover:border-violet hover:bg-violet"
+                    >Read all</a
+                  >
+                  <p>3/2023</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="flex flex-row flex-wrap pt-6 lg:pt-10 lg:h-80">
-            <img class="rounded-xl w-full lg:w-1/4 object-cover" src="assets/images/frantisekpobocek.jpg" alt="František Poboček">
-            <div class="bg-lime lg:ml-10 mt-5 lg:mt-0 rounded-xl py-8 px-5 rounded-b-xl w-full lg:w-1/2 xl:w-1/4">
-              <h3 class="pb-6 text-3xl">Headline</h3>
+          <div class="w-full pt-6 lg:w-2/3 lg:pl-10 lg:pt-0">
+            <div class="flex flex-row flex-wrap lg:h-80">
+              <img
+                class="h-48 w-full rounded-t-xl object-cover lg:h-80 lg:w-1/2 lg:rounded-r-none lg:rounded-s-xl"
+                src="assets/images/frantisekpobocek.jpg"
+                alt="František Poboček"
+              />
+              <div
+                class="w-full rounded-b-xl bg-beige px-5 py-8 lg:w-1/2 lg:rounded-b-none lg:rounded-e-xl"
+              >
+                <h3 class="pb-6 text-lg font-bold">Headline</h3>
+                <p class="pb-8">
+                  This one particular memory could sum up my childhood. I recall, I had a PC on
+                  kitchen table, yeah you heard right desktop.
+                </p>
+                <div class="flex flex-wrap items-center justify-between">
+                  <a
+                    href="#"
+                    class="inline-block rounded-full border border-dark-violet px-5 py-3 font-bold text-dark-violet duration-200 ease-out hover:border-violet hover:bg-violet"
+                    >Read all</a
+                  >
+                  <p>3/2023</p>
+                </div>
+              </div>
             </div>
-            <div class="w-full mt-6 x;:mt-0 flex-1 self-center text-center">
-              <a href="blog.html" class="relative inline-flex items-center justify-center px-20 py-4 overflow-hidden font-bold text-white bg-dark-violet rounded-full group hover:text-dark-violet">
-                <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-lime rounded-full group-hover:w-72 group-hover:h-72"></span>
-                <span class="relative">More from Blog</span>
-              </a>
+            <div class="flex flex-row flex-wrap pt-6 lg:h-80 lg:pt-10">
+              <img
+                class="w-full rounded-xl object-cover lg:w-1/4"
+                src="assets/images/frantisekpobocek.jpg"
+                alt="František Poboček"
+              />
+              <div
+                class="mt-5 w-full rounded-xl rounded-b-xl bg-lime px-5 py-8 lg:ml-10 lg:mt-0 lg:w-1/2 xl:w-1/4"
+              >
+                <h3 class="pb-6 text-3xl">Headline</h3>
+              </div>
+              <div class="x;:mt-0 mt-6 w-full flex-1 self-center text-center">
+                <a
+                  href="blog.html"
+                  class="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-dark-violet px-20 py-4 font-bold text-white hover:text-dark-violet"
+                >
+                  <span
+                    class="absolute h-0 w-0 rounded-full bg-lime transition-all duration-500 ease-out group-hover:h-72 group-hover:w-72"
+                  ></span>
+                  <span class="relative">More from Blog</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="bg-beige border-b border-dark-violet" id="contact">
-    <div class="flex flex-wrap container mx-auto sm:border-x border-dark-violet">
-      <div class="w-full lg:w-2/5 px-5 md:px-16 py-6 md:py-12">
-        <div class="flex justify-between text-violet text-4xl md:text-9xl ">
-          <span>]</span>
-          <span>]</span>
-          <span>]</span>
-          <span>]</span>
-          <span>]</span>
-        </div>
-        <h2 class="text-4xl lg:text-5xl xl:text-7xl font-bold xl:leading-[6rem] py-6 md:py-12 text-dark-violet tracking-wide">Let’s work together!</h2>
-        <div class="flex justify-between text-violet text-4xl md:text-9xl ">
-          <span>[</span>
-          <span>[</span>
-          <span>[</span>
-          <span>[</span>
-          <span>[</span>
-        </div>
-      </div>
-      <div class="w-full pb-6 md:pb-12 lg:pb-0 lg:border-l border-dark-violet lg:w-3/5 ">
-        <form>
-          <div class="flex flex-wrap">
-            <div class="w-full">
-              <input class="block w-full text-light-grey bg-transparent border-b border-dark-violet py-9  px-5 md:px-10 focus:outline-none" id="grid-email" type="text" placeholder="Your e-mail">
-            </div>
-          
-            <div class="w-full md:w-1/2">
-              <input class="block w-full text-light-grey bg-transparent border-b md:border-r border-dark-violet py-9  px-5 md:px-10 focus:outline-none" id="grid-name" type="text" placeholder="Name">
-            </div>
-            <div class="w-full md:w-1/2">
-              <input class="block w-full text-light-grey bg-transparent border-b border-dark-violet py-9  px-5 md:px-10 focus:outline-none" id="grid-title" type="text" placeholder="Title">
-            </div>
-            <div class="w-full">
-              <textarea id="message" rows="9" class="block w-full text-light-grey bg-transparent py-9  px-5 md:px-10 focus:outline-none" placeholder="Description"></textarea>
-            </div>
-            <div class="pl-6 md:pl-12 lg:pb-6">
-              <a href="#" class="relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold text-white bg-dark-violet rounded-full group">
-                <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-violet rounded-full group-hover:w-56 group-hover:h-56"></span>
-                <span class="relative">Send</span>
-              </a>
-            </div>
+    <div class="border-b border-dark-violet bg-beige" id="contact">
+      <div class="container mx-auto flex flex-wrap border-dark-violet sm:border-x">
+        <div class="w-full px-5 py-6 md:px-16 md:py-12 lg:w-2/5">
+          <div class="flex justify-between text-4xl text-violet md:text-9xl">
+            <span>]</span>
+            <span>]</span>
+            <span>]</span>
+            <span>]</span>
+            <span>]</span>
           </div>
-        </form>
+          <h2
+            class="py-6 text-4xl font-bold tracking-wide text-dark-violet md:py-12 lg:text-5xl xl:text-7xl xl:leading-[6rem]"
+          >
+            Let’s work together!
+          </h2>
+          <div class="flex justify-between text-4xl text-violet md:text-9xl">
+            <span>[</span>
+            <span>[</span>
+            <span>[</span>
+            <span>[</span>
+            <span>[</span>
+          </div>
+        </div>
+        <div class="w-full border-dark-violet pb-6 md:pb-12 lg:w-3/5 lg:border-l lg:pb-0">
+          <form>
+            <div class="flex flex-wrap">
+              <div class="w-full">
+                <input
+                  class="block w-full border-b border-dark-violet bg-transparent px-5 py-9 text-light-grey focus:outline-none md:px-10"
+                  id="grid-email"
+                  type="text"
+                  placeholder="Your e-mail"
+                />
+              </div>
+
+              <div class="w-full md:w-1/2">
+                <input
+                  class="block w-full border-b border-dark-violet bg-transparent px-5 py-9 text-light-grey focus:outline-none md:border-r md:px-10"
+                  id="grid-name"
+                  type="text"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="w-full md:w-1/2">
+                <input
+                  class="block w-full border-b border-dark-violet bg-transparent px-5 py-9 text-light-grey focus:outline-none md:px-10"
+                  id="grid-title"
+                  type="text"
+                  placeholder="Title"
+                />
+              </div>
+              <div class="w-full">
+                <textarea
+                  id="message"
+                  rows="9"
+                  class="block w-full bg-transparent px-5 py-9 text-light-grey focus:outline-none md:px-10"
+                  placeholder="Description"
+                ></textarea>
+              </div>
+              <div class="pl-6 md:pl-12 lg:pb-6">
+                <a
+                  href="#"
+                  class="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-dark-violet px-12 py-4 font-bold text-white"
+                >
+                  <span
+                    class="absolute h-0 w-0 rounded-full bg-violet transition-all duration-500 ease-out group-hover:h-56 group-hover:w-56"
+                  ></span>
+                  <span class="relative">Send</span>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
     <footer class="bg-beige">
-      <div class="flex flex-wrap justify-between md:justify-around container mx-auto sm:border-x border-dark-violet py-6 md:py-14 px-5 md:px-0">
-        <div><a class="text-xs font-bold text-dark-violet underline hover:text-violet" href="https://pobocek.dev/privacy">Privacy & Policy</a></div>
+      <div
+        class="container mx-auto flex flex-wrap justify-between border-dark-violet px-5 py-6 sm:border-x md:justify-around md:px-0 md:py-14"
+      >
+        <div>
+          <a
+            class="text-xs font-bold text-dark-violet underline hover:text-violet"
+            href="https://pobocek.dev/privacy"
+            >Privacy & Policy</a
+          >
+        </div>
         <div>
           <ul class="flex">
-            <li class="pr-3"><a href="https://linkedin.com/in/frantisek-pobocek-06819913b" target="_blank"><img class="w-full relative z-0 hover:opacity-30" src="assets/images/linkedin-dv.svg" alt="LinkedIn"></a></li>
-            <li class="pr-3"><a href="https://github.com/franzpe" target="_blank"><img class="w-full relative z-0 hover:opacity-30" src="assets/images/github-sign-dv.svg" alt="Github"></a></li>
-            <li><a href="https://t.me/Franzpeee" target="_blank"><img class="w-full relative z-0 hover:opacity-30" src="assets/images/telegram-dv.svg" alt="Telegram"></a></li>
+            <li class="pr-3">
+              <a href="https://linkedin.com/in/frantisek-pobocek-06819913b" target="_blank"
+                ><img
+                  class="relative z-0 w-full hover:opacity-30"
+                  src="assets/images/linkedin-dv.svg"
+                  alt="LinkedIn"
+              /></a>
+            </li>
+            <li class="pr-3">
+              <a href="https://github.com/franzpe" target="_blank"
+                ><img
+                  class="relative z-0 w-full hover:opacity-30"
+                  src="assets/images/github-sign-dv.svg"
+                  alt="Github"
+              /></a>
+            </li>
+            <li>
+              <a href="https://t.me/Franzpeee" target="_blank"
+                ><img
+                  class="relative z-0 w-full hover:opacity-30"
+                  src="assets/images/telegram-dv.svg"
+                  alt="Telegram"
+              /></a>
+            </li>
           </ul>
         </div>
-        <div><p class="text-xs text-dark-violet font-bold">2023. pobocek</p></div>
+        <div><p class="text-xs font-bold text-dark-violet">2023. pobocek</p></div>
       </div>
     </footer>
-
   </body>
 </html>

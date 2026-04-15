@@ -6,10 +6,12 @@
     "logoAlt": "pobocek.dev logo"
   },
   "hero": {
-    "greeting": "Hi, I'm Frantisek Pobocek",
+    "greeting": "Frantisek Pobocek",
     "tagline": "I build smarter web apps with AI integration — a decade of shipping production code for businesses across Europe.",
     "photoAlt": "Frantisek Pobocek",
-    "bulletsAlt": "decorative bullets"
+    "bulletsAlt": "decorative bullets",
+    "ctaWork": "See my work",
+    "ctaContact": "Get in touch"
   },
   "projectsHome": {
     "heading": "Selected work",

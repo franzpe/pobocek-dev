@@ -6,10 +6,12 @@
     "logoAlt": "pobocek.dev logo"
   },
   "hero": {
-    "greeting": "Ahoj, som František Poboček",
+    "greeting": "František Pobočék",
     "tagline": "Staviam smart webové aplikácie s AI integráciou — desaťročie skúseností s produkčným kódom pre európske firmy.",
     "photoAlt": "František Poboček",
-    "bulletsAlt": "dekoratívne guličky"
+    "bulletsAlt": "dekoratívne guličky",
+    "ctaWork": "Zobraziť práce",
+    "ctaContact": "Kontaktujte ma"
   },
   "projectsHome": {
     "heading": "Vybrané práce",
