@@ -71,9 +71,25 @@
   },
   "about": {
     "pageTitle": "O mne",
-    "intro": {
-      "heading": "Kto som",
-      "body": "Nezávislý softvérový konzultant so sídlom na Slovensku. Desaťročie dodávania produkčných webových aplikácií, AI integrácií a jedného vlastného SaaS — pre firmy po celej EÚ."
+    "highlights": {
+      "eyebrow": "Desaťročie dodávania",
+      "heading": "Skutočné produkty. Skutočné firmy. Skutočné výsledky.",
+      "intro": "Viac ako 18 webových aplikácií, e-shopov, intranetov a jeden vlastný SaaS — vo fintechu, realitách, B2B aj lokálnych službách. Postavené, aby fungovali, nie len aby dobre vyzerali.",
+      "stat1Value": "10+",
+      "stat1Label": "rokov produkčného kódu",
+      "stat2Value": "18+",
+      "stat2Label": "dodaných projektov",
+      "stat3Value": "100",
+      "stat3Label": "Lighthouse skóre na Stavodoprave",
+      "stat4Value": "EÚ",
+      "stat4Label": "klienti naprieč Európou",
+      "pick1Title": "Best Auction",
+      "pick1Body": "Frontend pre sofistikovanú elektronickú aukčnú platformu — zapečatené ponuky, real-time updaty, viacrolové workflow.",
+      "pick2Title": "Eviro",
+      "pick2Body": "Môj vlastný SaaS. Recenzie na autopilote, AI návrhy odpovedí, okamžité upozornenia na negatívnu spätnú väzbu — pre lokálne podniky, ktoré žijú z hodnotenia.",
+      "pick3Title": "NordERP Schvaľovanie",
+      "pick3Body": "Intranetová webová aplikácia nad rozsiahlym ERP — schvaľovanie faktúr a nákupných požiadaviek, procesy podľa rolí, audit log.",
+      "cta": "Zobraziť všetky práce"
     },
     "journeyEyebrow": "Moja cesta",
     "hero": {

@@ -1,7 +1,6 @@
 ---
 import type { Locale } from '~/i18n/utils';
-import { useT } from '~/i18n/utils';
-import SectionIntro from './SectionIntro.astro';
+import { useT, localizePath } from '~/i18n/utils';
 import Contact from './Contact.astro';
 
 interface Props {
@@ -10,10 +9,58 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = useT(lang);
+const workHref = localizePath('/work', lang);
 ---
 
-<!-- 1. Who am I — the short intro banner -->
-<SectionIntro heading={t('about.intro.heading')} intro={t('about.intro.body')} variant="dark" tag="h1" />
+<!-- 1. Highlights — the hook -->
+<div class="bg-dark-violet">
+  <div class="py-10 md:py-24 px-5 md:px-16 container mx-auto sm:border-x border-violet">
+    <span class="inline-block text-xs font-bold uppercase tracking-widest text-lime mb-4">{t('about.highlights.eyebrow')}</span>
+    <h1 class="text-4xl md:text-6xl font-bold text-violet max-w-4xl leading-tight">{t('about.highlights.heading')}</h1>
+    <p class="mt-6 md:mt-8 text-white md:text-xl font-bold max-w-3xl">{t('about.highlights.intro')}</p>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-10 md:mt-16">
+      <div>
+        <p class="text-4xl md:text-6xl font-bold text-lime">{t('about.highlights.stat1Value')}</p>
+        <p class="mt-2 text-xs md:text-sm font-bold text-white uppercase tracking-wider">{t('about.highlights.stat1Label')}</p>
+      </div>
+      <div>
+        <p class="text-4xl md:text-6xl font-bold text-lime">{t('about.highlights.stat2Value')}</p>
+        <p class="mt-2 text-xs md:text-sm font-bold text-white uppercase tracking-wider">{t('about.highlights.stat2Label')}</p>
+      </div>
+      <div>
+        <p class="text-4xl md:text-6xl font-bold text-lime">{t('about.highlights.stat3Value')}</p>
+        <p class="mt-2 text-xs md:text-sm font-bold text-white uppercase tracking-wider">{t('about.highlights.stat3Label')}</p>
+      </div>
+      <div>
+        <p class="text-4xl md:text-6xl font-bold text-lime">{t('about.highlights.stat4Value')}</p>
+        <p class="mt-2 text-xs md:text-sm font-bold text-white uppercase tracking-wider">{t('about.highlights.stat4Label')}</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 md:gap-8 mt-12 md:mt-20">
+      <div class="border border-violet rounded-xl p-6 md:p-8">
+        <h3 class="text-xl md:text-2xl font-bold text-violet mb-3">{t('about.highlights.pick1Title')}</h3>
+        <p class="text-white text-sm md:text-base">{t('about.highlights.pick1Body')}</p>
+      </div>
+      <div class="border border-violet rounded-xl p-6 md:p-8">
+        <h3 class="text-xl md:text-2xl font-bold text-violet mb-3">{t('about.highlights.pick2Title')}</h3>
+        <p class="text-white text-sm md:text-base">{t('about.highlights.pick2Body')}</p>
+      </div>
+      <div class="border border-violet rounded-xl p-6 md:p-8">
+        <h3 class="text-xl md:text-2xl font-bold text-violet mb-3">{t('about.highlights.pick3Title')}</h3>
+        <p class="text-white text-sm md:text-base">{t('about.highlights.pick3Body')}</p>
+      </div>
+    </div>
+
+    <div class="mt-10 md:mt-16">
+      <a href={workHref} class="relative inline-flex items-center justify-center px-12 py-4 overflow-hidden border-lime border font-bold text-lime bg-dark-violet rounded-full group hover:text-dark-violet">
+        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-lime rounded-full group-hover:w-56 group-hover:h-56"></span>
+        <span class="relative">{t('about.highlights.cta')} →</span>
+      </a>
+    </div>
+  </div>
+</div>
 
 <!-- 2. Today -->
 <div class="bg-dark-violet border-t border-violet">
