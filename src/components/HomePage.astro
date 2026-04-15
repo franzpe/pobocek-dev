@@ -1,7 +1,7 @@
 ---
 import type { Locale } from '~/i18n/utils';
 import { getCollection } from 'astro:content';
-import { useT, localizePath } from '~/i18n/utils';
+import { useT } from '~/i18n/utils';
 import Hero from './Hero.astro';
 import ProjectsGrid from './ProjectsGrid.astro';
 import MyStory from './MyStory.astro';
@@ -13,7 +13,6 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = useT(lang);
-const workHref = localizePath('/work', lang);
 
 const allProjects = await getCollection('projects');
 const featured = allProjects
@@ -62,13 +61,6 @@ const featured = allProjects
         <h3 class="text-xl md:text-2xl font-bold text-violet mb-3">{t('about.highlights.pick3Title')}</h3>
         <p class="text-white text-sm md:text-base">{t('about.highlights.pick3Body')}</p>
       </div>
-    </div>
-
-    <div class="mt-10 md:mt-16">
-      <a href={workHref} class="relative inline-flex items-center justify-center px-12 py-4 overflow-hidden border-lime border font-bold text-lime bg-dark-violet rounded-full group hover:text-dark-violet">
-        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-lime rounded-full group-hover:w-56 group-hover:h-56"></span>
-        <span class="relative">{t('about.highlights.cta')} →</span>
-      </a>
     </div>
   </div>
 </div>
