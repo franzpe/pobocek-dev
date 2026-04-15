@@ -1,0 +1,13 @@
+---
+import Base from '~/layouts/Base.astro';
+import PrivacyPage from '~/components/PrivacyPage.astro';
+import { useT } from '~/i18n/utils';
+
+const lang = 'sk';
+const t = useT(lang);
+const path = '/sk/privacy';
+---
+
+<Base title={`${t('privacy.pageTitle')} · pobocek.dev`} description={t('privacy.intro')} lang={lang} path={path} navVariant="light">
+  <PrivacyPage lang={lang} />
+</Base>

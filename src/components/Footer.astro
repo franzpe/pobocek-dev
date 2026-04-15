@@ -1,6 +1,6 @@
 ---
 import type { Locale } from '~/i18n/utils';
-import { useT } from '~/i18n/utils';
+import { useT, localizePath } from '~/i18n/utils';
 
 interface Props {
   lang: Locale;
@@ -9,12 +9,13 @@ interface Props {
 const { lang } = Astro.props;
 const t = useT(lang);
 const year = new Date().getFullYear();
+const privacyHref = localizePath('/privacy', lang);
 ---
 
 <footer class="bg-beige">
   <div class="flex flex-wrap justify-between md:justify-around container mx-auto sm:border-x border-dark-violet py-6 md:py-14 px-5 md:px-0 items-center gap-4">
     <div>
-      <a class="text-xs font-bold text-dark-violet underline hover:text-violet transition-colors" href="https://pobocek.dev/privacy">
+      <a class="text-xs font-bold text-dark-violet underline hover:text-violet transition-colors" href={privacyHref}>
         {t('footer.privacy')}
       </a>
     </div>
