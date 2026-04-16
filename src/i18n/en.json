@@ -165,18 +165,18 @@
     }
   },
   "seo": {
-    "defaultDescription": "Smarter web apps, AI integration, and Web3 — built by Frank Poboček across React, Node.js, .NET, GraphQL, and smart contracts.",
+    "defaultDescription": "I create smarter web apps with AI integrations — a decade of shipping production code for businesses across Europe.",
     "home": {
-      "title": "pobocek.dev — Smarter web apps, AI & Web3",
-      "description": "Full-stack web development, AI integration, and smart-contract engineering for SMEs across the EU."
+      "title": "Frantisek Pobocek | Web Developer & AI Integrations",
+      "description": "I create smarter web apps with AI integrations — a decade of shipping production code for businesses across Europe."
     },
     "work": {
-      "title": "Work · pobocek.dev",
-      "description": "Selected projects: web apps, e-commerce, intranet tools, and Web3 dApps delivered by Frank Poboček."
+      "title": "Work | Frantisek Pobocek — Web Developer & AI Integrations",
+      "description": "18+ delivered projects across fintech, real estate, B2B and local services. Web apps, e-commerce, intranets and Web3 dApps."
     },
     "about": {
-      "title": "About · pobocek.dev",
-      "description": "My journey from kitchen-table Counter-Strike to building production web apps and smart contracts for clients across the EU."
+      "title": "About | Frantisek Pobocek — Web Developer & AI Integrations",
+      "description": "A decade of shipping production code for EU businesses. Full-stack developer, AI integrator, smart-contract engineer, founder of Eviro."
     }
   }
 }

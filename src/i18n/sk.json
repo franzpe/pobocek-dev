@@ -165,18 +165,18 @@
     }
   },
   "seo": {
-    "defaultDescription": "Smart webové aplikácie, AI integrácie a Web3 — tvorí František Poboček v React, Node.js, .NET, GraphQL a smart contractoch.",
+    "defaultDescription": "Tvorím inteligentnejšie webové aplikácie s AI integráciou — desaťročie dodávania produkčného kódu pre firmy po celej Európe.",
     "home": {
-      "title": "pobocek.dev — Smart webové aplikácie, AI a Web3",
-      "description": "Full-stack vývoj, AI integrácie a smart contracty pre firmy v rámci EÚ."
+      "title": "František Poboček | Webové stránky, aplikácie a AI Integrácie",
+      "description": "Tvorím inteligentnejšie webové aplikácie s AI integráciou — desaťročie dodávania produkčného kódu pre firmy po celej Európe."
     },
     "work": {
-      "title": "Práce · pobocek.dev",
-      "description": "Vybrané projekty: webové aplikácie, e-shopy, intranetové nástroje a Web3 dApps od Františka Poboček."
+      "title": "Práce | František Poboček — Webové stránky, aplikácie a AI Integrácie",
+      "description": "18+ dodaných projektov vo fintechu, realitách, B2B a lokálnych službách. Webové aplikácie, e-shopy, intranety a Web3 dApps."
     },
     "about": {
-      "title": "O mne · pobocek.dev",
-      "description": "Moja cesta od Counter-Strike na kuchynskom stole k produkčným webovým aplikáciám a smart contractom pre klientov po celej EÚ."
+      "title": "O mne | František Poboček — Webové stránky, aplikácie a AI Integrácie",
+      "description": "Desaťročie dodávania produkčného kódu pre firmy v EÚ. Full-stack developer, AI integrátor, vývojár smart contractov, zakladateľ Eviro."
     }
   }
 }
