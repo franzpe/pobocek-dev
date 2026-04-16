@@ -16,12 +16,12 @@ const textColor = isDark ? 'text-white' : 'text-dark-violet';
 ---
 
 <div class={bg}>
-  <div class={`py-10 md:py-20 px-5 md:px-16 container mx-auto ${border}`}>
+  <div class={`pt-4 pb-10 md:py-20 px-5 md:px-16 container mx-auto ${border}`}>
     {tag === 'h1' ? (
-      <h1 class={`text-4xl md:text-6xl font-bold ${headingColor}`}>{heading}</h1>
+      <h1 class={`text-4xl md:text-6xl font-bold text-center md:text-left ${headingColor}`}>{heading}</h1>
     ) : (
-      <h2 class={`text-4xl md:text-6xl font-bold ${headingColor}`}>{heading}</h2>
+      <h2 class={`text-4xl md:text-6xl font-bold text-center md:text-left ${headingColor}`}>{heading}</h2>
     )}
-    {intro && <p class={`mt-6 md:text-xl max-w-3xl ${textColor}`}>{intro}</p>}
+    {intro && <p class={`mt-6 md:text-xl max-w-3xl text-center md:text-left ${textColor}`}>{intro}</p>}
   </div>
 </div>
