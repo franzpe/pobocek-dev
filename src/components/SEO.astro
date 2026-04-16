@@ -10,7 +10,7 @@ interface Props {
   ogImage?: string;
 }
 
-const { title, description, lang, path, ogImage = '/assets/images/frantisekpobocek.png' } = Astro.props;
+const { title, description, lang, path, ogImage = '/assets/images/og-image.png' } = Astro.props;
 const site = Astro.site ?? new URL('https://pobocek.dev');
 const canonical = new URL(path, site).toString();
 const alternate = alternatePath(path, lang);
