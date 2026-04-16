@@ -34,13 +34,13 @@ const formId = `contact-form-${lang}-${variant}`;
       <h2 class={`text-4xl lg:text-5xl xl:text-7xl font-bold xl:leading-[6rem] py-6 md:py-12 tracking-wide ${headingColor}`}>
         {t('contact.heading')}
       </h2>
-      <div class="flex justify-between text-violet text-4xl md:text-9xl">
+      <div class="flex justify-between items-end text-violet text-4xl md:text-9xl">
         <span>[</span><span>[</span><span>[</span><span>[</span><span>[</span>
       </div>
     </div>
-    <div class={`w-full pb-6 md:pb-12 lg:pb-0 lg:border-l ${inputBorder} lg:w-3/5`}>
-      <form id={formId} data-contact-form data-mailto={to} novalidate>
-        <div class="flex flex-wrap">
+    <div class={`w-full pb-6 md:pb-12 lg:pb-0 lg:border-l ${inputBorder} lg:w-3/5 flex flex-col`}>
+      <form id={formId} data-contact-form data-mailto={to} novalidate class="h-full flex flex-col">
+        <div class="flex flex-wrap flex-1">
           <div class="w-full">
             <input class={`block w-full bg-transparent border-b ${inputBorder} py-9 px-5 md:px-10 focus:outline-none ${inputText}`} name="email" type="email" placeholder={t('contact.email')} required />
           </div>
@@ -53,11 +53,15 @@ const formId = `contact-form-${lang}-${variant}`;
           <div class="w-full">
             <textarea name="message" rows="9" class={`block w-full bg-transparent py-9 px-5 md:px-10 focus:outline-none ${inputText}`} placeholder={t('contact.message')} required></textarea>
           </div>
-          <div class="pl-6 md:pl-12 lg:pb-6">
-            <button type="submit" class={`relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold rounded-full group ${btnClass}`}>
+          <div class="flex flex-col gap-4 px-6 md:px-10 pt-6 pb-6 lg:pb-8 mt-auto">
+            <button type="submit" class={`relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold rounded-full group w-fit ${btnClass}`}>
               <span class={`absolute w-0 h-0 transition-all duration-500 ease-out rounded-full ${btnHover}`}></span>
               <span class="relative">{t('contact.send')}</span>
             </button>
+            <div class="space-y-1">
+              <p class={`text-sm ${isDark ? 'text-white/50' : 'text-dark-violet/50'}`}>{t('contact.responseTime')}</p>
+              <a href="mailto:frank@pobocek.dev" class={`block text-sm font-bold ${isDark ? 'text-violet hover:text-lime' : 'text-dark-violet hover:text-violet'} transition-colors`}>frank@pobocek.dev</a>
+            </div>
           </div>
         </div>
       </form>

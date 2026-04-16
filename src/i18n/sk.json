@@ -8,6 +8,7 @@
   "hero": {
     "greeting": "František Pobočék",
     "tagline": "Staviam smart webové aplikácie s AI integráciou — desaťročie skúseností s produkčným kódom pre európske firmy.",
+    "tagline2": "Inteligentnejšie webové aplikácie s AI integráciami.",
     "photoAlt": "František Poboček",
     "bulletsAlt": "dekoratívne guličky",
     "ctaWork": "Zobraziť práce",
@@ -34,7 +35,8 @@
     "name": "Meno",
     "title": "Predmet",
     "message": "Správa",
-    "send": "Odoslať"
+    "send": "Odoslať",
+    "responseTime": "Zvyčajne odpoviem do 24 hodín."
   },
   "footer": {
     "privacy": "Ochrana osobných údajov",
@@ -81,8 +83,8 @@
       "stat1Label": "rokov produkčného kódu",
       "stat2Value": "18+",
       "stat2Label": "dodaných projektov",
-      "stat3Value": "100",
-      "stat3Label": "Lighthouse skóre na Stavodoprave",
+      "stat3Value": "AI",
+      "stat3Label": "ready",
       "stat4Value": "EÚ",
       "stat4Label": "klienti naprieč Európou",
       "pick1Title": "Best Auction",
