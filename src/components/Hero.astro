@@ -13,33 +13,24 @@ const t = useT(lang);
 <div id="hero-section" class="relative bg-dark-violet">
   <canvas id="hero-dots" class="pointer-events-none absolute inset-0 z-30 w-full h-full"></canvas>
   <div
-    class="container mx-auto flex flex-wrap items-stretch gap-y-10 border-violet px-5 py-10 text-violet sm:border-x md:px-16 md:py-32"
+    class="container mx-auto flex flex-wrap items-stretch border-violet px-5 py-10 text-violet sm:border-x md:px-16 md:py-32"
   >
-    <div class="flex w-full items-center lg:w-2/3 xl:w-1/2">
-      <div class="relative z-20">
-        <h1 class="text-5xl font-bold md:text-8xl lg:text-[6rem] xl:text-[7.5rem] leading-tight">{t('hero.greeting')}</h1>
-        <h2 class="max-w-xl pt-6 text-lg md:text-xl md:leading-[2rem]">{t('hero.tagline')}</h2>
-        <p class="max-w-xl pt-3 text-sm md:text-base font-bold text-lime">{t('hero.tagline2')}</p>
-        <div class="flex flex-wrap gap-4 pt-10">
-          <a href="/work" class="inline-flex items-center gap-2 rounded-full bg-violet px-8 py-3 font-bold text-dark-violet transition-colors hover:bg-lime">
-            {t('hero.ctaWork')} →
-          </a>
-          <a href="#contact" class="inline-flex items-center gap-2 rounded-full border border-violet px-8 py-3 font-bold text-violet transition-colors hover:border-lime hover:text-lime">
-            {t('hero.ctaContact')}
-          </a>
-        </div>
-        <div class="flex flex-wrap gap-6 pt-8 text-sm text-violet/50">
-          <span>10+ years</span>
-          <span>·</span>
-          <span>18+ projects shipped</span>
-          <span>·</span>
-          <span>EU clients</span>
-        </div>
+    <!-- Photo: first on mobile (order-1), right column on desktop (order-2) -->
+    <div class="relative z-20 w-full order-1 lg:order-2 lg:w-1/3 xl:w-1/2">
+      <!-- Mobile: constrained height portrait -->
+      <div class="relative w-full overflow-hidden lg:hidden" style="height: 320px;">
+        <img
+          class="w-full h-full object-cover object-top"
+          src="/assets/images/frantisekpobocek.png"
+          alt={t('hero.photoAlt')}
+        />
+        <div
+          class="pointer-events-none absolute inset-0"
+          style="background: linear-gradient(to bottom, transparent 50%, rgba(26,26,51,0.7) 80%, rgba(26,26,51,1) 100%);"
+        ></div>
       </div>
-    </div>
-
-    <div class="relative z-20 w-full lg:w-1/3 xl:w-1/2">
-      <div class="relative w-full overflow-hidden">
+      <!-- Desktop: full photo -->
+      <div class="relative w-full overflow-hidden hidden lg:block">
         <img
           class="relative z-0 w-full h-auto"
           src="/assets/images/frantisekpobocek.png"
@@ -48,7 +39,30 @@ const t = useT(lang);
         <div
           class="pointer-events-none absolute inset-0 z-[1]"
           style="background: radial-gradient(ellipse 65% 75% at 58% 38%, transparent 32%, rgba(26,26,51,0.55) 65%, rgba(26,26,51,0.95) 100%);"
-        >
+        ></div>
+      </div>
+    </div>
+
+    <!-- Text: second on mobile (order-2), left column on desktop (order-1) -->
+    <div class="flex w-full items-center order-2 lg:order-1 lg:w-2/3 xl:w-1/2 pt-6 lg:pt-0">
+      <div class="relative z-20 w-full text-center lg:text-left">
+        <h1 class="text-5xl font-bold md:text-8xl lg:text-[6rem] xl:text-[7.5rem] leading-tight">{t('hero.greeting')}</h1>
+        <h2 class="pt-6 text-lg md:text-xl md:leading-[2rem] lg:max-w-xl">{t('hero.tagline')}</h2>
+        <p class="pt-3 text-sm md:text-base font-bold text-lime lg:max-w-xl">{t('hero.tagline2')}</p>
+        <div class="flex flex-col sm:flex-row gap-4 pt-10 justify-center lg:justify-start">
+          <a href="/work" class="inline-flex items-center justify-center gap-2 rounded-full bg-violet px-8 py-3 font-bold text-dark-violet transition-colors hover:bg-lime">
+            {t('hero.ctaWork')} →
+          </a>
+          <a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-full border border-violet px-8 py-3 font-bold text-violet transition-colors hover:border-lime hover:text-lime">
+            {t('hero.ctaContact')}
+          </a>
+        </div>
+        <div class="flex flex-wrap justify-center lg:justify-start gap-x-3 gap-y-1 pt-8 text-sm text-violet/50">
+          <span>10+ years</span>
+          <span aria-hidden="true">·</span>
+          <span>18+ projects shipped</span>
+          <span aria-hidden="true">·</span>
+          <span>EU clients</span>
         </div>
       </div>
     </div>
