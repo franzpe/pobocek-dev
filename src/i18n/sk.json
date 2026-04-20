@@ -7,13 +7,12 @@
   },
   "hero": {
     "greeting": "František Pobočék",
-    "tagline": "AI automatizácia a webové aplikácie na mieru pre ambiciózne tímy.",
+    "tagline": "AI automatizácia a webové aplikácie pre ambiciózne tímy.",
     "tagline2": "Od MVP po produkčný SaaS — staviam AI workflow, interné nástroje a webové aplikácie.",
     "photoAlt": "František Poboček",
     "bulletsAlt": "dekoratívne guličky",
     "ctaWork": "Zobraziť práce",
-    "ctaContact": "Kontaktujte ma",
-    "stack": "React · Next.js · Node.js · n8n · LLM"
+    "ctaContact": "Kontaktujte ma"
   },
   "projectsHome": {
     "heading": "Vybrané práce",
@@ -167,17 +166,17 @@
     }
   },
   "seo": {
-    "defaultDescription": "AI automatizácia a webové aplikácie na mieru pre ambiciózne tímy. Desaťročie dodávania produkčného kódu — od MVP po produkčný SaaS.",
+    "defaultDescription": "AI automatizácia a webové aplikácie pre ambiciózne tímy. Desaťročie dodávania produkčného kódu — od MVP po produkčný SaaS.",
     "home": {
-      "title": "František Poboček | AI automatizácia a webové aplikácie na mieru",
-      "description": "AI automatizácia a webové aplikácie na mieru pre ambiciózne tímy. Staviam AI workflow, interné nástroje a webové aplikácie."
+      "title": "František Poboček | AI automatizácia a webové aplikácie",
+      "description": "AI automatizácia a webové aplikácie pre ambiciózne tímy. Staviam AI workflow, interné nástroje a webové aplikácie."
     },
     "work": {
-      "title": "Práce | František Poboček — AI automatizácia a webové aplikácie na mieru",
+      "title": "Práce | František Poboček — AI automatizácia a webové aplikácie",
       "description": "18+ dodaných projektov vo fintechu, realitách, B2B a lokálnych službách. Webové aplikácie, e-shopy, intranety a AI workflow."
     },
     "about": {
-      "title": "O mne | František Poboček — AI automatizácia a webové aplikácie na mieru",
+      "title": "O mne | František Poboček — AI automatizácia a webové aplikácie",
       "description": "Desaťročie dodávania produkčného kódu. AI automation engineer, zakladateľ Eviro."
     }
   }

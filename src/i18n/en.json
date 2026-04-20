@@ -12,8 +12,7 @@
     "photoAlt": "Frantisek Pobocek",
     "bulletsAlt": "decorative bullets",
     "ctaWork": "See my work",
-    "ctaContact": "Get in touch",
-    "stack": "React · Next.js · Node.js · n8n · LLMs"
+    "ctaContact": "Get in touch"
   },
   "projectsHome": {
     "heading": "Selected work",
