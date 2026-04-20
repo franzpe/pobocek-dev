@@ -8,10 +8,10 @@
     "logoAlt": "pobocek.dev logo"
   },
   "hero": {
-    "greeting": "Frantisek Pobocek",
+    "greeting": "Frank Pobocek",
     "tagline": "AI automation and custom web apps for ambitious teams.",
     "tagline2": "From MVPs to production SaaS — I build AI-powered workflows, internal tools, and web applications.",
-    "photoAlt": "Frantisek Pobocek",
+    "photoAlt": "Frank Pobocek",
     "bulletsAlt": "decorative bullets",
     "ctaWork": "See my work",
     "ctaContact": "Get in touch"
@@ -51,7 +51,7 @@
     "lastUpdated": "Last updated: April 2026",
     "intro": "This privacy policy explains how pobocek.dev (\"we\", \"us\") handles information collected via this website. We keep it short because this is a marketing site — we collect very little.",
     "whoHeading": "Who we are",
-    "whoBody": "pobocek.dev is an independent software consultancy operated by Frantisek Pobocek, based in Slovakia. Contact: info@pobocek.dev.",
+    "whoBody": "pobocek.dev is an independent software consultancy operated by Frank Pobocek, based in Slovakia. Contact: info@pobocek.dev.",
     "dataHeading": "What data we collect",
     "dataIntro": "We collect two categories of data:",
     "data1Title": "Contact form submissions",
@@ -215,7 +215,7 @@
     },
     "journeyEyebrow": "My journey",
     "hero": {
-      "heading": "So in a nutshell, who is Frank Poboček?",
+      "heading": "So in a nutshell, who is Frank Pobocek?",
       "tagline": "Developer. Builder. Founder.",
       "p1": "AI automation engineer, product builder, consultant, and founder — wearing multiple hats by design.",
       "p2": "Let me share my journey with you."
@@ -278,23 +278,23 @@
   "seo": {
     "defaultDescription": "AI automation and custom web apps for ambitious teams. A decade of shipping production code — from MVPs to production SaaS.",
     "home": {
-      "title": "Frantisek Pobocek | AI Automation & Custom Web Apps",
+      "title": "Frank Pobocek | AI Automation & Custom Web Apps",
       "description": "AI automation and custom web apps for ambitious teams. I build AI-powered workflows, internal tools, and web applications."
     },
     "work": {
-      "title": "Work | Frantisek Pobocek — AI Automation & Custom Web Apps",
+      "title": "Work | Frank Pobocek — AI Automation & Custom Web Apps",
       "description": "18+ delivered projects across fintech, real estate, B2B and local services. Web apps, e-commerce, intranets, and AI-powered workflows."
     },
     "services": {
-      "title": "Services | Frantisek Pobocek — AI Automation & Custom Web Apps",
+      "title": "Services | Frank Pobocek — AI Automation & Custom Web Apps",
       "description": "Three ways to work together: AI Automation Roadmap (€2,500), AI Implementation (from €6,000), and AI Operations Retainer (from €1,500/month)."
     },
     "partner": {
-      "title": "Partner | Frantisek Pobocek — Technical Co-founder & Fractional CTO",
+      "title": "Partner | Frank Pobocek — Technical Co-founder & Fractional CTO",
       "description": "I partner with founders and technical leaders building AI-powered products and SaaS — as a technical co-founder or fractional CTO."
     },
     "about": {
-      "title": "About | Frantisek Pobocek — AI Automation & Custom Web Apps",
+      "title": "About | Frank Pobocek — AI Automation & Custom Web Apps",
       "description": "A decade of shipping production code. AI automation & product engineer, founder of Eviro."
     }
   }

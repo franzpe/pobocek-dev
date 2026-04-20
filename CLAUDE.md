@@ -7,7 +7,7 @@
 ## 1. Project snapshot
 
 - **Site:** pobocek.dev
-- **Owner:** Frantisek Pobocek (Frank), solo developer based in Bratislava, Slovakia
+- **Owner:** Frank Pobocek (František Poboček in Slovak), solo developer based in Bratislava, Slovakia
 - **Languages:** EN + SK (bilingual — keep parity when editing copy)
 - **Current stack (verified):** Astro v5, Tailwind v3, static/SSG, Cloudflare Pages
 - **Current status:** live, professionally designed, fast-loading, works well. **Do not redesign.** Only extend, restructure, and rewrite copy per the directives below.
@@ -29,6 +29,8 @@ A **consultancy landing page + portfolio + founder-availability surface** for a 
 **Target buyer language:** "ambitious teams," "teams," "founders." **DO NOT** use "SMB," "mid-market," "enterprise," or any size-specific ICP language. The owner has explicitly rejected buyer-size narrowing. Positioning is sharp on *what is built*, broad on *who buys it*.
 
 > **Frank override (active — do not revert):** The brief's original phrasing was "for businesses across Europe." Frank has dropped geo-locked framing from the primary positioning. The hero tagline is now **"AI automation and custom web apps for ambitious teams."** "EU clients" is no longer featured in hero trust signals or the stats grid. Europe stays as a factual context (Frank is based in Bratislava; most past clients are EU) but never as a positioning constraint on the homepage or in meta.
+
+> **Name localisation (active — do not revert):** On **EN copy, SEO, JSON-LD, meta, and every English-facing surface**, the owner's name is **"Frank Pobocek"** (anglicised, no diacritics — consistent with the `pobocek.dev` domain and `frank@pobocek.dev` email). On **SK copy**, it stays **"František Poboček"** (native Slovak with diacritics). The bilingual structure of the site honours this split automatically — EN i18n keys use "Frank Pobocek", SK i18n keys use "František Poboček". Do not re-introduce "Frantisek Pobocek" (the diacritic-stripped Slovak form) anywhere — it's neither idiomatic EN nor authentic SK.
 
 **What to drop from primary positioning (important):**
 - **Web3 / Solidity / dApps** — keep on CV and in historical "About" chronology only, never in the hero, services, or headline stack list.
@@ -69,7 +71,7 @@ There should be a dedicated page (`/partner` or `/founders`) for founder-track p
 ## 6. Hero copy (current implementation)
 
 ```
-# Frantisek Pobocek
+# Frank Pobocek
 ## AI automation and custom web apps for ambitious teams.
 
 From MVPs to production SaaS — I build AI-powered workflows,
@@ -147,6 +149,7 @@ Every change made to the EN version must have a corresponding SK version update.
 - **Do not add "SMB" or "mid-market" language** anywhere on the site.
 - **Do not feature Web3 / Solidity / dApps** in hero, services, or stack lists.
 - **Do not re-introduce "across Europe" / "EU clients" framing** in hero tagline, primary stats, or meta descriptions. (See section 3 Frank override.)
+- **Do not use "Frantisek Pobocek" on the English site.** EN uses "Frank Pobocek"; SK uses "František Poboček". (See section 3 Name localisation override.)
 - **Do not move the Cal.com CTA into the hero.** It lives in the Contact section. (See section 6 Frank override.)
 - **Do not publish specific equity percentages** on the founder page.
 - **Do not add stock photos** of meetings, handshakes, laptops, or generic "team" imagery. The site's current photography is real photos of Frank; keep it that way.
