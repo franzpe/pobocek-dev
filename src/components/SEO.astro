@@ -16,24 +16,91 @@ const canonical = new URL(path, site).toString();
 const alternate = alternatePath(path, lang);
 const alternateUrl = new URL(alternate, site).toString();
 const ogImageUrl = new URL(ogImage, site).toString();
+const ogLocale = lang === 'en' ? 'en_US' : 'sk_SK';
+const ogLocaleAlt = lang === 'en' ? 'sk_SK' : 'en_US';
+
+// JSON-LD: Person schema (for Google Knowledge Panel)
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Frantisek Pobocek',
+  alternateName: 'František Poboček',
+  url: 'https://pobocek.dev',
+  image: new URL('/assets/images/frantisekpobocek.png', site).toString(),
+  jobTitle: 'AI Automation & Product Engineer',
+  description: 'AI automation and custom web apps for ambitious teams.',
+  sameAs: [
+    'https://linkedin.com/in/frantisek-pobocek-06819913b',
+    'https://github.com/franzpe',
+  ],
+  knowsAbout: [
+    'AI automation',
+    'n8n',
+    'Large Language Models',
+    'Web application development',
+    'React',
+    'Next.js',
+    'Node.js',
+    'TypeScript',
+    'PostgreSQL',
+  ],
+  worksFor: {
+    '@type': 'Organization',
+    name: 'pobocek.dev',
+    url: 'https://pobocek.dev',
+  },
+};
+
+// JSON-LD: ProfessionalService schema (for business / consultancy listings)
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'pobocek.dev',
+  url: 'https://pobocek.dev',
+  image: new URL('/assets/images/og-image.jpg', site).toString(),
+  description: 'AI automation and custom web apps for ambitious teams — AI-powered workflows, internal tools, and web applications.',
+  founder: { '@type': 'Person', name: 'Frantisek Pobocek' },
+  areaServed: 'Worldwide',
+  serviceType: [
+    'AI automation',
+    'Custom web application development',
+    'AI workflow consulting',
+    'SaaS product engineering',
+  ],
+  sameAs: [
+    'https://linkedin.com/in/frantisek-pobocek-06819913b',
+    'https://github.com/franzpe',
+  ],
+};
 ---
 
 <title>{title}</title>
 <meta name="description" content={description} />
+<meta name="author" content="Frantisek Pobocek" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
 <link rel="canonical" href={canonical} />
 
 <link rel="alternate" hreflang={lang === 'en' ? 'en' : 'sk'} href={canonical} />
 <link rel="alternate" hreflang={lang === 'en' ? 'sk' : 'en'} href={alternateUrl} />
 <link rel="alternate" hreflang="x-default" href={new URL(lang === 'en' ? path : alternate, site).toString()} />
 
+<meta property="og:site_name" content="pobocek.dev" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:type" content="website" />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={ogImageUrl} />
-<meta property="og:locale" content={lang === 'en' ? 'en_US' : 'sk_SK'} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="pobocek.dev — AI automation and custom web apps" />
+<meta property="og:locale" content={ogLocale} />
+<meta property="og:locale:alternate" content={ogLocaleAlt} />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={ogImageUrl} />
+<meta name="twitter:image:alt" content="pobocek.dev — AI automation and custom web apps" />
+
+<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
