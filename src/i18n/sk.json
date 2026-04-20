@@ -7,12 +7,13 @@
   },
   "hero": {
     "greeting": "František Pobočék",
-    "tagline": "Staviam smart webové aplikácie s AI integráciou — desaťročie skúseností s produkčným kódom pre európske firmy.",
-    "tagline2": "Inteligentnejšie webové aplikácie s AI integráciami.",
+    "tagline": "AI automatizácia a webové aplikácie na mieru pre ambiciózne tímy.",
+    "tagline2": "Od MVP po produkčný SaaS — staviam AI workflow, interné nástroje a webové aplikácie.",
     "photoAlt": "František Poboček",
     "bulletsAlt": "dekoratívne guličky",
     "ctaWork": "Zobraziť práce",
-    "ctaContact": "Kontaktujte ma"
+    "ctaContact": "Kontaktujte ma",
+    "stack": "React · Next.js · Node.js · n8n · LLM"
   },
   "projectsHome": {
     "heading": "Vybrané práce",
@@ -25,8 +26,8 @@
   },
   "myStory": {
     "heading": "Môj príbeh",
-    "p1": "Pri počítačoch som odmalička — najprv hry, potom opravy, dnes vývoj. Posledných desať rokov z toho robím kariéru — full-stack web, AI integrácie a Web3.",
-    "p2": "Dnes pomáham firmám v rámci EU premeniť nápady na produkčné webové aplikácie — smart produkty s AI, robustnou infraštruktúrou a prehľadným UX. React, Node.js, .NET, GraphQL, smart contracty, dApps.",
+    "p1": "Pri počítačoch som odmalička — najprv hry, potom opravy, dnes vývoj. Posledných desať rokov z toho robím kariéru — full-stack web a AI automatizácia.",
+    "p2": "Dnes pomáham ambicióznym tímom premeniť nápady na produkčný softvér — inteligentnejšie produkty s AI, robustnou infraštruktúrou a prehľadným UX. React, Node.js, .NET, GraphQL, n8n, LLM.",
     "more": "Viac o mne"
   },
   "contact": {
@@ -36,7 +37,8 @@
     "title": "Predmet",
     "message": "Správa",
     "send": "Odoslať",
-    "responseTime": "Zvyčajne odpoviem do 24 hodín."
+    "responseTime": "Zvyčajne odpoviem do 24 hodín.",
+    "bookCall": "Rezervovať 15-min úvodný hovor"
   },
   "footer": {
     "privacy": "Ochrana osobných údajov",
@@ -69,7 +71,7 @@
   "work": {
     "pageTitle": "Vybrané práce",
     "heading": "Moje práce",
-    "intro": "Výber projektov, ktoré som dodal — od webových aplikácií a e-shopov cez intranetové nástroje po Web3 dApps.",
+    "intro": "Výber projektov, ktoré som dodal — od webových aplikácií a e-shopov cez intranetové nástroje po AI workflow.",
     "visitSite": "Navštíviť web",
     "backToWork": "Späť na práce"
   },
@@ -83,8 +85,8 @@
       "stat1Label": "rokov produkčného kódu",
       "stat2Value": "18+",
       "stat2Label": "dodaných projektov",
-      "stat3Value": "AI",
-      "stat3Label": "ready",
+      "stat3Value": "Eviro",
+      "stat3Label": "môj živý AI SaaS",
       "stat4Value": "EÚ",
       "stat4Label": "EÚ klienti",
       "pick1Title": "Best Auction",
@@ -99,7 +101,7 @@
     "hero": {
       "heading": "Takže v skratke, kto je Frank Poboček?",
       "tagline": "Developer. Tvorca. Zakladateľ.",
-      "p1": "Full-stack web developer, AI integrátor, vývojár smart contractov, konzultant a zakladateľ — viac klobúkov, zámerne.",
+      "p1": "AI automation engineer, tvorca produktov, konzultant a zakladateľ — viac klobúkov, zámerne.",
       "p2": "Dovoľte mi podeliť sa o moju cestu."
     },
     "young": {
@@ -131,7 +133,7 @@
     "post": {
       "heading": "Po škole",
       "body": "Dva dni po štátniciach som nastúpil do CRIF ako Backend Engineer v .NET — budoval som systémy úverových registrov a data-poolingové riešenia pre medzinárodné trhy. Oracle databázy, stored procedures, business procesy, unit a integračné testy.",
-      "body2": "Po CRIF som prešiel na freelance — full-stack projekty pre klientov na Slovensku a v zahraničí, webové aplikácie, intranety a e-shopy pod značkou Applance Solutions, neskôr premenovanou na pobocek.dev.",
+      "body2": "Po CRIF som prešiel na freelance — full-stack projekty pre klientov na Slovensku a v zahraničí, webové aplikácie, intranety a e-shopy pod značkou Applance Solutions, neskôr premenovanou na pobocek.dev. V roku 2023 som navyše absolvoval Solidity bootcamp a dodal niekoľko smart-contract projektov; dnes tú istú inžiniersku dôkladnosť aplikujem na AI workflow a produkčné webové aplikácie.",
       "more": "Čítať viac"
     },
     "blockchain": {
@@ -144,11 +146,11 @@
     "today": {
       "heading": "Dnes",
       "subheading": "Nezávislé softvérové konzultácie",
-      "p1": "Dnes vediem pobocek.dev — pomáham firmám v rámci EÚ premeniť nápady na produkčné webové aplikácie a Web3 riešenia, od MVP až po plnohodnotné platformy.",
-      "p2": "Staviam webové aplikácie, intranety a e-shopy pre SME klientov po celom full-stacku — React, Node.js, .NET a Apollo GraphQL. Zároveň rozvíjam vlastný SaaS: Eviro — automatizuje zber recenzií, takže spokojní zákazníci sa menia na 5-hviezdičkové hodnotenia na autopilote.",
+      "p1": "Dnes vediem pobocek.dev — pomáham ambicióznym tímom premeniť nápady na produkčné AI produkty, od MVP až po plnohodnotné platformy.",
+      "p2": "Staviam webové aplikácie, intranety a interné nástroje po celom full-stacku — React, Node.js, .NET a Apollo GraphQL — a zapájam n8n + LLM do pracovných procesov tam, kde reálne šetria hodiny. Zároveň rozvíjam vlastný SaaS: Eviro — automatizuje zber recenzií, takže spokojní zákazníci sa menia na 5-hviezdičkové hodnotenia na autopilote.",
       "p3": "Desať rokov produkčnej praxe naprieč fintechom, realitami a B2B znamená menej prekvapení, rýchlejšie dodanie a kód, ktorý dáva zmysel aj v treťom roku prevádzky.",
       "stackHeading": "Stack, s ktorým pracujem každý deň",
-      "stackItems": "React · Next.js · Astro · Node.js · TypeScript · .NET · PostgreSQL · Apollo GraphQL · Tailwind · Solidity"
+      "stackItems": "React · Next.js · Astro · Node.js · TypeScript · .NET · PostgreSQL · Apollo GraphQL · Tailwind · n8n · LLM"
     },
     "ai": {
       "heading": "AI tam, kde to má zmysel",
@@ -165,18 +167,18 @@
     }
   },
   "seo": {
-    "defaultDescription": "Tvorím inteligentnejšie webové aplikácie s AI integráciou — desaťročie dodávania produkčného kódu pre firmy po celej Európe.",
+    "defaultDescription": "AI automatizácia a webové aplikácie na mieru pre ambiciózne tímy. Desaťročie dodávania produkčného kódu — od MVP po produkčný SaaS.",
     "home": {
-      "title": "František Poboček | Webové stránky, aplikácie a AI Integrácie",
-      "description": "Tvorím inteligentnejšie webové aplikácie s AI integráciou — desaťročie dodávania produkčného kódu pre firmy po celej Európe."
+      "title": "František Poboček | AI automatizácia a webové aplikácie na mieru",
+      "description": "AI automatizácia a webové aplikácie na mieru pre ambiciózne tímy. Staviam AI workflow, interné nástroje a webové aplikácie."
     },
     "work": {
-      "title": "Práce | František Poboček — Webové stránky, aplikácie a AI Integrácie",
-      "description": "18+ dodaných projektov vo fintechu, realitách, B2B a lokálnych službách. Webové aplikácie, e-shopy, intranety a Web3 dApps."
+      "title": "Práce | František Poboček — AI automatizácia a webové aplikácie na mieru",
+      "description": "18+ dodaných projektov vo fintechu, realitách, B2B a lokálnych službách. Webové aplikácie, e-shopy, intranety a AI workflow."
     },
     "about": {
-      "title": "O mne | František Poboček — Webové stránky, aplikácie a AI Integrácie",
-      "description": "Desaťročie dodávania produkčného kódu pre firmy v EÚ. Full-stack developer, AI integrátor, vývojár smart contractov, zakladateľ Eviro."
+      "title": "O mne | František Poboček — AI automatizácia a webové aplikácie na mieru",
+      "description": "Desaťročie dodávania produkčného kódu. AI automation engineer, zakladateľ Eviro."
     }
   }
 }

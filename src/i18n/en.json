@@ -7,12 +7,13 @@
   },
   "hero": {
     "greeting": "Frantisek Pobocek",
-    "tagline": "I turn ideas into live products — a decade of shipping production code for businesses across Europe.",
-    "tagline2": "Smarter web apps with AI integrations.",
+    "tagline": "AI automation and custom web apps for ambitious teams.",
+    "tagline2": "From MVPs to production SaaS — I build AI-powered workflows, internal tools, and web applications.",
     "photoAlt": "Frantisek Pobocek",
     "bulletsAlt": "decorative bullets",
     "ctaWork": "See my work",
-    "ctaContact": "Get in touch"
+    "ctaContact": "Get in touch",
+    "stack": "React · Next.js · Node.js · n8n · LLMs"
   },
   "projectsHome": {
     "heading": "Selected work",
@@ -25,8 +26,8 @@
   },
   "myStory": {
     "heading": "My Story",
-    "p1": "I've been around computers since I was a kid — first playing games, then repairing them, then building on them. Over the last decade I've turned that into a career spanning full-stack web apps, AI integrations, and Web3.",
-    "p2": "Today I help SMEs across the EU turn ideas into production-ready web apps — smarter products with AI where it matters, robust infrastructure, and clean UX. React, Node.js, .NET, GraphQL, smart contracts, dApps.",
+    "p1": "I've been around computers since I was a kid — first playing games, then repairing them, then building on them. Over the last decade I've turned that into a career spanning full-stack web apps and AI automation.",
+    "p2": "Today I help ambitious teams turn ideas into production-ready software — smarter products with AI where it matters, robust infrastructure, and clean UX. React, Node.js, .NET, GraphQL, n8n, LLMs.",
     "more": "More about me"
   },
   "contact": {
@@ -36,7 +37,8 @@
     "title": "Title",
     "message": "Description",
     "send": "Send",
-    "responseTime": "I typically respond within 24 hours."
+    "responseTime": "I typically respond within 24 hours.",
+    "bookCall": "Book a 15-min intro call"
   },
   "footer": {
     "privacy": "Privacy & Policy",
@@ -69,7 +71,7 @@
   "work": {
     "pageTitle": "Selected Work",
     "heading": "My Work",
-    "intro": "A selection of projects I've delivered — from web apps and e-commerce to enterprise intranet tools and Web3 dApps.",
+    "intro": "A selection of projects I've delivered — from web apps and e-commerce to intranet tools and AI-powered workflows.",
     "visitSite": "Visit site",
     "backToWork": "Back to work"
   },
@@ -83,8 +85,8 @@
       "stat1Label": "years of production code",
       "stat2Value": "18+",
       "stat2Label": "projects shipped",
-      "stat3Value": "AI",
-      "stat3Label": "ready",
+      "stat3Value": "Eviro",
+      "stat3Label": "my live AI SaaS",
       "stat4Value": "EU",
       "stat4Label": "EU clients",
       "pick1Title": "Best Auction",
@@ -99,7 +101,7 @@
     "hero": {
       "heading": "So in a nutshell, who is Frank Poboček?",
       "tagline": "Developer. Builder. Founder.",
-      "p1": "Full-stack web developer, AI integrator, smart-contract engineer, consultant, and founder — wearing multiple hats by design.",
+      "p1": "AI automation engineer, product builder, consultant, and founder — wearing multiple hats by design.",
       "p2": "Let me share my journey with you."
     },
     "young": {
@@ -131,7 +133,7 @@
     "post": {
       "heading": "Post Academics",
       "body": "Two days after graduating I joined CRIF as a Backend Engineer in .NET — building credit-register and data-pooling systems for international markets. Oracle databases, stored procedures, business processes, unit and integration tests.",
-      "body2": "After CRIF I moved into freelance — taking on full-stack projects for clients across Slovakia and beyond, building web apps, intranets, and e-commerce platforms under the Applance Solutions brand, later rebranded to pobocek.dev.",
+      "body2": "After CRIF I moved into freelance — taking on full-stack projects for clients across Slovakia and beyond, building web apps, intranets, and e-commerce platforms under the Applance Solutions brand, later rebranded to pobocek.dev. In 2023 I also completed a Solidity bootcamp and shipped a handful of smart-contract projects; today I apply that same engineering rigour to AI workflows and production web apps.",
       "more": "Read more"
     },
     "blockchain": {
@@ -144,11 +146,11 @@
     "today": {
       "heading": "Today",
       "subheading": "Independent software consultancy",
-      "p1": "Today I run pobocek.dev — helping businesses across the EU turn ideas into production-ready web apps and Web3 solutions, from MVPs to full-scale platforms.",
-      "p2": "I build custom web applications, intranets, and e-commerce platforms for SME clients across the full stack — React, Node.js, .NET, and Apollo GraphQL. I also ship my own SaaS: Eviro — automating review collection so happy customers become 5-star ratings on autopilot.",
+      "p1": "Today I run pobocek.dev — helping ambitious teams turn ideas into production-ready AI-powered products, from MVPs to full-scale platforms.",
+      "p2": "I build custom web applications, intranets, and internal tools across the full stack — React, Node.js, .NET, and Apollo GraphQL — and wire n8n + LLMs into workflows where they save real hours. I also ship my own SaaS: Eviro — automating review collection so happy customers become 5-star ratings on autopilot.",
       "p3": "A decade of production experience across fintech, real estate, and B2B means fewer surprises, faster delivery, and code that still makes sense in year three.",
       "stackHeading": "Stack I ship with daily",
-      "stackItems": "React · Next.js · Astro · Node.js · TypeScript · .NET · PostgreSQL · Apollo GraphQL · Tailwind · Solidity"
+      "stackItems": "React · Next.js · Astro · Node.js · TypeScript · .NET · PostgreSQL · Apollo GraphQL · Tailwind · n8n · LLMs"
     },
     "ai": {
       "heading": "AI where it moves the needle",
@@ -165,18 +167,18 @@
     }
   },
   "seo": {
-    "defaultDescription": "I create smarter web apps with AI integrations — a decade of shipping production code for businesses across Europe.",
+    "defaultDescription": "AI automation and custom web apps for ambitious teams. A decade of shipping production code — from MVPs to production SaaS.",
     "home": {
-      "title": "Frantisek Pobocek | Web Developer & AI Integrations",
-      "description": "I create smarter web apps with AI integrations — a decade of shipping production code for businesses across Europe."
+      "title": "Frantisek Pobocek | AI Automation & Custom Web Apps",
+      "description": "AI automation and custom web apps for ambitious teams. I build AI-powered workflows, internal tools, and web applications."
     },
     "work": {
-      "title": "Work | Frantisek Pobocek — Web Developer & AI Integrations",
-      "description": "18+ delivered projects across fintech, real estate, B2B and local services. Web apps, e-commerce, intranets and Web3 dApps."
+      "title": "Work | Frantisek Pobocek — AI Automation & Custom Web Apps",
+      "description": "18+ delivered projects across fintech, real estate, B2B and local services. Web apps, e-commerce, intranets, and AI-powered workflows."
     },
     "about": {
-      "title": "About | Frantisek Pobocek — Web Developer & AI Integrations",
-      "description": "A decade of shipping production code for EU businesses. Full-stack developer, AI integrator, smart-contract engineer, founder of Eviro."
+      "title": "About | Frantisek Pobocek — AI Automation & Custom Web Apps",
+      "description": "A decade of shipping production code. AI automation & product engineer, founder of Eviro."
     }
   }
 }
