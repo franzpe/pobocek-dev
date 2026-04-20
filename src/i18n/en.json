@@ -73,7 +73,10 @@
     "heading": "My Work",
     "intro": "A selection of projects I've delivered — from web apps and e-commerce to intranet tools and AI-powered workflows.",
     "visitSite": "Visit site",
-    "backToWork": "Back to work"
+    "backToWork": "Back to work",
+    "problem": "Problem",
+    "solution": "What I built",
+    "outcomes": "Outcomes"
   },
   "services": {
     "pageTitle": "Services",

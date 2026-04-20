@@ -8,6 +8,28 @@
   "url": "https://www.norderp.com",
   "date": "2021-06",
   "featured": true,
-  "order": 4,
-  "tech": ["React", "TypeScript", ".NET"]
+  "order": 6,
+  "tech": ["React", "TypeScript", ".NET", "Windows Auth / AD"],
+  "role": {
+    "en": "Full-stack Engineer (Self-employed)",
+    "sk": "Full-stack Engineer (SZČO)"
+  },
+  "duration": {
+    "en": "Sep 2020 – Nov 2020 · 3 mo",
+    "sk": "sept 2020 – nov 2020 · 3 mesiace"
+  },
+  "problem": {
+    "en": "NordERP needed a way for end users to approve documents — purchase requests, incoming invoices — without forcing them into the Jeeves ERP desktop client. Visibility into financial cycles from request through payment had to stay intact, but the existing UX was blocking adoption.",
+    "sk": "NordERP potreboval spôsob, ako umožniť koncovým používateľom schvaľovať dokumenty — nákupné požiadavky, došlé faktúry — bez toho, aby museli otvárať desktopového klienta Jeeves ERP. Viditeľnosť do finančných cyklov od požiadavky po platbu musela zostať zachovaná, ale pôvodný UX brzdil adopciu."
+  },
+  "solution": {
+    "en": "Built a document approval web app on demand — full frontend and backend architecture from scratch, integrated directly with the Jeeves ERP API. Windows Authentication with Active Directory gave users seamless SSO via their existing corporate logins. Deployed on the NordERP intranet.",
+    "sk": "Postavil som webovú aplikáciu na schvaľovanie dokumentov na mieru — frontend aj backend architektúra od nuly, priama integrácia s Jeeves ERP API. Windows Authentication s Active Directory zabezpečila používateľom bezšvové SSO cez existujúce firemné prihlasovanie. Nasadené na intranete NordERP."
+  },
+  "outcomes": [
+    { "en": "Acquired by Jeeves ERP as part of their product offering", "sk": "Akvirované spoločnosťou Jeeves ERP ako súčasť ich produktového portfólia" },
+    { "en": "Built from scratch in 3 months — full stack", "sk": "Postavené od nuly za 3 mesiace — full-stack" },
+    { "en": "Full visibility into financial cycles: request → payment", "sk": "Plná viditeľnosť finančných cyklov: požiadavka → platba" },
+    { "en": "Seamless AD-based SSO for every user", "sk": "Bezšvové SSO cez Active Directory pre všetkých používateľov" }
+  ]
 }

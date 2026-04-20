@@ -12,40 +12,110 @@ interface Props {
 const { lang, project } = Astro.props;
 const t = useT(lang);
 const workHref = localizePath('/work', lang);
+
+const d = project.data;
+const hasCaseStudy = d.problem && d.solution && d.outcomes && d.outcomes.length > 0;
+// When there's no banner image, fold the description into the case study section
+// as an intro line — avoids an orphaned description paragraph on a sea of beige.
+const mergeDescriptionIntoCaseStudy = hasCaseStudy && !d.image;
 ---
 
 <article class="bg-beige border-b border-dark-violet">
   <div class="py-10 md:py-20 px-5 md:px-16 container mx-auto text-dark-violet sm:border-x border-dark-violet">
     <a href={workHref} class="inline-block mb-8 text-dark-violet font-bold hover:text-violet">← {t('work.backToWork')}</a>
-    <h1 class="text-4xl md:text-6xl font-bold">{project.data.title[lang]}</h1>
-    <p class="mt-4 text-medium-grey text-lg">{project.data.date.replace('-', '/')}</p>
-    {project.data.tech && (
-      <ul class="mt-4 flex flex-wrap gap-2">
-        {project.data.tech.map((t) => (
-          <li class="text-xs font-bold bg-white text-dark-violet px-3 py-1 rounded-full">{t}</li>
+    <h1 class="text-4xl md:text-6xl font-bold">{d.title[lang]}</h1>
+
+    {(d.role || d.duration) && (
+      <div class="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-medium-grey">
+        {d.role && <span class="font-bold text-dark-violet">{d.role[lang]}</span>}
+        {d.role && d.duration && <span aria-hidden="true">·</span>}
+        {d.duration && <span>{d.duration[lang]}</span>}
+      </div>
+    )}
+    {!d.role && !d.duration && (
+      <p class="mt-4 text-medium-grey text-lg">{d.date.replace('-', '/')}</p>
+    )}
+
+    {d.tech && (
+      <ul class="mt-6 flex flex-wrap gap-2">
+        {d.tech.map((tag) => (
+          <li class="text-xs font-bold bg-white text-dark-violet px-3 py-1 rounded-full">{tag}</li>
         ))}
       </ul>
     )}
   </div>
 </article>
 
-<div class="bg-beige">
-  <div class="py-10 md:py-20 px-5 md:px-16 container mx-auto sm:border-x border-dark-violet">
-    <div class="flex flex-col lg:flex-row gap-10">
-      <div class="w-full lg:w-1/2">
-        <img src={project.data.image} alt={project.data.title[lang]} class="w-full rounded-xl shadow" />
-      </div>
-      <div class="w-full lg:w-1/2 text-dark-violet">
-        <p class="text-lg md:text-xl leading-relaxed">{project.data.description[lang]}</p>
-        {project.data.url && (
-          <a href={project.data.url} target="_blank" rel="noopener noreferrer" class="mt-8 relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold text-white bg-dark-violet rounded-full group">
-            <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-violet rounded-full group-hover:w-56 group-hover:h-56"></span>
-            <span class="relative">{t('work.visitSite')} →</span>
-          </a>
+{!mergeDescriptionIntoCaseStudy && (
+  <div class="bg-beige border-b border-dark-violet">
+    <div class="py-10 md:py-20 px-5 md:px-16 container mx-auto sm:border-x border-dark-violet">
+      <div class={`flex flex-col ${d.image ? 'lg:flex-row' : ''} gap-10`}>
+        {d.image && (
+          <div class="w-full lg:w-1/2">
+            <img src={d.image} alt={d.title[lang]} class="w-full rounded-xl shadow" />
+          </div>
         )}
+        <div class={`w-full ${d.image ? 'lg:w-1/2' : 'max-w-3xl'} text-dark-violet`}>
+          <p class="text-lg md:text-xl leading-relaxed">{d.description[lang]}</p>
+          {d.url && (
+            <a href={d.url} target="_blank" rel="noopener noreferrer" class="mt-8 relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold text-white bg-dark-violet rounded-full group">
+              <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-violet rounded-full group-hover:w-56 group-hover:h-56"></span>
+              <span class="relative">{t('work.visitSite')} →</span>
+            </a>
+          )}
+        </div>
       </div>
     </div>
   </div>
-</div>
+)}
+
+{hasCaseStudy && (
+  <div class="bg-beige border-b border-dark-violet">
+    <div class="container mx-auto sm:border-x border-dark-violet px-5 md:px-16 py-10 md:py-20">
+      {mergeDescriptionIntoCaseStudy && (
+        <div class="mb-10 md:mb-16 pb-10 md:pb-14 border-b border-dark-violet/20">
+          <div class="max-w-4xl text-dark-violet">
+            <p class="text-lg md:text-xl leading-relaxed">{d.description[lang]}</p>
+            {d.url && (
+              <a href={d.url} target="_blank" rel="noopener noreferrer" class="mt-6 relative inline-flex items-center justify-center px-10 py-3 overflow-hidden font-bold text-white bg-dark-violet rounded-full group">
+                <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-violet rounded-full group-hover:w-56 group-hover:h-56"></span>
+                <span class="relative">{t('work.visitSite')} →</span>
+              </a>
+            )}
+          </div>
+        </div>
+      )}
+
+      <div class="grid gap-10 md:gap-14 lg:grid-cols-2 max-w-6xl">
+        <!-- Problem -->
+        <section>
+          <span class="inline-block text-xs font-bold uppercase tracking-widest text-violet mb-4">{t('work.problem')}</span>
+          <p class="text-dark-violet md:text-lg leading-relaxed">{d.problem![lang]}</p>
+        </section>
+
+        <!-- Solution -->
+        <section>
+          <span class="inline-block text-xs font-bold uppercase tracking-widest text-violet mb-4">{t('work.solution')}</span>
+          <p class="text-dark-violet md:text-lg leading-relaxed">{d.solution![lang]}</p>
+        </section>
+      </div>
+
+      <!-- Outcomes (full-width border, content stays max-w-6xl) -->
+      <div class="mt-12 md:mt-20 pt-10 md:pt-14 border-t border-dark-violet/20">
+        <section class="max-w-6xl">
+          <span class="inline-block text-xs font-bold uppercase tracking-widest text-violet mb-4">{t('work.outcomes')}</span>
+          <ul class="mt-4 grid gap-4 md:gap-6 md:grid-cols-2">
+            {d.outcomes!.map((o) => (
+              <li class="flex gap-3 text-dark-violet md:text-lg">
+                <span class="text-violet flex-shrink-0 font-bold" aria-hidden="true">→</span>
+                <span>{o[lang]}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+)}
 
 <Contact lang={lang} variant="dark" />

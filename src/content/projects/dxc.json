@@ -1,0 +1,34 @@
+{
+  "title": { "en": "DXC — Slovak e-Government Platform", "sk": "DXC — slovenská e-Government platforma" },
+  "description": {
+    "en": "Lead Frontend Engineer on CIP (Central Integration Platform) — Slovakia's national e-government platform enabling public sector institutions to share data and deliver digital services to citizens.",
+    "sk": "Lead Frontend Engineer na CIP (Centrálnej integračnej platforme) — slovenskej národnej e-Government platforme, ktorá umožňuje inštitúciám verejného sektora zdieľať dáta a poskytovať digitálne služby občanom."
+  },
+  "image": "/assets/images/projects/dxc.png",
+  "date": "2023-06",
+  "featured": true,
+  "order": 3,
+  "tech": ["React", "TypeScript", "HTML5", "Keycloak"],
+  "role": {
+    "en": "Lead Frontend Engineer (Contract)",
+    "sk": "Lead Frontend Engineer (kontrakt)"
+  },
+  "duration": {
+    "en": "Jan 2021 – Jun 2023 · 2 yrs 6 mo · Bratislava",
+    "sk": "jan 2021 – jún 2023 · 2 roky 6 mesiacov · Bratislava"
+  },
+  "problem": {
+    "en": "Slovakia needed a national Central Integration Platform — the backbone enabling public sector institutions to share data and deliver digital services to citizens. The frontend had to be fast, accessible, auditable, and integrate with a national identity provider. No small ask.",
+    "sk": "Slovensko potrebovalo národnú Centrálnu integračnú platformu — chrbticu, ktorá umožňuje inštitúciám verejného sektora zdieľať dáta a poskytovať digitálne služby občanom. Frontend musel byť rýchly, prístupný, auditovateľný a integrovaný s národným identity providerom. Žiadna drobnosť."
+  },
+  "solution": {
+    "en": "Architected the frontend component library from scratch. Defined and implemented the frontend architecture end-to-end. Integrated the platform with Keycloak for identity and access management tied to the national identity scheme. Led and mentored the frontend development team through the full delivery.",
+    "sk": "Navrhol som frontend komponentnú knižnicu od nuly. Definoval a implementoval frontend architektúru end-to-end. Integroval platformu s Keycloakom pre identity a access management naviazaný na národnú identitnú schému. Viedol a mentoroval frontend tím počas celej dodávky."
+  },
+  "outcomes": [
+    { "en": "Shipped frontend for Slovakia's national e-government platform", "sk": "Dodaný frontend pre národnú slovenskú e-Government platformu" },
+    { "en": "Frontend component library architected from scratch", "sk": "Frontend komponentná knižnica navrhnutá od nuly" },
+    { "en": "Full national identity / Keycloak integration delivered", "sk": "Plná integrácia národnej identity / Keycloaku" },
+    { "en": "Led and mentored the frontend development team", "sk": "Viedol a mentoroval som frontend tím" }
+  ]
+}

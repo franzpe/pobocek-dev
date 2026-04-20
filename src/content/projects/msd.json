@@ -1,0 +1,34 @@
+{
+  "title": { "en": "MSD — Internal Pharma Tooling", "sk": "MSD — interné nástroje pre farmaceutický priemysel" },
+  "description": {
+    "en": "Led frontend engineering for internal pharma tooling across MSD's European operations — React component systems on AWS in a regulated enterprise environment.",
+    "sk": "Viedol som frontend engineering pre interné farmaceutické nástroje v rámci európskych operácií MSD — React komponentné systémy na AWS v regulovanom enterprise prostredí."
+  },
+  "image": "/assets/images/projects/msd.png",
+  "date": "2026-01",
+  "featured": true,
+  "order": 2,
+  "tech": ["React", "TypeScript", "AWS"],
+  "role": {
+    "en": "Lead Frontend Engineer (Contract)",
+    "sk": "Lead Frontend Engineer (kontrakt)"
+  },
+  "duration": {
+    "en": "Jun 2023 – Jan 2026 · 2 yrs 8 mo · Remote",
+    "sk": "jún 2023 – jan 2026 · 2 roky 8 mesiacov · remote"
+  },
+  "problem": {
+    "en": "MSD — one of the world's largest pharmaceutical companies — runs complex internal tooling across its European operations. In a regulated enterprise environment, the bar is high: code quality, audit trails, cross-team coordination, and delivery reliability all have to hold under scrutiny.",
+    "sk": "MSD — jedna z najväčších farmaceutických spoločností na svete — prevádzkuje komplexné interné nástroje v rámci európskych operácií. V regulovanom enterprise prostredí je latka vysoko: kvalita kódu, audit trail, koordinácia medzi tímami a spoľahlivosť dodávky musia obstáť pri každej kontrole."
+  },
+  "solution": {
+    "en": "Led frontend engineering across multiple pharma-tooling products. Architected and maintained React-based component systems on AWS, led the frontend team through code reviews and technical direction, collaborated cross-functionally with backend and product on complex data workflows, and held the line on code quality in a regulated environment.",
+    "sk": "Viedol som frontend engineering naprieč viacerými farmaceutickými nástrojmi. Architektoval a udržiaval som React-based komponentné systémy na AWS, viedol frontend tím cez code review a technické smerovanie, spolupracoval medziodborovo s backendom a produktom na komplexných dátových tokoch a držal latku kvality kódu v regulovanom prostredí."
+  },
+  "outcomes": [
+    { "en": "2+ years delivering production frontend in a regulated enterprise", "sk": "2+ roky dodávania produkčného frontendu v regulovanom enterprise" },
+    { "en": "Architected React component systems used across EU operations", "sk": "Navrhnuté React komponentné systémy používané v EU operáciách" },
+    { "en": "Led frontend team — code reviews, technical direction, delivery", "sk": "Viedol som frontend tím — code review, technické smerovanie, delivery" },
+    { "en": "Held high code quality standards under enterprise scrutiny", "sk": "Udržiaval som vysoké štandardy kvality kódu pod enterprise kontrolou" }
+  ]
+}

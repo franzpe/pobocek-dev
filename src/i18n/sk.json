@@ -73,7 +73,10 @@
     "heading": "Moje práce",
     "intro": "Výber projektov, ktoré som dodal — od webových aplikácií a e-shopov cez intranetové nástroje po AI workflow.",
     "visitSite": "Navštíviť web",
-    "backToWork": "Späť na práce"
+    "backToWork": "Späť na práce",
+    "problem": "Problém",
+    "solution": "Čo som postavil",
+    "outcomes": "Výsledky"
   },
   "services": {
     "pageTitle": "Služby",

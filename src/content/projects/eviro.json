@@ -9,5 +9,27 @@
   "date": "2026-01",
   "featured": true,
   "order": 1,
-  "tech": ["React", "Node.js", "GraphQL", "Stripe"]
+  "tech": ["React", "Node.js", "GraphQL", "Stripe", "n8n", "LLMs"],
+  "role": {
+    "en": "Founder & Engineer",
+    "sk": "Zakladateľ a inžinier"
+  },
+  "duration": {
+    "en": "2026 – present",
+    "sk": "2026 – súčasnosť"
+  },
+  "problem": {
+    "en": "Local businesses live and die by their star rating — yet most bleed leads quietly. 94% of consumers skip a business after a single negative review, 69% of happy customers never leave a review unless asked, and 63% of reviews go unanswered entirely. That's a lot of preventable churn sitting in plain sight.",
+    "sk": "Lokálne podniky stoja a padajú na svojom hodnotení — no väčšina z nich ticho stráca zákazníkov. 94 % spotrebiteľov preskočí podnik po jednej negatívnej recenzii, 69 % spokojných zákazníkov nenapíše recenziu, pokiaľ ich o ňu nepožiadajú, a 63 % recenzií zostane bez odpovede. Odchod zákazníkov sa deje priamo pred očami."
+  },
+  "solution": {
+    "en": "Eviro automates the whole review loop. It pings customers for a review after each visit, drafts AI replies in the business's tone the moment one lands, and SMS-alerts the owner within 60 seconds of any sub-3-star review so they can recover the relationship before it hurts. Supports Google, Facebook and Yelp. Weekly digests track rating movement and response analytics.",
+    "sk": "Eviro automatizuje celý cyklus recenzií. Po každej návšteve pošle zákazníkom žiadosť o recenziu, hneď po jej zverejnení pripraví AI odpoveď v tóne podniku a do 60 sekúnd SMS upozorní majiteľa na hodnotenie pod 3 hviezdičky, aby stihol situáciu zachrániť skôr, než uškodí. Podporuje Google, Facebook a Yelp. Týždenné reporty sledujú vývoj hodnotenia a efektivitu odpovedí."
+  },
+  "outcomes": [
+    { "en": "Typical businesses jump from 2 reviews/month to 15+", "sk": "Bežný podnik prejde z 2 recenzií mesačne na 15+" },
+    { "en": "Negative review alert within 60 seconds", "sk": "Upozornenie na negatívnu recenziu do 60 sekúnd" },
+    { "en": "Replying to 10 reviews takes 3 minutes instead of 30", "sk": "Odpovedať na 10 recenzií trvá 3 minúty namiesto 30" },
+    { "en": "Setup in 5 minutes, no technical skills needed", "sk": "Nastavenie za 5 minút, žiadne technické znalosti" }
+  ]
 }

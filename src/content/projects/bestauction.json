@@ -8,6 +8,28 @@
   "url": "https://www.bestauction.com",
   "date": "2023-09",
   "featured": true,
-  "order": 2,
-  "tech": ["React", "TypeScript", "Node.js", "GraphQL"]
+  "order": 4,
+  "tech": ["React", "TypeScript", "HTML5", "Node.js", "GraphQL"],
+  "role": {
+    "en": "Frontend Engineer (Contract)",
+    "sk": "Frontend Engineer (kontrakt)"
+  },
+  "duration": {
+    "en": "May 2018 – May 2023 · 5 yrs 1 mo",
+    "sk": "máj 2018 – máj 2023 · 5 rokov 1 mesiac"
+  },
+  "problem": {
+    "en": "Public and private procurement is slow, opaque, and costly. Buyers struggle to run transparent auctions at scale, suppliers struggle to compete fairly, and most incumbent procurement tools are clunky desktop software that nobody wants to use twice.",
+    "sk": "Verejné a súkromné obstarávanie je pomalé, nepriehľadné a drahé. Obstarávatelia ťažko organizujú transparentné aukcie vo veľkom, dodávatelia ťažko férovo súťažia, a väčšina existujúcich nástrojov je ťažkopádny desktopový softvér, ktorý nikto nechce používať druhýkrát."
+  },
+  "solution": {
+    "en": "A modern web-based eProcurement platform running both public and private eAuctions end to end. I built the frontend architecture from scratch, developed the UI components and business-critical modules, owned unit and integration testing, and integrated with third-party APIs on both the buyer and supplier sides. Sealed bids, real-time updates, multi-role workflows.",
+    "sk": "Moderná webová eProcurement platforma, ktorá spracúva verejné aj súkromné eAukcie od začiatku do konca. Frontend architektúru som postavil od nuly, vyvinul UI komponenty a kritické business moduly, vlastnil unit a integračné testy a integroval sa s API tretích strán na strane obstarávateľa aj dodávateľa. Zapečatené ponuky, real-time updaty, viacrolové workflow."
+  },
+  "outcomes": [
+    { "en": "32% average reduction in procurement costs for buyers", "sk": "32 % priemerné zníženie nákladov na obstarávanie" },
+    { "en": "5-year engagement — built from zero to production", "sk": "5-ročná spolupráca — od nuly do produkcie" },
+    { "en": "Full frontend architecture designed and owned", "sk": "Celá frontend architektúra navrhnutá a vlastnená mnou" },
+    { "en": "Sealed bids, real-time updates, multi-role workflows shipped", "sk": "Zapečatené ponuky, real-time updaty a viacrolové workflow v produkcii" }
+  ]
 }
