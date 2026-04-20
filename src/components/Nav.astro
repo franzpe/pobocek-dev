@@ -32,6 +32,7 @@ const iconSuffix = isDark ? '' : '-dv';
 
 const home = localizePath('/', lang);
 const services = localizePath('/services', lang);
+const partner = localizePath('/partner', lang);
 const work = localizePath('/work', lang);
 const about = localizePath('/about', lang);
 const contactAnchor = `${home}#contact`;
@@ -73,12 +74,13 @@ const contactAnchor = `${home}#contact`;
     </button>
 
     <ul class={`hidden lg:flex flex-wrap items-center font-bold z-10 ${textColor}`}>
-      <li class="px-3">
+      <li class="px-1">
         <a class="px-6 py-6 hover:text-violet" href={contactAnchor}>{t('nav.getInTouch')}</a>
       </li>
-      <li class="px-3"><a class="px-6 py-6 hover:text-violet" href={services}>{t('nav.services')}</a></li>
-      <li class="px-3"><a class="px-6 py-6 hover:text-violet" href={work}>{t('nav.work')}</a></li>
-      <li class="px-3"><a class="px-6 py-6 hover:text-violet" href={about}>{t('nav.about')}</a></li>
+      <li class="px-1"><a class="px-6 py-6 hover:text-violet" href={services}>{t('nav.services')}</a></li>
+      <li class="px-1"><a class="px-6 py-6 hover:text-violet" href={partner}>{t('nav.partner')}</a></li>
+      <li class="px-1"><a class="px-6 py-6 hover:text-violet" href={work}>{t('nav.work')}</a></li>
+      <li class="px-1"><a class="px-6 py-6 hover:text-violet" href={about}>{t('nav.about')}</a></li>
       <li>
         <ul class="ml-3 flex items-center gap-3">
           <li>
@@ -122,6 +124,11 @@ const contactAnchor = `${home}#contact`;
       <li>
         <a class={`block px-8 py-5 hover:text-violet border-b ${borderColor}`} href={services}
           >{t('nav.services')}</a
+        >
+      </li>
+      <li>
+        <a class={`block px-8 py-5 hover:text-violet border-b ${borderColor}`} href={partner}
+          >{t('nav.partner')}</a
         >
       </li>
       <li>

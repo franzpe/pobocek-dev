@@ -5,7 +5,6 @@
     "sk": "Pre spoločnosť NordERP sme vytvorili webovú aplikáciu, ktorá funguje v rámci intranetovej siete. Slúži na schvaľovanie rôznych typov dokumentov a dáta čerpá z rozsiahleho ERP systému. V aplikácii je možné vyhľadávať položky, schvaľovať/zamietať aj pridávať nákupné požiadavky alebo došlé faktúry — všetko prehľadne na jednom mieste."
   },
   "image": "/assets/images/projects/approval-app.png",
-  "url": "https://www.norderp.com",
   "date": "2021-06",
   "featured": true,
   "order": 6,

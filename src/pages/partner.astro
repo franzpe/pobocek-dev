@@ -1,0 +1,13 @@
+---
+import Base from '~/layouts/Base.astro';
+import PartnerPage from '~/components/PartnerPage.astro';
+import { useT } from '~/i18n/utils';
+
+const lang = 'en';
+const t = useT(lang);
+const path = '/partner';
+---
+
+<Base title={t('seo.partner.title')} description={t('seo.partner.description')} lang={lang} path={path}>
+  <PartnerPage lang={lang} />
+</Base>

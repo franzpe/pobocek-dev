@@ -1,9 +1,10 @@
 {
   "nav": {
-    "getInTouch": "Get in Touch",
+    "getInTouch": "Contact",
     "services": "Services",
+    "partner": "Partner",
     "work": "Work",
-    "about": "About me",
+    "about": "About",
     "logoAlt": "pobocek.dev logo"
   },
   "hero": {
@@ -137,6 +138,68 @@
       "cta": "Get in touch"
     }
   },
+  "partner": {
+    "pageTitle": "Partner",
+    "eyebrow": "Founder track",
+    "heading": "For founders and technical leaders building AI products and SaaS",
+    "intro": "I partner with founders and technical leaders building AI-powered products and SaaS — sometimes as a technical co-founder, sometimes as a fractional CTO. Here's what that looks like.",
+    "homeCallout": {
+      "eyebrow": "Founder track",
+      "heading": "Building an AI product or SaaS? Let's partner up.",
+      "body": "For founders and technical leaders — I also take on co-founder and fractional CTO engagements.",
+      "cta": "See how it works"
+    },
+    "commitmentLabel": "Commitment",
+    "compensationLabel": "Compensation",
+    "bestForLabel": "Best for",
+    "includes": "What you get",
+    "tier1": {
+      "name": "Technical Co-founder",
+      "commitment": "20–25 hrs / week · 6–12 months",
+      "compensation": "Hybrid cash + meaningful equity",
+      "description": "Hands-on building with you from MVP to production. I own the technical side end-to-end — architecture, stack decisions, core engineering, hiring your first devs, shipping the product.",
+      "bestFor": "Non-technical founders with validated demand and a real product vision, who need a technical counterpart to actually build it.",
+      "b1": "End-to-end ownership of the tech",
+      "b2": "Architecture, stack, and hiring decisions",
+      "b3": "Core engineering — I write the code that matters",
+      "b4": "Long-term alignment via equity"
+    },
+    "tier2": {
+      "name": "Fractional CTO",
+      "commitment": "5–10 hrs / week",
+      "compensation": "Cash-heavy + advisor equity",
+      "description": "I plug into your existing team as the senior technical voice — code reviews, architecture decisions, hiring support, unblocking tough problems, keeping quality high as you scale.",
+      "bestFor": "Founders with a small in-house dev team who need senior technical judgement on tap, not a full-time hire.",
+      "b1": "Weekly technical direction and architecture input",
+      "b2": "Code reviews for critical changes",
+      "b3": "Hiring support — interviews and calibration",
+      "b4": "On-call senior judgement when things get hard"
+    },
+    "looksFor": {
+      "heading": "What I look for",
+      "b1": "Full-time committed founders (or founding team) — not side projects",
+      "b2": "Evidence of market demand — revenue, signed LOIs, a real waitlist",
+      "b3": "AI-first or Next.js-friendly stack",
+      "b4": "EU-based or EU-timezone-friendly"
+    },
+    "looksAway": {
+      "heading": "What I don't do",
+      "b1": "Idea-stage only, with no evidence of demand",
+      "b2": "Equity-only full-time builds",
+      "b3": "Pure crypto / Web3 plays"
+    },
+    "proof": {
+      "heading": "Why me",
+      "intro": "I've shipped my own SaaS (Eviro), led frontend at enterprise scale (MSD, DXC on Slovakia's national e-government platform), and spent a decade taking products from zero to production across fintech, real estate, B2B, and local services. I know what founding looks like from inside and outside.",
+      "cta": "See the work"
+    },
+    "cta": {
+      "heading": "Let's talk",
+      "body": "If what you're building fits the above, send me a short note — company, traction so far, where you see me fitting in. Happy to jump on a call.",
+      "primary": "Book a 30-min call",
+      "secondary": "Send a note"
+    }
+  },
   "about": {
     "pageTitle": "About",
     "highlights": {
@@ -148,16 +211,7 @@
       "stat2Value": "18+",
       "stat2Label": "projects shipped",
       "stat3Value": "Eviro",
-      "stat3Label": "my live AI SaaS",
-      "stat4Value": "EU",
-      "stat4Label": "EU clients",
-      "pick1Title": "Best Auction",
-      "pick1Body": "Frontend for a sophisticated electronic procurement platform — sealed bids, real-time updates, multi-role workflows.",
-      "pick2Title": "Eviro",
-      "pick2Body": "My own SaaS. Reviews on autopilot, AI reply drafts, instant alerts on negative feedback — for local businesses that live by their star rating.",
-      "pick3Title": "NordERP Approval",
-      "pick3Body": "Intranet web app on top of a rich ERP — invoice and purchase-request approvals, role-aware workflows, audit trail.",
-      "cta": "See all work"
+      "stat3Label": "my live AI SaaS"
     },
     "journeyEyebrow": "My journey",
     "hero": {
@@ -198,13 +252,6 @@
       "body2": "After CRIF I moved into freelance — taking on full-stack projects for clients across Slovakia and beyond, building web apps, intranets, and e-commerce platforms under the Applance Solutions brand, later rebranded to pobocek.dev. In 2023 I also completed a Solidity bootcamp and shipped a handful of smart-contract projects; today I apply that same engineering rigour to AI workflows and production web apps.",
       "more": "Read more"
     },
-    "blockchain": {
-      "heading": "Blockchain",
-      "body": "I completed a Solidity bootcamp in early 2023 and went deep on smart contract development — writing, testing, and auditing contracts for EVM-compatible chains.",
-      "body2": "Since then I've integrated dApps into web frontends, worked with Web3.js and ethers.js, and consulted on token contract architecture.",
-      "body3": "Web3 is now a native part of the pobocek.dev offering alongside the full-stack web work.",
-      "more": "Read more"
-    },
     "today": {
       "heading": "Today",
       "subheading": "Independent software consultancy",
@@ -241,6 +288,10 @@
     "services": {
       "title": "Services | Frantisek Pobocek — AI Automation & Custom Web Apps",
       "description": "Three ways to work together: AI Automation Roadmap (€2,500), AI Implementation (from €6,000), and AI Operations Retainer (from €1,500/month)."
+    },
+    "partner": {
+      "title": "Partner | Frantisek Pobocek — Technical Co-founder & Fractional CTO",
+      "description": "I partner with founders and technical leaders building AI-powered products and SaaS — as a technical co-founder or fractional CTO."
     },
     "about": {
       "title": "About | Frantisek Pobocek — AI Automation & Custom Web Apps",

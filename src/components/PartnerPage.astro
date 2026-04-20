@@ -1,0 +1,124 @@
+---
+import type { Locale } from '~/i18n/utils';
+import { useT, localizePath } from '~/i18n/utils';
+import Contact from './Contact.astro';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const t = useT(lang);
+
+const workHref = localizePath('/work', lang);
+const contactAnchor = `${localizePath('/', lang)}#contact`;
+const calUrl = 'https://www.cal.eu/frantisek-pobocek';
+
+const tiers = ['partner.tier1', 'partner.tier2'];
+---
+
+<!-- Page intro -->
+<div class="bg-dark-violet border-b border-violet">
+  <div class="container mx-auto sm:border-x border-violet px-5 md:px-16 pt-4 pb-10 md:py-20">
+    <span class="inline-block text-xs font-bold uppercase tracking-widest text-lime mb-4">{t('partner.eyebrow')}</span>
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight text-violet max-w-4xl text-center md:text-left">{t('partner.heading')}</h1>
+    <p class="mt-6 md:text-xl max-w-3xl text-white text-center md:text-left">{t('partner.intro')}</p>
+  </div>
+</div>
+
+<!-- Tier cards -->
+<div class="bg-dark-violet border-b border-violet">
+  <div class="container mx-auto sm:border-x border-violet px-5 md:px-16 py-10 md:py-20">
+    <div class="grid gap-6 md:gap-8 lg:grid-cols-2">
+      {tiers.map((tier) => (
+        <article class="flex flex-col rounded-xl border border-violet bg-dark-violet p-6 md:p-8">
+          <h2 class="text-2xl md:text-3xl font-bold text-violet">{t(`${tier}.name`)}</h2>
+
+          <div class="mt-4 space-y-3">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-lime">{t('partner.commitmentLabel')}</p>
+              <p class="mt-1 text-sm md:text-base text-white">{t(`${tier}.commitment`)}</p>
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-lime">{t('partner.compensationLabel')}</p>
+              <p class="mt-1 text-sm md:text-base text-white">{t(`${tier}.compensation`)}</p>
+            </div>
+          </div>
+
+          <p class="mt-6 text-sm md:text-base text-white/80 leading-relaxed">{t(`${tier}.description`)}</p>
+
+          <div class="mt-6 pt-6 border-t border-violet/30">
+            <p class="text-xs font-bold uppercase tracking-widest text-violet/70 mb-2">{t('partner.bestForLabel')}</p>
+            <p class="text-sm text-white">{t(`${tier}.bestFor`)}</p>
+          </div>
+
+          <div class="mt-6">
+            <p class="text-xs font-bold uppercase tracking-widest text-violet/70 mb-3">{t('partner.includes')}</p>
+            <ul class="space-y-2">
+              <li class="flex gap-2 text-sm text-white"><span class="text-lime">→</span><span>{t(`${tier}.b1`)}</span></li>
+              <li class="flex gap-2 text-sm text-white"><span class="text-lime">→</span><span>{t(`${tier}.b2`)}</span></li>
+              <li class="flex gap-2 text-sm text-white"><span class="text-lime">→</span><span>{t(`${tier}.b3`)}</span></li>
+              <li class="flex gap-2 text-sm text-white"><span class="text-lime">→</span><span>{t(`${tier}.b4`)}</span></li>
+            </ul>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</div>
+
+<!-- What I look for + What I don't do -->
+<div class="bg-dark-violet border-b border-violet">
+  <div class="container mx-auto sm:border-x border-violet px-5 md:px-16 py-10 md:py-20">
+    <div class="grid gap-10 md:gap-14 lg:grid-cols-2 max-w-6xl">
+      <section>
+        <h2 class="text-2xl md:text-4xl font-bold text-violet mb-6">{t('partner.looksFor.heading')}</h2>
+        <ul class="space-y-3">
+          <li class="flex gap-3 text-white md:text-lg"><span class="text-lime font-bold flex-shrink-0">→</span><span>{t('partner.looksFor.b1')}</span></li>
+          <li class="flex gap-3 text-white md:text-lg"><span class="text-lime font-bold flex-shrink-0">→</span><span>{t('partner.looksFor.b2')}</span></li>
+          <li class="flex gap-3 text-white md:text-lg"><span class="text-lime font-bold flex-shrink-0">→</span><span>{t('partner.looksFor.b3')}</span></li>
+          <li class="flex gap-3 text-white md:text-lg"><span class="text-lime font-bold flex-shrink-0">→</span><span>{t('partner.looksFor.b4')}</span></li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="text-2xl md:text-4xl font-bold text-violet mb-6">{t('partner.looksAway.heading')}</h2>
+        <ul class="space-y-3">
+          <li class="flex gap-3 text-white md:text-lg"><span class="text-violet/60 font-bold flex-shrink-0">×</span><span>{t('partner.looksAway.b1')}</span></li>
+          <li class="flex gap-3 text-white md:text-lg"><span class="text-violet/60 font-bold flex-shrink-0">×</span><span>{t('partner.looksAway.b2')}</span></li>
+          <li class="flex gap-3 text-white md:text-lg"><span class="text-violet/60 font-bold flex-shrink-0">×</span><span>{t('partner.looksAway.b3')}</span></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- Why me / proof -->
+<div class="bg-lime border-b border-dark-violet">
+  <div class="container mx-auto sm:border-x border-dark-violet px-5 md:px-16 py-10 md:py-20">
+    <h2 class="text-3xl md:text-5xl font-bold text-dark-violet max-w-3xl">{t('partner.proof.heading')}</h2>
+    <p class="mt-6 max-w-3xl text-dark-violet md:text-lg leading-relaxed">{t('partner.proof.intro')}</p>
+    <div class="mt-8">
+      <a href={workHref} class="inline-flex items-center justify-center px-10 py-3 font-bold text-lime bg-dark-violet rounded-full hover:bg-violet hover:text-dark-violet transition-colors">
+        <span>{t('partner.proof.cta')} →</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Final CTA -->
+<div class="bg-dark-violet border-b border-violet">
+  <div class="container mx-auto sm:border-x border-violet px-5 md:px-16 py-10 md:py-20">
+    <h2 class="text-3xl md:text-5xl font-bold text-violet max-w-3xl">{t('partner.cta.heading')}</h2>
+    <p class="mt-6 max-w-3xl text-white md:text-lg leading-relaxed">{t('partner.cta.body')}</p>
+    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+      <a href={calUrl} target="_blank" rel="noopener" class="inline-flex items-center justify-center px-10 py-3 font-bold text-dark-violet bg-violet rounded-full hover:bg-lime transition-colors">
+        <span>{t('partner.cta.primary')} →</span>
+      </a>
+      <a href={contactAnchor} class="inline-flex items-center justify-center px-10 py-3 font-bold text-violet border border-violet rounded-full hover:border-lime hover:text-lime transition-colors">
+        <span>{t('partner.cta.secondary')}</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<Contact lang={lang} variant="light" />

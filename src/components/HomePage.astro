@@ -20,6 +20,7 @@ const featured = allProjects
   .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 
 const servicesHref = localizePath('/services', lang);
+const partnerHref = localizePath('/partner', lang);
 ---
 
 <Hero lang={lang} />
@@ -60,7 +61,24 @@ const servicesHref = localizePath('/services', lang);
   </div>
 </div>
 
-<!-- Services teaser (after Highlights, before Projects) -->
+<!-- Partner callout — founder track (between Highlights and Services) -->
+<div class="bg-lime border-t border-dark-violet">
+  <div class="container mx-auto sm:border-x border-dark-violet px-5 md:px-16 py-10 md:py-20">
+    <div class="max-w-3xl">
+      <span class="inline-block text-xs font-bold uppercase tracking-widest text-dark-violet mb-4">{t('partner.homeCallout.eyebrow')}</span>
+      <h2 class="text-3xl md:text-5xl font-bold leading-tight text-dark-violet">{t('partner.homeCallout.heading')}</h2>
+      <p class="mt-6 text-dark-violet md:text-lg">{t('partner.homeCallout.body')}</p>
+      <div class="mt-8">
+        <a href={partnerHref} class="relative inline-flex items-center justify-center px-10 py-3 overflow-hidden font-bold text-lime bg-dark-violet rounded-full group">
+          <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-violet rounded-full group-hover:w-[500px] group-hover:h-[500px]"></span>
+          <span class="relative">{t('partner.homeCallout.cta')} →</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Services teaser (after Partner callout, before Projects) -->
 <div class="bg-dark-violet border-t border-violet">
   <div class="container mx-auto sm:border-x border-violet px-5 md:px-16 py-10 md:py-20">
     <div class="max-w-3xl">

@@ -2,6 +2,7 @@
   "nav": {
     "getInTouch": "Kontakt",
     "services": "Služby",
+    "partner": "Partnerstvo",
     "work": "Práce",
     "about": "O mne",
     "logoAlt": "pobocek.dev logo"
@@ -137,6 +138,68 @@
       "cta": "Všetky služby"
     }
   },
+  "partner": {
+    "pageTitle": "Partnerstvo",
+    "eyebrow": "Founder track",
+    "heading": "Pre zakladateľov a technických lídrov, ktorí stavajú AI produkty a SaaS",
+    "intro": "Partnerujem si so zakladateľmi a technickými lídrami, ktorí stavajú AI-poháňané produkty a SaaS — niekedy ako technický co-founder, niekedy ako fractional CTO. Takto to môže vyzerať.",
+    "homeCallout": {
+      "eyebrow": "Founder track",
+      "heading": "Staviate AI produkt alebo SaaS? Partnerujme si.",
+      "body": "Pre zakladateľov a technických lídrov — beriem aj co-founder a fractional CTO spolupráce.",
+      "cta": "Pozrieť ako to funguje"
+    },
+    "commitmentLabel": "Časový záväzok",
+    "compensationLabel": "Kompenzácia",
+    "bestForLabel": "Vhodné pre",
+    "includes": "Čo dostanete",
+    "tier1": {
+      "name": "Technický co-founder",
+      "commitment": "20–25 hod / týždeň · 6–12 mesiacov",
+      "compensation": "Hybridne cash + zmysluplný equity",
+      "description": "Stavíme to spolu od MVP po produkciu. Vlastním technickú stranu end-to-end — architektúra, stack rozhodnutia, core inžinierstvo, najímanie prvých developerov, dodanie produktu.",
+      "bestFor": "Netechnickí zakladatelia s overeným dopytom a reálnou víziou produktu, ktorí potrebujú technického partnera, aby to skutočne postavil.",
+      "b1": "End-to-end vlastníctvo technickej stránky",
+      "b2": "Rozhodnutia o architektúre, stacku a najímaní",
+      "b3": "Core inžinierstvo — píšem kód, ktorý rozhoduje",
+      "b4": "Dlhodobá zosúladenosť cez equity"
+    },
+    "tier2": {
+      "name": "Fractional CTO",
+      "commitment": "5–10 hod / týždeň",
+      "compensation": "Cash-heavy + advisor equity",
+      "description": "Pripojím sa k vášmu existujúcemu tímu ako senior technický hlas — code review, architektúra, podpora pri najímaní, odblokovanie ťažkých problémov, udržiavanie kvality pri škálovaní.",
+      "bestFor": "Zakladatelia s malým interným dev tímom, ktorí potrebujú senior technické rozhodovanie na zavolanie, nie full-time hire.",
+      "b1": "Týždenné technické smerovanie a architektúra",
+      "b2": "Code review na kritické zmeny",
+      "b3": "Podpora pri najímaní — pohovory a kalibrácia",
+      "b4": "On-call senior rozhodovanie, keď sa veci skomplikujú"
+    },
+    "looksFor": {
+      "heading": "Čo hľadám",
+      "b1": "Full-time zaviazaní zakladatelia (alebo founding team) — nie side projekty",
+      "b2": "Dôkaz dopytu — revenue, podpísané LOI, reálny waitlist",
+      "b3": "AI-first alebo Next.js-friendly stack",
+      "b4": "EU-based alebo v EU časovej zóne"
+    },
+    "looksAway": {
+      "heading": "Čo nerobím",
+      "b1": "Čisto idea stage, bez dôkazu dopytu",
+      "b2": "Čisto equity full-time buildy",
+      "b3": "Čisto crypto / Web3 projekty"
+    },
+    "proof": {
+      "heading": "Prečo ja",
+      "intro": "Dodal som vlastný SaaS (Eviro), viedol frontend na enterprise úrovni (MSD, DXC na národnej e-government platforme Slovenska) a strávil desaťročie dávaním produktov z nuly do produkcie naprieč fintechom, realitami, B2B a lokálnymi službami. Viem, ako vyzerá zakladateľstvo zvnútra aj zvonka.",
+      "cta": "Pozri si práce"
+    },
+    "cta": {
+      "heading": "Povedzme si viac",
+      "body": "Ak to, čo stavaš, sedí s vyššie uvedeným, napíš mi krátku správu — firma, kde ste s traction, ako si vidíš moje zapojenie. Rád si skočím na hovor.",
+      "primary": "Rezervovať 30-min hovor",
+      "secondary": "Napíš správu"
+    }
+  },
   "about": {
     "pageTitle": "O mne",
     "highlights": {
@@ -148,16 +211,7 @@
       "stat2Value": "18+",
       "stat2Label": "dodaných projektov",
       "stat3Value": "Eviro",
-      "stat3Label": "môj živý AI SaaS",
-      "stat4Value": "EÚ",
-      "stat4Label": "EÚ klienti",
-      "pick1Title": "Best Auction",
-      "pick1Body": "Frontend pre sofistikovanú elektronickú aukčnú platformu — zapečatené ponuky, real-time updaty, viacrolové workflow.",
-      "pick2Title": "Eviro",
-      "pick2Body": "Môj vlastný SaaS. Recenzie na autopilote, AI návrhy odpovedí, okamžité upozornenia na negatívnu spätnú väzbu — pre lokálne podniky, ktoré žijú z hodnotenia.",
-      "pick3Title": "NordERP Schvaľovanie",
-      "pick3Body": "Intranetová webová aplikácia nad rozsiahlym ERP — schvaľovanie faktúr a nákupných požiadaviek, procesy podľa rolí, audit log.",
-      "cta": "Zobraziť všetky práce"
+      "stat3Label": "môj živý AI SaaS"
     },
     "journeyEyebrow": "Moja cesta",
     "hero": {
@@ -198,13 +252,6 @@
       "body2": "Po CRIF som prešiel na freelance — full-stack projekty pre klientov na Slovensku a v zahraničí, webové aplikácie, intranety a e-shopy pod značkou Applance Solutions, neskôr premenovanou na pobocek.dev. V roku 2023 som navyše absolvoval Solidity bootcamp a dodal niekoľko smart-contract projektov; dnes tú istú inžiniersku dôkladnosť aplikujem na AI workflow a produkčné webové aplikácie.",
       "more": "Čítať viac"
     },
-    "blockchain": {
-      "heading": "Blockchain",
-      "body": "Začiatkom roka 2023 som absolvoval Solidity bootcamp a ponoril sa do vývoja smart contractov — písanie, testovanie a auditovanie contractov pre EVM-kompatibilné chainy.",
-      "body2": "Od vtedy integrujem dApps do webových frontendov, pracujem s Web3.js a ethers.js a konzultujem architektúru token contractov.",
-      "body3": "Web3 je dnes prirodzenou súčasťou ponuky pobocek.dev popri full-stack webovom vývoji.",
-      "more": "Čítať viac"
-    },
     "today": {
       "heading": "Dnes",
       "subheading": "Nezávislé softvérové konzultácie",
@@ -241,6 +288,10 @@
     "services": {
       "title": "Služby | František Poboček — AI automatizácia a webové aplikácie",
       "description": "Tri spôsoby spolupráce: AI Automation Roadmap (€2 500), AI Implementácia (od €6 000) a AI Operations Retainer (od €1 500/mesiac)."
+    },
+    "partner": {
+      "title": "Partnerstvo | František Poboček — technický co-founder a fractional CTO",
+      "description": "Partnerujem si so zakladateľmi a technickými lídrami, ktorí stavajú AI produkty a SaaS — ako technický co-founder alebo fractional CTO."
     },
     "about": {
       "title": "O mne | František Poboček — AI automatizácia a webové aplikácie",
