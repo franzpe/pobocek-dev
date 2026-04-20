@@ -1,6 +1,7 @@
 {
   "nav": {
     "getInTouch": "Kontakt",
+    "services": "Služby",
     "work": "Práce",
     "about": "O mne",
     "logoAlt": "pobocek.dev logo"
@@ -74,11 +75,70 @@
     "visitSite": "Navštíviť web",
     "backToWork": "Späť na práce"
   },
+  "services": {
+    "pageTitle": "Služby",
+    "eyebrow": "Služby",
+    "heading": "Tri spôsoby spolupráce",
+    "intro": "Od zmapovania prvej AI automatizácie až po jej prevádzku v produkcii — vyberte si formu spolupráce podľa toho, kde práve ste.",
+    "tier1": {
+      "name": "AI Automation Roadmap",
+      "price": "€2 500",
+      "duration": "2 týždne",
+      "tagline": "Nájdem 3–5 automatizácií s najväčším návratom.",
+      "description": "Hĺbkový audit vašich súčasných pracovných procesov. Odchádzate s písomnou správou identifikujúcou 3–5 automatizácií s najvyššou návratnosťou, zoradených podľa ceny, času dodania a očakávaného benefitu.",
+      "bestFor": "Tímy, ktoré skúmajú AI a ešte nevedia, kde začať.",
+      "b1": "90-min úvodný hovor",
+      "b2": "Praktický audit 2–3 procesov",
+      "b3": "Písomná správa: zoradené automatizácie s odhadom ceny, času a návratnosti",
+      "b4": "30-min prehliadka a Q&A",
+      "cta": "Rezervovať roadmap"
+    },
+    "tier2": {
+      "name": "AI Implementácia",
+      "price": "od €6 000",
+      "duration": "4–6 týždňov",
+      "tagline": "Dodáme jednu AI automatizáciu, fixný rozsah a cena.",
+      "description": "Build s pevným rozsahom — AI asistent, RAG nad vašimi dokumentmi, CRM/ops automatizácia alebo interný nástroj. Dodané s dokumentáciou a pripravené na integráciu do vášho stacku.",
+      "bestFor": "Tímy s jasným use case, pripravené dodať.",
+      "b1": "Kick-off a uzavretie scope",
+      "b2": "Build s týždennými demami",
+      "b3": "Integrácia do existujúceho stacku",
+      "b4": "Plná dokumentácia a odovzdanie",
+      "cta": "Naplánovať build"
+    },
+    "tier3": {
+      "name": "AI Operations Retainer",
+      "price": "od €1 500/mesiac",
+      "duration": "minimálne 3 mesiace",
+      "tagline": "Udržujem a rozvíjam vašu AI mesiac za mesiacom.",
+      "description": "Keď je AI v prevádzke, treba ju udržiavať. Mesačný monitoring, ladenie promptov a nové workflow podľa toho, ako rastie využitie vo vašom tíme.",
+      "bestFor": "Tímy s AI v produkcii, ktoré chcú technického partnera na dosah.",
+      "b1": "Mesačný performance review",
+      "b2": "Ladenie promptov a observability",
+      "b3": "Nové workflow podľa potreby",
+      "b4": "Prioritné odpovede na otázky a opravy",
+      "cta": "Začať retainer"
+    },
+    "duration": "Trvanie",
+    "bestFor": "Vhodné pre",
+    "includes": "Čo je súčasťou",
+    "fallback": {
+      "heading": "Mimo týchto balíkov?",
+      "body": "Máte zadanie, ktoré sa nehodí do žiadneho z balíkov — väčší build, kratší sprint, alebo niečo, čo som nevymenoval? Napíšte mi obrysy problému a spolu nájdeme vhodnú formu spolupráce.",
+      "cta": "Kontaktujte ma"
+    },
+    "teaser": {
+      "eyebrow": "Služby",
+      "heading": "Tri spôsoby spolupráce",
+      "intro": "Od zmapovania prvej AI automatizácie až po jej prevádzku v produkcii.",
+      "cta": "Všetky služby"
+    }
+  },
   "about": {
     "pageTitle": "O mne",
     "highlights": {
       "eyebrow": "Desaťročie dodávania",
-      "heading": "Skutočné produkty. Skutočné firmy. Skutočné výsledky.",
+      "heading": "Developer. Tvorca. Zakladateľ.",
       "intro": "Viac ako 18 webových aplikácií, e-shopov, intranetových aplikácií a jeden vlastný SaaS — vo fintechu, realitách, B2B aj lokálnych službách. Postavené, aby fungovali, nie len aby dobre vyzerali.",
       "stat1Value": "10+",
       "stat1Label": "rokov produkčného kódu",
@@ -174,6 +234,10 @@
     "work": {
       "title": "Práce | František Poboček — AI automatizácia a webové aplikácie",
       "description": "18+ dodaných projektov vo fintechu, realitách, B2B a lokálnych službách. Webové aplikácie, e-shopy, intranety a AI workflow."
+    },
+    "services": {
+      "title": "Služby | František Poboček — AI automatizácia a webové aplikácie",
+      "description": "Tri spôsoby spolupráce: AI Automation Roadmap (€2 500), AI Implementácia (od €6 000) a AI Operations Retainer (od €1 500/mesiac)."
     },
     "about": {
       "title": "O mne | František Poboček — AI automatizácia a webové aplikácie",

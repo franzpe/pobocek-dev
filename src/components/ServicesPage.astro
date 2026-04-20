@@ -1,0 +1,91 @@
+---
+import type { Locale } from '~/i18n/utils';
+import { useT, localizePath } from '~/i18n/utils';
+import Contact from './Contact.astro';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const t = useT(lang);
+
+const contactAnchor = `${localizePath('/', lang)}#contact`;
+const calUrl = 'https://www.cal.eu/frantisek-pobocek';
+
+const tiers = [
+  { id: 'tier1', key: 'services.tier1', ctaHref: calUrl, external: true },
+  { id: 'tier2', key: 'services.tier2', ctaHref: calUrl, external: true },
+  { id: 'tier3', key: 'services.tier3', ctaHref: calUrl, external: true },
+];
+---
+
+<!-- Page intro -->
+<div class="bg-dark-violet border-b border-violet">
+  <div class="container mx-auto sm:border-x border-violet px-5 md:px-16 pt-4 pb-10 md:py-20">
+    <span class="inline-block text-xs font-bold uppercase tracking-widest text-lime mb-4">{t('services.eyebrow')}</span>
+    <h1 class="text-4xl md:text-6xl font-bold text-violet text-center md:text-left">{t('services.heading')}</h1>
+    <p class="mt-6 md:text-xl max-w-3xl text-white text-center md:text-left">{t('services.intro')}</p>
+  </div>
+</div>
+
+<!-- Tiers grid -->
+<div class="bg-dark-violet border-b border-violet">
+  <div class="container mx-auto sm:border-x border-violet px-5 md:px-16 py-10 md:py-20">
+    <div class="grid gap-6 md:gap-8 lg:grid-cols-3">
+      {tiers.map((tier) => (
+        <article id={tier.id} class="flex flex-col rounded-xl border border-violet bg-dark-violet p-6 md:p-8">
+          <span class="text-xs font-bold uppercase tracking-widest text-lime">{t(`${tier.key}.duration`)}</span>
+          <h2 class="mt-3 text-2xl md:text-3xl font-bold text-violet">{t(`${tier.key}.name`)}</h2>
+          <p class="mt-4 text-3xl md:text-4xl font-bold text-lime">{t(`${tier.key}.price`)}</p>
+          <p class="mt-4 text-sm md:text-base text-white/80 leading-relaxed">{t(`${tier.key}.description`)}</p>
+
+          <div class="mt-6 pt-6 border-t border-violet/30">
+            <p class="text-xs font-bold uppercase tracking-widest text-violet/70 mb-2">{t('services.bestFor')}</p>
+            <p class="text-sm text-white">{t(`${tier.key}.bestFor`)}</p>
+          </div>
+
+          <div class="mt-6">
+            <p class="text-xs font-bold uppercase tracking-widest text-violet/70 mb-3">{t('services.includes')}</p>
+            <ul class="space-y-2">
+              <li class="flex gap-2 text-sm text-white"><span class="text-lime">→</span><span>{t(`${tier.key}.b1`)}</span></li>
+              <li class="flex gap-2 text-sm text-white"><span class="text-lime">→</span><span>{t(`${tier.key}.b2`)}</span></li>
+              <li class="flex gap-2 text-sm text-white"><span class="text-lime">→</span><span>{t(`${tier.key}.b3`)}</span></li>
+              <li class="flex gap-2 text-sm text-white"><span class="text-lime">→</span><span>{t(`${tier.key}.b4`)}</span></li>
+            </ul>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-violet/30">
+            <a
+              href={tier.ctaHref}
+              target={tier.external ? '_blank' : undefined}
+              rel={tier.external ? 'noopener' : undefined}
+              class="relative inline-flex items-center justify-center w-full px-8 py-3 overflow-hidden font-bold text-dark-violet bg-violet rounded-full group hover:bg-lime transition-colors"
+            >
+              <span class="relative">{t(`${tier.key}.cta`)} →</span>
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</div>
+
+<!-- Fallback / custom scope -->
+<div class="bg-lime border-b border-dark-violet">
+  <div class="container mx-auto sm:border-x border-dark-violet px-5 md:px-16 py-10 md:py-20 text-center md:text-left">
+    <h2 class="text-3xl md:text-5xl font-bold text-dark-violet max-w-3xl">{t('services.fallback.heading')}</h2>
+    <p class="mt-6 max-w-3xl text-dark-violet md:text-lg">{t('services.fallback.body')}</p>
+    <div class="mt-8">
+      <a
+        href={contactAnchor}
+        class="relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold text-lime bg-dark-violet rounded-full group"
+      >
+        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-violet rounded-full group-hover:w-[500px] group-hover:h-[500px]"></span>
+        <span class="relative">{t('services.fallback.cta')} →</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<Contact lang={lang} variant="light" />

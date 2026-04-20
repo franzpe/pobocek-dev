@@ -1,0 +1,13 @@
+---
+import Base from '~/layouts/Base.astro';
+import ServicesPage from '~/components/ServicesPage.astro';
+import { useT } from '~/i18n/utils';
+
+const lang = 'en';
+const t = useT(lang);
+const path = '/services';
+---
+
+<Base title={t('seo.services.title')} description={t('seo.services.description')} lang={lang} path={path}>
+  <ServicesPage lang={lang} />
+</Base>

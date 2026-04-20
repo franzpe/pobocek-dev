@@ -1,6 +1,7 @@
 {
   "nav": {
     "getInTouch": "Get in Touch",
+    "services": "Services",
     "work": "Work",
     "about": "About me",
     "logoAlt": "pobocek.dev logo"
@@ -74,11 +75,70 @@
     "visitSite": "Visit site",
     "backToWork": "Back to work"
   },
+  "services": {
+    "pageTitle": "Services",
+    "eyebrow": "Services",
+    "heading": "Three ways to work together",
+    "intro": "From scoping your first AI automation to running it in production — pick the engagement that matches where you are.",
+    "tier1": {
+      "name": "AI Automation Roadmap",
+      "price": "€2,500",
+      "duration": "2 weeks",
+      "tagline": "Find the 3–5 automations with the biggest return.",
+      "description": "A deep audit of your current workflows. You leave with a written report identifying 3–5 high-ROI automations, ranked by cost, time to ship, and expected payback.",
+      "bestFor": "Teams exploring AI, not yet sure where to start.",
+      "b1": "90-min discovery call",
+      "b2": "Hands-on audit of 2–3 workflows",
+      "b3": "Written report: ranked automations with cost, time, and payback estimates",
+      "b4": "30-min walkthrough and Q&A",
+      "cta": "Book the roadmap"
+    },
+    "tier2": {
+      "name": "AI Implementation",
+      "price": "from €6,000",
+      "duration": "4–6 weeks",
+      "tagline": "Ship one AI automation, fixed scope and price.",
+      "description": "Fixed-scope build of one AI automation: an assistant, RAG over your docs, CRM/ops automation, or an internal tool. Shipped with docs and ready to integrate into your stack.",
+      "bestFor": "Teams with a clear use case, ready to ship.",
+      "b1": "Kick-off and scope lock",
+      "b2": "Build with weekly demos",
+      "b3": "Integration with your existing stack",
+      "b4": "Full docs and handover",
+      "cta": "Scope a build"
+    },
+    "tier3": {
+      "name": "AI Operations Retainer",
+      "price": "from €1,500/month",
+      "duration": "minimum 3 months",
+      "tagline": "Keep your AI running and growing, month over month.",
+      "description": "Once your AI is live, it needs looking after. Monthly monitoring, prompt tuning, and new workflow builds as your team grows its usage.",
+      "bestFor": "Teams running AI in production, wanting a technical partner on call.",
+      "b1": "Monthly performance review",
+      "b2": "Prompt tuning and observability",
+      "b3": "New workflow builds as needed",
+      "b4": "Priority response on questions and fixes",
+      "cta": "Start a retainer"
+    },
+    "teaser": {
+      "eyebrow": "Services",
+      "heading": "Three ways to work together",
+      "intro": "From scoping your first AI automation to running it in production.",
+      "cta": "See full services"
+    },
+    "duration": "Duration",
+    "bestFor": "Best for",
+    "includes": "What's included",
+    "fallback": {
+      "heading": "Outside these tiers?",
+      "body": "Got a scope that doesn't fit neatly — a bigger build, a shorter sprint, or something I haven't listed? Send me the shape of the problem and we'll figure out the right engagement.",
+      "cta": "Get in touch"
+    }
+  },
   "about": {
     "pageTitle": "About",
     "highlights": {
       "eyebrow": "A decade of shipping",
-      "heading": "Real products. Real businesses. Real outcomes.",
+      "heading": "Developer. Builder. Founder.",
       "intro": "18+ web apps, e-shops, intranet applications and one SaaS of my own — with AI integrations built in where they matter. Delivered across fintech, real estate, B2B and local services. Built to ship, not to demo.",
       "stat1Value": "10+",
       "stat1Label": "years of production code",
@@ -174,6 +234,10 @@
     "work": {
       "title": "Work | Frantisek Pobocek — AI Automation & Custom Web Apps",
       "description": "18+ delivered projects across fintech, real estate, B2B and local services. Web apps, e-commerce, intranets, and AI-powered workflows."
+    },
+    "services": {
+      "title": "Services | Frantisek Pobocek — AI Automation & Custom Web Apps",
+      "description": "Three ways to work together: AI Automation Roadmap (€2,500), AI Implementation (from €6,000), and AI Operations Retainer (from €1,500/month)."
     },
     "about": {
       "title": "About | Frantisek Pobocek — AI Automation & Custom Web Apps",

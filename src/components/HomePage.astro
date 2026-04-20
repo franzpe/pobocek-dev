@@ -1,7 +1,7 @@
 ---
 import type { Locale } from '~/i18n/utils';
 import { getCollection } from 'astro:content';
-import { useT } from '~/i18n/utils';
+import { useT, localizePath } from '~/i18n/utils';
 import Hero from './Hero.astro';
 import ProjectsGrid from './ProjectsGrid.astro';
 import MyStory from './MyStory.astro';
@@ -18,13 +18,15 @@ const allProjects = await getCollection('projects');
 const featured = allProjects
   .filter((p) => p.data.featured)
   .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+
+const servicesHref = localizePath('/services', lang);
 ---
 
 <Hero lang={lang} />
 
-<!-- Highlights right below hero -->
+<!-- Positioning statement + stats (slim highlights — no project picks) -->
 <div class="border-t border-violet bg-dark-violet">
-  <div class="container mx-auto border-violet px-5 py-10 sm:border-x md:px-16 md:py-32">
+  <div class="container mx-auto border-violet px-5 py-10 sm:border-x md:px-16 md:py-24">
     <span class="mb-4 inline-block text-xs font-bold uppercase tracking-widest text-lime"
       >{t('about.highlights.eyebrow')}</span
     >
@@ -55,26 +57,46 @@ const featured = allProjects
         </p>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="mt-12 grid gap-6 md:mt-20 md:grid-cols-3 md:gap-8">
-      <div class="rounded-xl border border-violet p-6 md:p-8">
-        <h3 class="mb-3 text-xl font-bold text-violet md:text-2xl">
-          {t('about.highlights.pick1Title')}
-        </h3>
-        <p class="text-sm text-white md:text-base">{t('about.highlights.pick1Body')}</p>
-      </div>
-      <div class="rounded-xl border border-violet p-6 md:p-8">
-        <h3 class="mb-3 text-xl font-bold text-violet md:text-2xl">
-          {t('about.highlights.pick2Title')}
-        </h3>
-        <p class="text-sm text-white md:text-base">{t('about.highlights.pick2Body')}</p>
-      </div>
-      <div class="rounded-xl border border-violet p-6 md:p-8">
-        <h3 class="mb-3 text-xl font-bold text-violet md:text-2xl">
-          {t('about.highlights.pick3Title')}
-        </h3>
-        <p class="text-sm text-white md:text-base">{t('about.highlights.pick3Body')}</p>
-      </div>
+<!-- Services teaser (after Highlights, before Projects) -->
+<div class="bg-dark-violet border-t border-violet">
+  <div class="container mx-auto sm:border-x border-violet px-5 md:px-16 py-10 md:py-20">
+    <div class="max-w-3xl">
+      <span class="inline-block text-xs font-bold uppercase tracking-widest text-lime mb-4">{t('services.teaser.eyebrow')}</span>
+      <h2 class="text-4xl md:text-6xl font-bold leading-tight text-violet">{t('services.teaser.heading')}</h2>
+      <p class="mt-6 text-white md:text-lg">{t('services.teaser.intro')}</p>
+    </div>
+
+    <div class="mt-10 md:mt-14 grid gap-6 md:gap-8 lg:grid-cols-3">
+      <a href={`${servicesHref}#tier1`} class="group flex flex-col rounded-xl border border-violet p-6 md:p-8 transition-colors hover:border-lime">
+        <span class="text-xs font-bold uppercase tracking-widest text-lime">{t('services.tier1.duration')}</span>
+        <h3 class="mt-3 text-xl md:text-2xl font-bold text-violet">{t('services.tier1.name')}</h3>
+        <p class="mt-3 text-2xl md:text-3xl font-bold text-lime">{t('services.tier1.price')}</p>
+        <p class="mt-4 text-sm md:text-base text-white/80 flex-1">{t('services.tier1.tagline')}</p>
+        <p class="mt-6 text-sm font-bold text-violet group-hover:text-lime transition-colors">{t('services.tier1.cta')} →</p>
+      </a>
+      <a href={`${servicesHref}#tier2`} class="group flex flex-col rounded-xl border border-violet p-6 md:p-8 transition-colors hover:border-lime">
+        <span class="text-xs font-bold uppercase tracking-widest text-lime">{t('services.tier2.duration')}</span>
+        <h3 class="mt-3 text-xl md:text-2xl font-bold text-violet">{t('services.tier2.name')}</h3>
+        <p class="mt-3 text-2xl md:text-3xl font-bold text-lime">{t('services.tier2.price')}</p>
+        <p class="mt-4 text-sm md:text-base text-white/80 flex-1">{t('services.tier2.tagline')}</p>
+        <p class="mt-6 text-sm font-bold text-violet group-hover:text-lime transition-colors">{t('services.tier2.cta')} →</p>
+      </a>
+      <a href={`${servicesHref}#tier3`} class="group flex flex-col rounded-xl border border-violet p-6 md:p-8 transition-colors hover:border-lime">
+        <span class="text-xs font-bold uppercase tracking-widest text-lime">{t('services.tier3.duration')}</span>
+        <h3 class="mt-3 text-xl md:text-2xl font-bold text-violet">{t('services.tier3.name')}</h3>
+        <p class="mt-3 text-2xl md:text-3xl font-bold text-lime">{t('services.tier3.price')}</p>
+        <p class="mt-4 text-sm md:text-base text-white/80 flex-1">{t('services.tier3.tagline')}</p>
+        <p class="mt-6 text-sm font-bold text-violet group-hover:text-lime transition-colors">{t('services.tier3.cta')} →</p>
+      </a>
+    </div>
+
+    <div class="mt-10 md:mt-14 text-center md:text-left">
+      <a href={servicesHref} class="relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-bold text-dark-violet bg-lime rounded-full group hover:bg-violet transition-colors">
+        <span class="relative">{t('services.teaser.cta')} →</span>
+      </a>
     </div>
   </div>
 </div>

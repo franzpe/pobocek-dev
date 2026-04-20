@@ -83,7 +83,7 @@ React · Next.js · Node.js · n8n · LLMs.
 
 > **Frank override (active — do not revert):** The brief's original hero had a Cal.com booking CTA as the secondary button. Frank has decided the hero stays clean with the existing two CTAs. The Cal.com "Book a 15-min intro call" link lives in the **Contact section**, below the email/response-time block — not in the hero.
 
-The Cal.com placeholder URL is `https://cal.com/frantisek-pobocek`. Swap for the real handle when Frank provides it.
+The Cal booking URL is `https://www.cal.eu/frantisek-pobocek` (Cal.com's EU domain).
 
 ## 7. LinkedIn + profile alignment
 
