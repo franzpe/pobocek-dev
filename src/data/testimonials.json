@@ -1,0 +1,24 @@
+[
+  {
+    "quote": {
+      "en": "Working with Frank is always productive. He understands his development tasks in the context of the overall project, thinks things through, and delivers functional code. We've worked together on projects where he was Front-End Lead as well as Full Stack Developer — both successful. Anyone who hires Frank will gain a valuable asset to their project.",
+      "sk": "Spolupráca s Frankom je vždy produktívna. Rozumie svojim vývojovým úlohám v kontexte celého projektu, premyslí si ich a dodáva funkčný kód. Spolupracovali sme na projektoch, kde bol Front-End Lead, aj na projektoch, kde pracoval ako Full Stack Developer — oba boli úspešné. Kto si Franka najme, získa cenný prínos pre svoj projekt."
+    },
+    "name": "Peter Ondruš",
+    "role": "Product Lead",
+    "company": "Bestauction.com",
+    "avatar": "/assets/images/testimonials/ondrus.webp",
+    "avatarType": "photo"
+  },
+  {
+    "quote": {
+      "en": "Frank built our company website from A to Z. We were happy with the result — he understood our business quickly, asked the right questions, and delivered on time. The site still works without issues years later. Reliable, honest, and easy to work with — I would recommend him to anyone.",
+      "sk": "Frank nám vytvoril firemnú webstránku od A po Z. S výsledkom sme boli spokojní — rýchlo pochopil náš biznis, pýtal sa správne otázky a dodal načas. Stránka funguje bez problémov roky po nasadení. Spoľahlivý, čestný a ľahko sa s ním spolupracuje — odporúčam ho každému."
+    },
+    "name": "Ing. Róbert Chlebo",
+    "role": "Co-owner & CEO",
+    "company": "ORSTAP NITRA spol. s r.o.",
+    "avatar": "/assets/images/testimonials/orstap.png",
+    "avatarType": "logo"
+  }
+]

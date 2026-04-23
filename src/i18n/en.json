@@ -41,6 +41,11 @@
     "responseTime": "I typically respond within 24 hours.",
     "bookCall": "Book a 15-min intro call"
   },
+  "testimonials": {
+    "eyebrow": "Recommendations",
+    "heading": "What clients say",
+    "intro": "People I've worked with — the kind of feedback that matters more than any self-written tagline."
+  },
   "footer": {
     "privacy": "Privacy & Policy",
     "copyright": "pobocek.dev"

@@ -1,0 +1,231 @@
+---
+import type { Locale } from '~/i18n/utils';
+import { useT } from '~/i18n/utils';
+import testimonialsData from '~/data/testimonials.json';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const t = useT(lang);
+
+const testimonials = testimonialsData as Array<{
+  quote: { en: string; sk: string };
+  name: string;
+  role: string;
+  company: string;
+  avatar: string | null;
+  avatarType?: 'photo' | 'logo';
+}>;
+
+const hasMultiple = testimonials.length > 1;
+const initial = (name: string) => name.trim().charAt(0).toUpperCase();
+---
+
+<div class="bg-dark-violet border-t border-violet" data-testimonials-root>
+  <div class="container mx-auto sm:border-x border-violet px-5 md:px-16 py-10 md:py-20">
+
+    <!-- Header (left-aligned to match rest of homepage) -->
+    <div class="max-w-3xl mb-10 md:mb-16">
+      <span class="inline-block text-xs font-bold uppercase tracking-widest text-lime mb-4">
+        {t('testimonials.eyebrow')}
+      </span>
+      <h2 class="text-4xl md:text-6xl font-bold leading-tight text-violet">
+        {t('testimonials.heading')}
+      </h2>
+    </div>
+
+    <!-- Centered stage -->
+    <div class="relative flex flex-col items-center text-center max-w-4xl mx-auto" data-stage>
+
+      <!-- Quote mark (aligned left) -->
+      <svg
+        class="text-lime mb-6 md:mb-8 self-start"
+        width="48"
+        height="36"
+        viewBox="0 0 32 24"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path d="M0 24V14.4C0 11.2 0.48 8.32 1.44 5.76C2.4 3.2 4.32 1.28 7.2 0L10.56 3.36C9.12 4.16 7.92 5.28 6.96 6.72C6 8.16 5.44 9.92 5.28 12H10.56V24H0ZM19.2 24V14.4C19.2 11.2 19.68 8.32 20.64 5.76C21.6 3.2 23.52 1.28 26.4 0L29.76 3.36C28.32 4.16 27.12 5.28 26.16 6.72C25.2 8.16 24.64 9.92 24.48 12H29.76V24H19.2Z"/>
+      </svg>
+
+      <!-- Slides stack: only one visible at a time -->
+      <div class="relative w-full min-h-[360px] md:min-h-[300px]" data-slides>
+        {testimonials.map((item, i) => (
+          <blockquote
+            data-slide
+            data-index={i}
+            class={`transition-opacity duration-500 ease-out w-full ${i === 0 ? 'relative opacity-100' : 'absolute inset-0 opacity-0 pointer-events-none'}`}
+            aria-hidden={i !== 0 ? 'true' : 'false'}
+          >
+            <p class="text-xl md:text-2xl lg:text-3xl leading-relaxed text-white font-medium">
+              {item.quote[lang]}
+            </p>
+            <footer class="mt-8 md:mt-10">
+              <p class="font-bold text-violet">{item.name}</p>
+              <p class="text-sm text-white/60 mt-1">{item.role} · {item.company}</p>
+            </footer>
+          </blockquote>
+        ))}
+      </div>
+
+      <!-- Avatar strip / navigation -->
+      {hasMultiple && (
+        <div
+          class="mt-10 md:mt-14 flex items-center justify-center gap-3 md:gap-4"
+          role="tablist"
+          aria-label="Select testimonial"
+          data-avatars
+        >
+          {testimonials.map((item, i) => {
+            const isLogo = item.avatarType === 'logo';
+            const activeClasses = i === 0 ? 'scale-110' : 'opacity-60 hover:opacity-100 scale-100';
+            const borderClasses = i === 0 ? 'border-lime' : 'border-violet/40';
+            return (
+              <button
+                type="button"
+                data-avatar
+                data-index={i}
+                role="tab"
+                aria-selected={i === 0 ? 'true' : 'false'}
+                aria-label={`Show testimonial from ${item.name}`}
+                class={`relative rounded-full transition-all duration-300 ease-out ${activeClasses}`}
+              >
+                {item.avatar ? (
+                  isLogo ? (
+                    <div class={`w-12 h-12 md:w-14 md:h-14 rounded-full bg-white flex items-center justify-center border-2 transition-colors ${borderClasses} overflow-hidden`}>
+                      <img
+                        src={item.avatar}
+                        alt={item.name}
+                        class="w-full h-full object-contain p-2"
+                        loading="lazy"
+                      />
+                    </div>
+                  ) : (
+                    <img
+                      src={item.avatar}
+                      alt={item.name}
+                      class={`w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border-2 transition-colors ${borderClasses}`}
+                      loading="lazy"
+                    />
+                  )
+                ) : (
+                  <div
+                    class={`w-12 h-12 md:w-14 md:h-14 rounded-full bg-violet/20 text-violet font-bold text-base md:text-lg flex items-center justify-center border-2 transition-colors ${borderClasses}`}
+                    aria-hidden="true"
+                  >
+                    {initial(item.name)}
+                  </div>
+                )}
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  </div>
+</div>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-testimonials-root]');
+  if (root) {
+    const stage = root.querySelector<HTMLElement>('[data-stage]');
+    const slides = Array.from(root.querySelectorAll<HTMLElement>('[data-slide]'));
+    const avatars = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-avatar]'));
+    const total = slides.length;
+
+    if (total > 1 && stage) {
+      let current = 0;
+      let timer: number | null = null;
+      const INTERVAL_MS = 10000;
+
+      const show = (i: number) => {
+        // Slides
+        slides.forEach((el, idx) => {
+          const active = idx === i;
+          el.classList.toggle('opacity-100', active);
+          el.classList.toggle('opacity-0', !active);
+          el.classList.toggle('pointer-events-none', !active);
+          el.classList.toggle('absolute', !active);
+          el.classList.toggle('inset-0', !active);
+          el.classList.toggle('relative', active);
+          el.setAttribute('aria-hidden', active ? 'false' : 'true');
+        });
+
+        // Avatars
+        avatars.forEach((btn, idx) => {
+          const active = idx === i;
+          btn.setAttribute('aria-selected', active ? 'true' : 'false');
+          btn.classList.toggle('scale-110', active);
+          btn.classList.toggle('opacity-60', !active);
+
+          const avatarEl = btn.querySelector<HTMLElement>('img, div');
+          if (avatarEl) {
+            avatarEl.classList.toggle('border-lime', active);
+            avatarEl.classList.toggle('border-violet/40', !active);
+          }
+        });
+
+        current = i;
+      };
+
+      const advance = (direction: 1 | -1) => {
+        show((current + direction + total) % total);
+      };
+
+      const startAuto = () => {
+        stopAuto();
+        timer = window.setInterval(() => advance(1), INTERVAL_MS);
+      };
+      const stopAuto = () => {
+        if (timer !== null) {
+          window.clearInterval(timer);
+          timer = null;
+        }
+      };
+
+      // Click avatar to jump to slide
+      avatars.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const idx = Number(btn.dataset.index);
+          stopAuto();
+          show(idx);
+          startAuto();
+        });
+      });
+
+      // Keyboard nav: arrow keys on any avatar
+      avatars.forEach((btn) => {
+        btn.addEventListener('keydown', (e: KeyboardEvent) => {
+          if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            stopAuto();
+            advance(1);
+            avatars[(current) % total]?.focus();
+            startAuto();
+          } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            stopAuto();
+            advance(-1);
+            avatars[(current) % total]?.focus();
+            startAuto();
+          }
+        });
+      });
+
+      // Pause on hover / focus
+      stage.addEventListener('mouseenter', stopAuto);
+      stage.addEventListener('mouseleave', startAuto);
+      stage.addEventListener('focusin', stopAuto);
+      stage.addEventListener('focusout', startAuto);
+
+      // Respect reduced motion
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      if (!reducedMotion.matches) {
+        startAuto();
+      }
+    }
+  }
+</script>

@@ -41,6 +41,11 @@
     "responseTime": "Zvyčajne odpoviem do 24 hodín.",
     "bookCall": "Rezervovať 15-min úvodný hovor"
   },
+  "testimonials": {
+    "eyebrow": "Odporúčania",
+    "heading": "Čo klienti hovoria",
+    "intro": "Ľudia, s ktorými som spolupracoval — taká spätná väzba znamená viac než akýkoľvek vlastný slogan."
+  },
   "footer": {
     "privacy": "Ochrana osobných údajov",
     "copyright": "pobocek.dev"
