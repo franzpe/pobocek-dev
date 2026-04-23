@@ -162,10 +162,12 @@ Every change made to the EN version must have a corresponding SK version update.
 
 The owner has two companion documents with strategic context. These don't need to be pasted into every session but should be consulted if the agent is making judgment calls on positioning or strategy:
 
-- `pobocek-client-acquisition-playbook.md` — full 2026 client acquisition strategy
+- `pobocek-client-acquisition-playbook.md` — 2026 client acquisition strategy (revised: inbound-first, cold outreach **optional**, committed to repo root)
 - `pobocek-founder-track-addendum.md` — founder track strategy
 
 If a decision seems like it conflicts with those documents, default to this brief (which is the shortest synthesis) and ask the owner.
+
+> **Frank override (active — do not revert):** Cold outreach (secondary domains, Instantly, Clay, mass email sequences) is **explicitly optional** in the playbook. Frank prefers inbound + warm network only. Do not push cold-outreach tactics unless he specifically asks to activate the optional accelerator track. Default channel stack: Malt + Lemon.io (inbound) + LinkedIn content + warm network + newsletter + SEO case studies.
 
 ## 13. Owner context (personal)
 
